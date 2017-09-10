@@ -1,0 +1,6 @@
+unzip 201103_SeguroDefeso.zip
+iconv -f iso-8859-1 -t utf-8 201103_SeguroDefeso.csv > temp
+mv temp 201103_SeguroDefeso.csv
+sed -i 's/\r//g' 201103_SeguroDefeso.csv
+./201103_SeguroDefeso.py
+file *
