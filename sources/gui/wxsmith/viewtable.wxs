@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="viewtable">
+		<icon>/home/kenneth/wxstuff/reclink/rl.xpm</icon>
+		<size>400,193</size>
+		<pos_arg>1</pos_arg>
+		<size_arg>1</size_arg>
+		<object class="wxGrid" name="ID_GRID1" variable="Grid1" member="yes">
+			<cols>1</cols>
+			<rows>1</rows>
+			<readonly>1</readonly>
+			<labelrowheight>20</labelrowheight>
+			<labelcolwidth>80</labelcolwidth>
+			<collabels>
+				<item></item>
+			</collabels>
+			<pos>96,208</pos>
+			<size>400,184</size>
+			<handler function="OnGrid1CellSelect" entry="EVT_CMD_GRID_SELECT_CELL" />
+		</object>
+		<object class="wxFileDialog" variable="FileDialog1" member="yes">
+			<message>Selecione o arquivo</message>
+			<wildcard>*.dat</wildcard>
+			<style>wxFD_OPEN|wxFD_FILE_MUST_EXIST</style>
+		</object>
+		<object class="wxMenuBar" variable="MenuBar1" member="yes">
+			<object class="wxMenu" variable="Menu1" member="yes">
+				<label>Arquivo</label>
+				<object class="wxMenuItem" name="ID_MENUITEM1" variable="MenuItem1" member="yes">
+					<label>Visualiza</label>
+					<handler function="OnMenuItem2Selected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM9" variable="MenuItem9" member="yes">
+					<label>Estrutura</label>
+					<enabled>0</enabled>
+					<handler function="OnMenuItem9Selected1" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM8" variable="MenuItem8" member="yes">
+					<label>Reinicia</label>
+					<enabled>0</enabled>
+					<handler function="OnMenuItem8Selected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM4" variable="MenuItem4" member="yes">
+					<label>Índice</label>
+					<enabled>0</enabled>
+					<handler function="OnMenuItem4Selected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM2" variable="MenuItem2" member="yes">
+					<label>Sai</label>
+					<handler function="OnMenuItem3Selected" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu2" member="yes">
+				<label>Movimenta</label>
+				<object class="wxMenuItem" name="ID_MENUITEM5" variable="MenuItem5" member="yes">
+					<label>Anexa</label>
+					<enabled>0</enabled>
+					<handler function="OnMenuItem5Selected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM3" variable="MenuItem3" member="yes">
+					<label>Exporta</label>
+					<enabled>0</enabled>
+					<handler function="OnMenuItem3Selected1" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM6" variable="MenuItem6" member="yes">
+					<label>Importa</label>
+					<handler function="OnMenuItem6Selected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM7" variable="MenuItem7" member="yes">
+					<label>Importa dbf</label>
+					<handler function="OnMenuItem7Selected" entry="EVT_MENU" />
+				</object>
+			</object>
+		</object>
+		<object class="wxStopWatch" variable="StopWatch1" member="yes" />
+	</object>
+</wxsmith>

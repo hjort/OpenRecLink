@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="wizjin">
+		<title>Assistente</title>
+		<size>523,349</size>
+		<id_arg>0</id_arg>
+		<object class="wxFlexGridSizer" variable="FlexGridSizer1" member="no">
+			<cols>1</cols>
+			<rows>3</rows>
+			<object class="sizeritem">
+				<object class="wxPanel" name="ID_PANEL3" variable="Panel3" member="yes">
+					<size>523,23</size>
+					<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+						<label>Associa</label>
+						<pos>16,8</pos>
+						<font>
+							<size>14</size>
+							<style>normal</style>
+							<weight>bold</weight>
+							<underlined>0</underlined>
+							<family>swiss</family>
+							<face>Sans</face>
+						</font>
+					</object>
+				</object>
+				<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxNotebook" name="ID_LISTBOOK1" variable="Listbook1" member="yes">
+					<size>523,276</size>
+					<handler function="OnListbook1PageChanged" entry="EVT_NOTEBOOK_PAGE_CHANGED" />
+					<object class="notebookpage">
+						<object class="wxPanel" name="ID_PANEL2" variable="Panel2" member="yes">
+							<pos>56,8</pos>
+							<size>523,260</size>
+							<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="cfgfilenamectrl" member="yes">
+								<pos>40,104</pos>
+								<size>400,27</size>
+								<style>wxTE_READONLY</style>
+							</object>
+							<object class="wxBitmapButton" name="ID_BITMAPBUTTON1" variable="opencfgfile" member="yes">
+								<bitmap stock_id="wxART_FILE_SAVE" />
+								<pos>448,104</pos>
+								<handler function="OnopencfgfileClick" entry="EVT_BUTTON" />
+							</object>
+							<object class="wxStaticText" name="ID_STATICTEXT6" variable="StaticText6" member="yes">
+								<label>Arquivo de configuração:</label>
+								<pos>48,80</pos>
+							</object>
+						</object>
+						<label>Config.</label>
+					</object>
+					<object class="notebookpage">
+						<object class="wxPanel" name="ID_PANEL4" variable="Panel4" member="yes">
+							<pos>202,14</pos>
+							<size>523,260</size>
+							<object class="wxTextCtrl" name="ID_TEXTCTRL2" variable="masterfilenamectrl" member="yes">
+								<pos>40,72</pos>
+								<size>400,27</size>
+								<style>wxTE_READONLY</style>
+							</object>
+							<object class="wxBitmapButton" name="ID_BITMAPBUTTON2" variable="openmasterfile" member="yes">
+								<bitmap stock_id="wxART_FILE_OPEN" />
+								<pos>448,72</pos>
+								<handler function="OnopenmasterfileClick" entry="EVT_BUTTON" />
+							</object>
+							<object class="wxTextCtrl" name="ID_TEXTCTRL3" variable="updatefilenamectrl" member="yes">
+								<pos>40,144</pos>
+								<size>400,27</size>
+								<style>wxTE_READONLY</style>
+							</object>
+							<object class="wxBitmapButton" name="ID_BITMAPBUTTON3" variable="openupdatefile" member="yes">
+								<bitmap stock_id="wxART_FILE_OPEN" />
+								<pos>448,144</pos>
+								<handler function="OnopenupdatefileClick" entry="EVT_BUTTON" />
+							</object>
+							<object class="wxStaticText" name="ID_STATICTEXT3" variable="StaticText3" member="yes">
+								<label>Arquivo mestre (será indexado)</label>
+								<pos>48,48</pos>
+							</object>
+							<object class="wxStaticText" name="ID_STATICTEXT4" variable="StaticText4" member="yes">
+								<label>Arquivo de atualização (será lido por inteiro):</label>
+								<pos>48,120</pos>
+							</object>
+						</object>
+						<label>Arq. dados</label>
+					</object>
+					<object class="notebookpage">
+						<object class="wxPanel" name="ID_PANEL5" variable="Panel5" member="yes">
+							<object class="wxChoice" name="ID_CHOICE2" variable="masterkey" member="yes">
+								<pos>200,70</pos>
+								<size>192,29</size>
+							</object>
+							<object class="wxChoice" name="ID_CHOICE1" variable="updatekey" member="yes">
+								<pos>200,150</pos>
+								<size>192,29</size>
+							</object>
+							<object class="wxStaticText" name="ID_STATICTEXT5" variable="StaticText5" member="yes">
+								<label>Campo-chave do arquivo mestre:</label>
+								<pos>48,40</pos>
+							</object>
+							<object class="wxStaticText" name="ID_STATICTEXT7" variable="StaticText7" member="yes">
+								<label>Campo-chave do arquivo de atualização:</label>
+								<pos>48,120</pos>
+							</object>
+						</object>
+						<label>Chave</label>
+					</object>
+					<object class="notebookpage">
+						<object class="wxPanel" name="ID_PANEL6" variable="Panel6" member="yes">
+							<object class="wxCheckListBox" name="ID_CHECKLISTBOX1" variable="masterfields" member="yes">
+								<pos>192,32</pos>
+								<size>205,174</size>
+							</object>
+							<object class="wxStaticText" name="ID_STATICTEXT8" variable="StaticText8" member="yes">
+								<label>Selecione os campos &#x0A;desejados do arquivo&#x0A;mestre na caixa ao&#x0A;lado:</label>
+								<pos>16,48</pos>
+							</object>
+						</object>
+						<label>Mestre</label>
+					</object>
+					<object class="notebookpage">
+						<object class="wxPanel" name="ID_PANEL7" variable="Panel7" member="yes">
+							<object class="wxStaticText" name="ID_STATICTEXT9" variable="StaticText9" member="yes">
+								<label>Selecione os campos &#x0A;desejados do arquivo&#x0A;de atualização na caixa&#x0A;ao lado:</label>
+								<pos>16,48</pos>
+							</object>
+							<object class="wxCheckListBox" name="ID_CHECKLISTBOX2" variable="updatefields" member="yes">
+								<pos>192,32</pos>
+								<size>205,174</size>
+							</object>
+						</object>
+						<label>Atualização</label>
+					</object>
+					<object class="notebookpage">
+						<object class="wxPanel" name="ID_PANEL8" variable="Panel8" member="yes">
+							<pos>175,19</pos>
+							<object class="wxTextCtrl" name="ID_TEXTCTRL4" variable="errrep" member="yes">
+								<pos>40,32</pos>
+								<size>350,176</size>
+								<style>wxTE_MULTILINE|wxTE_READONLY</style>
+							</object>
+							<object class="wxBitmapButton" name="wxID_OK" variable="okbtn" member="yes">
+								<bitmap stock_id="wxART_TICK_MARK" />
+								<pos>416,176</pos>
+								<size>36,36</size>
+								<enabled>0</enabled>
+								<tooltip>Aceita</tooltip>
+								<handler function="OnokbtnClick" entry="EVT_BUTTON" />
+							</object>
+							<object class="wxBitmapButton" name="wxID_CANCEL" variable="cancelbtn" member="yes">
+								<bitmap stock_id="wxART_CROSS_MARK" />
+								<pos>464,176</pos>
+								<size>36,36</size>
+								<tooltip>Abandona</tooltip>
+							</object>
+							<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
+								<label>Status da configuração:</label>
+								<pos>40,8</pos>
+							</object>
+						</object>
+						<label>Finaliza</label>
+					</object>
+				</object>
+				<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+					<size>523,47</size>
+					<object class="wxButton" name="ID_BUTTON1" variable="backbtn" member="yes">
+						<label>Volta</label>
+						<pos>340,8</pos>
+						<handler function="OnbackbtnClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxButton" name="ID_BUTTON2" variable="fwdbtn" member="yes">
+						<label>Segue</label>
+						<pos>425,8</pos>
+						<handler function="OnfwdbtnClick" entry="EVT_BUTTON" />
+					</object>
+				</object>
+				<flag>wxBOTTOM|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+		</object>
+		<object class="wxFileDialog" variable="FileDialog1" member="yes">
+			<message>Seleciona arquivo</message>
+			<style>wxFD_DEFAULT_STYLE|wxFD_OPEN</style>
+		</object>
+		<object class="wxFileDialog" variable="FileDialog2" member="yes">
+			<message>Seleciona arquivo</message>
+			<style>wxFD_SAVE</style>
+		</object>
+	</object>
+</wxsmith>

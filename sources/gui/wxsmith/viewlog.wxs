@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="viewlog">
+		<title>Log de atividade</title>
+		<pos_arg>1</pos_arg>
+		<size_arg>1</size_arg>
+		<object class="wxGridBagSizer" variable="GridBagSizer1" member="no">
+			<object class="sizeritem">
+				<object class="wxGrid" name="ID_GRID1" variable="Grid1" member="yes">
+					<cols>5</cols>
+					<rows>4</rows>
+					<readonly>1</readonly>
+					<labelrowheight>20</labelrowheight>
+					<defaultcolsize>100</defaultcolsize>
+					<collabels>
+						<item>Hora (UTC)</item>
+						<item>Atividade</item>
+						<item>Configuração</item>
+						<item>Tempo</item>
+						<item>Mensagem</item>
+					</collabels>
+					<size>597,133</size>
+					<handler function="OnGrid1CellSelect" entry="EVT_CMD_GRID_SELECT_CELL" />
+				</object>
+				<col>0</col>
+				<row>0</row>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+		</object>
+	</object>
+</wxsmith>

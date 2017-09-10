@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="reclinkmain">
+		<title>OpenRecLink</title>
+		<icon>/home/kenneth/wxstuff/reclink/rl.xpm</icon>
+		<size>669,471</size>
+		<id_arg>0</id_arg>
+		<style>wxCAPTION|wxSYSTEM_MENU|wxCLOSE_BOX|wxMINIMIZE_BOX|wxFULL_REPAINT_ON_RESIZE</style>
+		<exstyle>wxFRAME_EX_METAL</exstyle>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP1" variable="StaticBitmap1" member="yes">
+			<pos>448,104</pos>
+		</object>
+		<object class="wxMenuBar" variable="MenuBar1" member="yes">
+			<object class="wxMenu" variable="Menu1" member="yes">
+				<label>Arquivo</label>
+				<object class="wxMenuItem" name="ID_MENUITEM1" variable="MenuItem1" member="yes">
+					<label>Ferramentas</label>
+					<handler function="OnMenuItem1Selected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM17" variable="MenuItem16" member="yes">
+					<label>Log atividade</label>
+					<handler function="OnMenuItem16Selected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM10" variable="MenuItem9" member="yes">
+					<label>Sobre</label>
+					<handler function="OnaboutSelected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM2" variable="MenuItem2" member="yes">
+					<label>Sai</label>
+					<handler function="OnmenucloseSelected" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu7" member="yes">
+				<label>Copia</label>
+				<object class="wxMenuItem" name="ID_MENUITEM23" variable="MenuItem22" member="yes">
+					<label>Configura</label>
+					<handler function="OnMenuItem22Selected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM24" variable="MenuItem23" member="yes">
+					<label>Executa</label>
+					<handler function="OnMenuItem23Selected" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu2" member="yes">
+				<label>Padroniza</label>
+				<object class="wxMenuItem" name="ID_MENUITEM3" variable="MenuItem3" member="yes">
+					<label>Configura</label>
+					<handler function="OncfgstdSelected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM4" variable="MenuItem4" member="yes">
+					<label>Executa</label>
+					<handler function="OnrunstdSelected" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu3" member="yes">
+				<label>Relaciona</label>
+				<object class="wxMenuItem" name="ID_MENUITEM5" variable="MenuItem5" member="yes">
+					<label>Configura</label>
+					<handler function="OncfglnkSelected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM20" variable="MenuItem19" member="yes">
+					<label>Gera freq</label>
+					<handler function="OnMenuItem19Selected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM21" variable="MenuItem20" member="yes">
+					<label>Analisa freq</label>
+					<handler function="OnMenuItem20Selected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM14" variable="MenuItem10" member="no">
+					<label>Gera matrizes</label>
+					<handler function="OncalcparmsSelected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM15" variable="MenuItem14" member="yes">
+					<label>Calcula</label>
+					<handler function="OndocalcSelected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM6" variable="MenuItem6" member="yes">
+					<label>Executa</label>
+					<handler function="OnrunlnkSelected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM18" variable="MenuItem17" member="yes">
+					<label>Reduz pares</label>
+					<handler function="OnMenuItem17Selected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM19" variable="MenuItem18" member="yes">
+					<label>Marca/Desmarca</label>
+					<handler function="OnMenuItem18Selected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM22" variable="MenuItem21" member="yes">
+					<label>Exporta SQL</label>
+					<handler function="OnMenuItem21Selected" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu4" member="yes">
+				<label>Deduplica</label>
+				<object class="wxMenuItem" name="ID_MENUITEM7" variable="MenuItem7" member="no">
+					<label>Configura</label>
+					<handler function="OncfgdupSelected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM8" variable="MenuItem8" member="yes">
+					<label>Executa</label>
+					<handler function="OndodupSelected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM16" variable="MenuItem15" member="yes">
+					<label>Examina</label>
+					<handler function="OnviewdupSelected" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu5" member="yes">
+				<label>Combina</label>
+				<object class="wxMenuItem" name="ID_MENUITEM9" variable="doinspect" member="yes">
+					<label>Examina</label>
+					<handler function="OninspectSelected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM11" variable="MenuItem11" member="yes">
+					<label>Executa</label>
+					<handler function="OndoexeccmbSelected" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu6" member="yes">
+				<label>Associa</label>
+				<object class="wxMenuItem" name="ID_MENUITEM12" variable="MenuItem12" member="yes">
+					<label>Configura</label>
+					<handler function="OncfgjinSelected" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM13" variable="MenuItem13" member="no">
+					<label>Executa</label>
+					<handler function="OndoexecjinSelected" entry="EVT_MENU" />
+				</object>
+			</object>
+		</object>
+		<object class="wxSingleInstanceChecker" variable="SingleInstanceChecker1" member="yes" />
+	</object>
+</wxsmith>

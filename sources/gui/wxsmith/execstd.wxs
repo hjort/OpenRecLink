@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="execstd">
+		<title>Executa padronização</title>
+		<size>523,349</size>
+		<id_arg>0</id_arg>
+		<object class="wxFlexGridSizer" variable="FlexGridSizer1" member="no">
+			<cols>1</cols>
+			<rows>3</rows>
+			<object class="sizeritem">
+				<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+					<size>501,305</size>
+					<object class="wxTextCtrl" name="ID_TEXTCTRL2" variable="cfgfilenamectrl" member="yes">
+						<pos>24,40</pos>
+						<size>400,27</size>
+						<style>wxTE_READONLY</style>
+					</object>
+					<object class="wxBitmapButton" name="ID_BITMAPBUTTON2" variable="opencfgfile" member="yes">
+						<bitmap stock_id="wxART_FILE_OPEN" />
+						<pos>432,40</pos>
+						<handler function="OnopencfgfileClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxTextCtrl" name="ID_TEXTCTRL4" variable="outfilenamectrl" member="yes">
+						<pos>24,112</pos>
+						<size>400,27</size>
+						<style>wxTE_READONLY</style>
+					</object>
+					<object class="wxBitmapButton" name="ID_BITMAPBUTTON1" variable="openoutfile" member="yes">
+						<bitmap stock_id="wxART_FILE_OPEN" />
+						<pos>432,112</pos>
+						<handler function="OnopenoutfileClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+						<label>Arq. configuração</label>
+						<pos>32,24</pos>
+					</object>
+					<object class="wxStaticText" name="ID_STATICTEXT3" variable="StaticText3" member="yes">
+						<label>Arq. saída</label>
+						<pos>32,96</pos>
+					</object>
+					<object class="wxGauge" name="ID_GAUGE1" variable="Gauge1" member="yes">
+						<pos>32,240</pos>
+						<size>424,28</size>
+					</object>
+					<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
+						<label>Registro corrente:</label>
+						<pos>192,192</pos>
+					</object>
+					<object class="wxStaticText" name="ID_STATICTEXT5" variable="StaticText5" member="yes">
+						<label>0</label>
+						<pos>336,192</pos>
+						<size>120,17</size>
+						<style>wxALIGN_RIGHT</style>
+					</object>
+					<object class="wxBitmapButton" name="ID_BITMAPBUTTON3" variable="BitmapButton2" member="yes">
+						<bitmap stock_id="wxART_EXECUTABLE_FILE" />
+						<pos>40,184</pos>
+						<tooltip>Executa</tooltip>
+						<handler function="OnBitmapButton2Click" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxStaticLine" name="ID_STATICLINE1" variable="StaticLine1" member="yes">
+						<pos>0,168</pos>
+						<size>480,1</size>
+					</object>
+					<object class="wxStaticLine" name="ID_STATICLINE2" variable="StaticLine2" member="yes">
+						<pos>0,290</pos>
+						<size>480,1</size>
+					</object>
+				</object>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxBitmapButton" name="wxID_OK" variable="BitmapButton1" member="yes">
+					<bitmap stock_id="wxART_UNDO" />
+					<tooltip>Retorna</tooltip>
+				</object>
+				<flag>wxBOTTOM|wxRIGHT|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+			</object>
+		</object>
+		<object class="wxFileDialog" variable="FileDialog1" member="yes">
+			<message>Seleciona arquivo</message>
+			<style>wxFD_DEFAULT_STYLE|wxFD_OPEN|wxFD_FILE_MUST_EXIST</style>
+		</object>
+		<object class="wxFileDialog" variable="FileDialog2" member="yes">
+			<message>Seleciona arquivo</message>
+			<style>wxFD_SAVE|wxFD_OVERWRITE_PROMPT</style>
+		</object>
+		<object class="wxStopWatch" variable="StopWatch1" member="yes" />
+	</object>
+</wxsmith>

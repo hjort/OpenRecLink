@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="SQLexportdlg">
+		<title>Cria arquivos de exportação SQL</title>
+		<size>500,259</size>
+		<id_arg>0</id_arg>
+		<object class="wxFlexGridSizer" variable="FlexGridSizer1" member="no">
+			<cols>1</cols>
+			<rows>3</rows>
+			<object class="sizeritem">
+				<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+					<size>480,205</size>
+					<object class="wxTextCtrl" name="ID_TEXTCTRL4" variable="outfilenamectrl" member="yes">
+						<pos>16,24</pos>
+						<size>400,27</size>
+						<style>wxTE_READONLY</style>
+					</object>
+					<object class="wxBitmapButton" name="ID_BITMAPBUTTON1" variable="openoutfile" member="yes">
+						<bitmap stock_id="wxART_FILE_OPEN" />
+						<pos>432,24</pos>
+						<handler function="OnopenoutfileClick" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxStaticText" name="ID_STATICTEXT3" variable="StaticText3" member="yes">
+						<label>Arq. configuração:</label>
+						<pos>16,8</pos>
+					</object>
+					<object class="wxGauge" name="ID_GAUGE1" variable="Gauge1" member="yes">
+						<pos>24,160</pos>
+						<size>424,28</size>
+					</object>
+					<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
+						<label>Registro corrente:</label>
+						<pos>192,112</pos>
+					</object>
+					<object class="wxStaticText" name="ID_STATICTEXT5" variable="StaticText5" member="yes">
+						<label>0</label>
+						<pos>328,112</pos>
+						<size>120,17</size>
+						<style>wxALIGN_RIGHT</style>
+					</object>
+					<object class="wxBitmapButton" name="ID_BITMAPBUTTON3" variable="BitmapButton2" member="yes">
+						<bitmap stock_id="wxART_EXECUTABLE_FILE" />
+						<pos>24,104</pos>
+						<enabled>0</enabled>
+						<tooltip>Executa</tooltip>
+						<handler function="OnBitmapButton2Click" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxStaticLine" name="ID_STATICLINE1" variable="StaticLine1" member="yes">
+						<pos>0,208</pos>
+						<size>480,0</size>
+					</object>
+					<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+						<label>Aguardando...</label>
+						<pos>16,64</pos>
+					</object>
+				</object>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxBitmapButton" name="wxID_OK" variable="BitmapButton1" member="yes">
+					<bitmap stock_id="wxART_UNDO" />
+					<tooltip>Retorna</tooltip>
+					<handler function="OnBitmapButton1Click" entry="EVT_BUTTON" />
+				</object>
+				<flag>wxBOTTOM|wxRIGHT|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+			</object>
+		</object>
+		<object class="wxFileDialog" variable="FileDialog1" member="yes">
+			<message>Seleciona arquivo</message>
+			<style>wxFD_DEFAULT_STYLE|wxFD_OPEN|wxFD_FILE_MUST_EXIST</style>
+		</object>
+		<object class="wxStopWatch" variable="StopWatch1" member="yes" />
+	</object>
+</wxsmith>

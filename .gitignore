@@ -33,3 +33,6 @@
 
 # build files
 sources/build/*
+
+# backup files
+*.*~

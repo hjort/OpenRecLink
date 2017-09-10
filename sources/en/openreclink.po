@@ -1,0 +1,2405 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenRecLink\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-05 02:52-0300\n"
+"PO-Revision-Date: 2016-06-05 03:10-0300\n"
+"Last-Translator: Kenneth Camargo <kencamargo@gmail.com>\n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-KeywordsList: _\n"
+"X-Poedit-SearchPath-0: gui\n"
+"X-Poedit-SearchPath-1: nongui\n"
+
+#: gui/SQLexportdlg.cpp:62
+msgid "Cria arquivos de exportação SQL"
+msgstr "Create SQL export files"
+
+#: gui/SQLexportdlg.cpp:68 gui/freqdlg.cpp:70
+msgid "Arq. configuração:"
+msgstr "Configuration file:"
+
+#: gui/SQLexportdlg.cpp:70 gui/execcmb.cpp:90 gui/execcopy.cpp:75
+#: gui/execdup.cpp:70 gui/execjin.cpp:75 gui/execlnk.cpp:159
+#: gui/execlnmatrix.cpp:162 gui/execmark.cpp:98 gui/execpurge.cpp:92
+#: gui/execstd.cpp:75 gui/freqdlg.cpp:72 gui/importcsv.cpp:120
+msgid "Registro corrente:"
+msgstr "Current record:"
+
+#: gui/SQLexportdlg.cpp:74 gui/execcmb.cpp:93 gui/execcopy.cpp:78
+#: gui/execdup.cpp:73 gui/execjin.cpp:78 gui/execlnk.cpp:83
+#: gui/execlnmatrix.cpp:88 gui/execmark.cpp:82 gui/execpurge.cpp:78
+#: gui/execstd.cpp:78 gui/freqdlg.cpp:76 gui/reclinkmain.cpp:137
+#: gui/reclinkmain.cpp:143 gui/reclinkmain.cpp:157 gui/reclinkmain.cpp:169
+#: gui/reclinkmain.cpp:177 gui/reclinkmain.cpp:183
+msgid "Executa"
+msgstr "Run"
+
+#: gui/SQLexportdlg.cpp:76
+msgid "Aguardando..."
+msgstr "Waiting..."
+
+#: gui/SQLexportdlg.cpp:79 gui/execcmb.cpp:104 gui/execcopy.cpp:83
+#: gui/execdup.cpp:79 gui/execjin.cpp:83 gui/execlnk.cpp:98
+#: gui/execlnmatrix.cpp:105 gui/execmark.cpp:105 gui/execpurge.cpp:95
+#: gui/execstd.cpp:83 gui/freqanalysis.cpp:88 gui/freqdlg.cpp:83
+#: gui/runcalc.cpp:139 gui/viewdup.cpp:132
+msgid "Retorna"
+msgstr "Return"
+
+#: gui/SQLexportdlg.cpp:82 gui/execcmb.cpp:107 gui/execcmb.cpp:108
+#: gui/execcmb.cpp:109 gui/execcmb.cpp:110 gui/execcopy.cpp:86
+#: gui/execcopy.cpp:87 gui/execdup.cpp:82 gui/execjin.cpp:86 gui/execjin.cpp:87
+#: gui/execlnk.cpp:101 gui/execlnk.cpp:102 gui/execlnmatrix.cpp:108
+#: gui/execmark.cpp:108 gui/execpurge.cpp:98 gui/execstd.cpp:86
+#: gui/execstd.cpp:87 gui/exportdlg.cpp:86 gui/freqdlg.cpp:86
+#: gui/importcsv.cpp:137 gui/importdlg.cpp:60 gui/indexdialog.cpp:64
+#: gui/runcalc.cpp:143 gui/viewdup.cpp:136 gui/wizdup.cpp:153
+#: gui/wizdup.cpp:154 gui/wizjin.cpp:137 gui/wizjin.cpp:138 gui/wizlnk.cpp:196
+#: gui/wizlnk.cpp:197
+msgid "Seleciona arquivo"
+msgstr "Select file"
+
+#: gui/SQLexportdlg.cpp:121 gui/execcmb.cpp:184 gui/execcopy.cpp:107
+#: gui/execdup.cpp:100 gui/execjin.cpp:126 gui/execlnk.cpp:226
+#: gui/execlnmatrix.cpp:367 gui/execmark.cpp:147 gui/execpurge.cpp:118
+#: gui/execstd.cpp:124 gui/freqdlg.cpp:105 gui/inspect.cpp:279
+#: gui/runcalc.cpp:163 gui/wizdup.cpp:273 gui/wizjin.cpp:169 gui/wizlnk.cpp:374
+msgid "Selecione o arquivo de configuração"
+msgstr "Select the configuration file"
+
+#: gui/SQLexportdlg.cpp:369
+msgid "Exportando arquivo de pares..."
+msgstr "Exporting matches file..."
+
+#: gui/SQLexportdlg.cpp:372
+msgid "Exportando arquivo de comparação..."
+msgstr "Exporting comparison file..."
+
+#: gui/SQLexportdlg.cpp:375
+msgid "Exportando arquivo de referência..."
+msgstr "Exporting reference file..."
+
+#: gui/SQLexportdlg.cpp:378
+msgid "Gerando comandos SQL..."
+msgstr "Generating SQL commands..."
+
+#: gui/SQLexportdlg.cpp:462 gui/execcmb.cpp:278 gui/execdup.cpp:201
+#: gui/execjin.cpp:198 gui/execlnk.cpp:208 gui/execlnmatrix.cpp:349
+#: gui/execmark.cpp:292 gui/execstd.cpp:199 gui/freqdlg.cpp:499
+#, c-format
+msgid ""
+"\n"
+"Tempo de execução: %d:%02d:%02d"
+msgstr ""
+"\n"
+"Processing time: %d:%02d:%02d"
+
+#: gui/SQLexportdlg.cpp:465 gui/execcmb.cpp:281 gui/execcopy.cpp:167
+#: gui/execdup.cpp:204 gui/execjin.cpp:201 gui/execlnk.cpp:211
+#: gui/execlnmatrix.cpp:352 gui/execmark.cpp:296 gui/execpurge.cpp:247
+#: gui/execstd.cpp:202 gui/freqdlg.cpp:502
+msgid "Processamento OK."
+msgstr "Processing OK."
+
+#: gui/SQLexportdlg.cpp:465 gui/execcmb.cpp:281 gui/execcopy.cpp:167
+#: gui/execdup.cpp:204 gui/execjin.cpp:201 gui/execlnk.cpp:211
+#: gui/execlnmatrix.cpp:352 gui/execmark.cpp:296 gui/execpurge.cpp:247
+#: gui/execstd.cpp:202 gui/exportdlg.cpp:225 gui/freqdlg.cpp:502
+#: gui/importcsv.cpp:259 gui/importdlg.cpp:114
+msgid "ENCERRADO"
+msgstr "FINISHED"
+
+#: gui/SQLexportdlg.cpp:467 gui/execcmb.cpp:283 gui/execcopy.cpp:169
+#: gui/execdup.cpp:206 gui/execjin.cpp:203 gui/execlnk.cpp:213
+#: gui/execlnmatrix.cpp:354 gui/execmark.cpp:298 gui/execpurge.cpp:249
+#: gui/execstd.cpp:204 gui/exportdlg.cpp:233 gui/exportdlg.cpp:235
+#: gui/exportdlg.cpp:237 gui/exportdlg.cpp:239 gui/exportdlg.cpp:241
+#: gui/freqdlg.cpp:150 gui/freqdlg.cpp:504 gui/inspect.cpp:1268
+#: gui/inspect.cpp:1277 gui/reclinkApp.cpp:181 gui/viewdup.cpp:356
+#: gui/viewdup.cpp:681 gui/viewdup.cpp:704 gui/wizdup.cpp:614
+#: gui/wizjin.cpp:210 gui/wizjin.cpp:228 gui/wizjin.cpp:240 gui/wizjin.cpp:331
+#: gui/wizjin.cpp:350 gui/wizlnk.cpp:427 gui/wizlnk.cpp:449 gui/wizlnk.cpp:467
+#: gui/wizlnk.cpp:488 gui/wizlnk.cpp:874 nongui/findex.cpp:453
+#: nongui/ntable.cpp:1054 nongui/xbtable.cpp:1180
+msgid "ERRO"
+msgstr "ERROR"
+
+#: gui/aboutpanel.cpp:97
+msgid "Versão "
+msgstr "Version"
+
+#: gui/bigfiledlg.cpp:54
+msgid "ARQUIVO MUTO EXTENSO"
+msgstr "FILE TOO LARGE"
+
+#: gui/bigfiledlg.cpp:58
+msgid "Este arquivo tem NNNNNN registros."
+msgstr "This file has NNNNNN records."
+
+#: gui/bigfiledlg.cpp:60
+msgid "Não é possível exibi-los todos."
+msgstr "It's not possible to show them all."
+
+#: gui/bigfiledlg.cpp:63
+msgid "Selecione o registro inicial:"
+msgstr "Select the initial record:"
+
+#: gui/execcmb.cpp:71
+msgid "Executa combinação"
+msgstr "Run combination"
+
+#: gui/execcmb.cpp:83
+msgid "Arq. configuração de relacionamento"
+msgstr "Linkage configuration file"
+
+#: gui/execcmb.cpp:84
+msgid "Arq. combinado"
+msgstr "Combined file"
+
+#: gui/execcmb.cpp:85
+msgid "Novo arq. referência"
+msgstr "New reference file"
+
+#: gui/execcmb.cpp:87
+msgid "Novo arq. comparação"
+msgstr "New comparison file"
+
+#: gui/execcmb.cpp:100
+msgid "Gera novos arqs."
+msgstr "Generate new files"
+
+#: gui/execcmb.cpp:133 gui/execcopy.cpp:120 gui/execjin.cpp:108
+#: gui/execstd.cpp:108
+msgid "Selecione o arquivo de saída"
+msgstr "Select the output file"
+
+#: gui/execcmb.cpp:150
+msgid "Selecione o novo arquivo de referência"
+msgstr "Select the new reference file"
+
+#: gui/execcmb.cpp:168
+msgid "Selecione o novo arquivo de comparação"
+msgstr "Select the new comparison file"
+
+#: gui/execcmb.cpp:237 gui/execcmb.cpp:240
+msgid "Erro durante processamento"
+msgstr "Error during processing"
+
+#: gui/execcmb.cpp:243 gui/execlnk.cpp:194 gui/execlnmatrix.cpp:335
+msgid "Erro na inicialização"
+msgstr "Error initializing"
+
+#: gui/execcmb.cpp:251 gui/execcopy.cpp:137 gui/execdup.cpp:181
+#: gui/execjin.cpp:171 gui/execlnk.cpp:132 gui/execlnmatrix.cpp:135
+#: gui/execmark.cpp:256 gui/execpurge.cpp:205 gui/execstd.cpp:172
+msgid "Erro no processamento"
+msgstr "Processing error"
+
+#: gui/execcmb.cpp:264 gui/execcopy.cpp:150 gui/execdup.cpp:190
+#: gui/execjin.cpp:184 gui/execstd.cpp:185
+msgid "Não existe arquivo de configuração com esse nome"
+msgstr "There is no configuration file with this name"
+
+#: gui/execcmb.cpp:267 gui/execcopy.cpp:153 gui/execjin.cpp:187
+#: gui/execstd.cpp:188
+msgid "Selecione primeiro o arquivo de saída"
+msgstr "First select the output file"
+
+#: gui/execcmb.cpp:270 gui/execcopy.cpp:156 gui/execdup.cpp:193
+#: gui/execjin.cpp:190 gui/execstd.cpp:191
+msgid "Selecione primeiro o arquivo de configuração"
+msgstr "First select the configuration file"
+
+#: gui/execcopy.cpp:64
+msgid "Executa cópia seletiva"
+msgstr "Run selective copy"
+
+#: gui/execcopy.cpp:72 gui/execdup.cpp:68 gui/execjin.cpp:72 gui/execlnk.cpp:77
+#: gui/execlnmatrix.cpp:82 gui/execmark.cpp:79 gui/execpurge.cpp:75
+#: gui/execstd.cpp:72
+msgid "Arq. configuração"
+msgstr "Configuration file"
+
+#: gui/execcopy.cpp:73 gui/execjin.cpp:73 gui/execstd.cpp:73
+msgid "Arq. saída"
+msgstr "Output file"
+
+#: gui/execcopy.cpp:164
+#, c-format
+msgid ""
+"\n"
+"Lidos: %d Escritos %d\n"
+"Tempo de execução: %d:%02d:%02d"
+msgstr ""
+"\n"
+"Read: %d Written: %d\n"
+"Processing time: %d:%02d:%02d"
+
+#: gui/execdup.cpp:62
+msgid "Executa deduplica"
+msgstr "Run deduplication"
+
+#: gui/execdup.cpp:171
+msgid "Erro ao inicializar índice"
+msgstr "Error initializing index"
+
+#: gui/execdup.cpp:174
+msgid "O arquivo de atualizaçào não tem os campos necessários"
+msgstr "The update file does not have the necessary fields"
+
+#: gui/execjin.cpp:64
+msgid "Executa associação"
+msgstr "Run joining"
+
+#: gui/execlnk.cpp:70
+msgid "Executa relacionamento"
+msgstr "Run linkage"
+
+#: gui/execlnk.cpp:78 gui/execlnmatrix.cpp:83
+msgid "Inicializando - aguarde..."
+msgstr "Initializing - wait..."
+
+#: gui/execlnk.cpp:80 gui/wizdup.cpp:134 gui/wizlnk.cpp:174
+msgid "0"
+msgstr "0"
+
+#: gui/execlnk.cpp:88
+msgid "Reg. inicial"
+msgstr "First record"
+
+#: gui/execlnk.cpp:89
+msgid "Reg. final"
+msgstr "Last record"
+
+#: gui/execlnk.cpp:95 gui/execlnmatrix.cpp:94 gui/execmark.cpp:87
+#: gui/execpurge.cpp:83
+msgid "Interrompe"
+msgstr "Interrupt"
+
+#: gui/execlnk.cpp:127 gui/execlnmatrix.cpp:130 gui/execmark.cpp:321
+#: gui/execpurge.cpp:263
+msgid "Processamento interrompido"
+msgstr "Processing interrupted"
+
+#: gui/execlnk.cpp:197 gui/execlnmatrix.cpp:338
+msgid "Selecione um arquivo de configuração primeiro"
+msgstr "First select a configuration file"
+
+#: gui/execlnk.cpp:269
+msgid ""
+"Já existe um arquivo de pares associado.\n"
+"Utiliza o mesmo? (\"Não\" apaga o arquivo)"
+msgstr ""
+"There is an associated match file.\n"
+"Should I use it? (\"No\" erases the file)"
+
+#: gui/execlnk.cpp:269 gui/viewdup.cpp:196
+msgid "ARQUIVO JÁ EXISTENTE"
+msgstr "FILE ALREADY EXISTS"
+
+#: gui/execlnk.cpp:280 gui/inspect.cpp:421
+msgid ""
+"Já existe um arquivo de índice\n"
+"associado a esta configuração.\n"
+"Devo utilizá-lo?"
+msgstr ""
+"There is an index associated\n"
+"with this configuration.\n"
+"Should I use it?"
+
+#: gui/execlnk.cpp:281 gui/inspect.cpp:422 gui/inspect.cpp:464
+#: gui/inspect.cpp:1034 gui/inspect.cpp:1109 gui/inspect.cpp:1424
+#: gui/inspect.cpp:1428 gui/viewdup.cpp:495 gui/viewdup.cpp:501
+msgid "ATENÇÃO"
+msgstr "ATTENTION"
+
+#: gui/execlnmatrix.cpp:75 gui/reclinkmain.cpp:153
+msgid "Gera matrizes"
+msgstr "Generate matrixes"
+
+#: gui/execlnmatrix.cpp:97
+msgid "Fração amostral"
+msgstr "Sample fraction"
+
+#: gui/execlnmatrix.cpp:99
+msgid "Aleatória"
+msgstr "Random"
+
+#: gui/execlnmatrix.cpp:101
+msgid "Blocada"
+msgstr "Blocked"
+
+#: gui/execlnmatrix.cpp:173
+msgid "Deve-se selecionar ao menos uma das opções"
+msgstr "At least one of the options must be selected"
+
+#: gui/execlnmatrix.cpp:237
+msgid ""
+"Uma das frequências calculadas foi igual a zero.\n"
+"É recomendado executar novamente a rotina\n"
+"com uma fração amostral maior."
+msgstr ""
+"One of the calculated frequencies was equal to zero.\n"
+"Run the routine again with a larger sample fraction."
+
+#: gui/execlnmatrix.cpp:238 gui/viewtable.cpp:299 gui/viewtable.cpp:305
+#: gui/viewtable.cpp:308 gui/viewtable.cpp:382
+msgid "NOTA"
+msgstr "NOTICE"
+
+#: gui/execlnmatrix.cpp:261
+msgid "Erro no processamento da matriz não-blocada"
+msgstr "Error processing unblocked matrix"
+
+#: gui/execlnmatrix.cpp:331
+msgid "Erro no processamento da matriz blocada"
+msgstr "Error processing blocked matrix"
+
+#: gui/execmark.cpp:72
+msgid "Marca/Desmarca arquivo de pares"
+msgstr "Mark/Unmark match file"
+
+#: gui/execmark.cpp:90
+msgid "Desmarca"
+msgstr "Unmark"
+
+#: gui/execmark.cpp:91
+msgid "Marca"
+msgstr "Mark "
+
+#: gui/execmark.cpp:93
+msgid " Opção "
+msgstr "Option"
+
+#: gui/execmark.cpp:99
+msgid "Min. par"
+msgstr "Min. pair"
+
+#: gui/execmark.cpp:101
+msgid "Max. n/par"
+msgstr "Max. n/pair"
+
+#: gui/execmark.cpp:168 gui/execpurge.cpp:139
+msgid "Arquivo de pares não existe"
+msgstr "The pairs file does not exist"
+
+#: gui/execmark.cpp:168 gui/execpurge.cpp:139
+msgid "ARQUIVO INEXISTENTE"
+msgstr "FILE DOES NOT EXIST"
+
+#: gui/execmark.cpp:251 gui/execpurge.cpp:200
+msgid "Processamento interrompido pelo usuário"
+msgstr "Processing interrupted by user"
+
+#: gui/execmark.cpp:288
+#, c-format
+msgid ""
+"\n"
+"Pares: %d Dúvidas: %d N/pares: %d Invál: %d\n"
+"Tempo de execução: %d:%02d:%02d"
+msgstr ""
+"\n"
+"Pairs: %d Doubts: %d N/pairs: %d Inval: %d\n"
+"Processing time: %d:%02d:%02d"
+
+#: gui/execpurge.cpp:68 gui/reclinkmain.cpp:159 gui/reclinkmain.cpp:410
+msgid "Reduz pares"
+msgstr "Reduce pairs"
+
+#: gui/execpurge.cpp:86
+msgid "Pares marcados"
+msgstr "Marked pairs"
+
+#: gui/execpurge.cpp:87
+#, fuzzy
+msgid "Valor mínimo"
+msgstr "Minimum score"
+
+#: gui/execpurge.cpp:89
+msgid " Tipo de seleção "
+msgstr "Type of selection"
+
+#: gui/execpurge.cpp:218 nongui/dbdup.cpp:477
+#, fuzzy
+msgid "Copia de "
+msgstr "Copy of "
+
+#: gui/execpurge.cpp:244
+#, c-format
+msgid ""
+"\n"
+"Copiados %d de %d registros\n"
+"Tempo de execução: %d:%02d:%02d"
+msgstr ""
+"\n"
+"Copied %d of %d records\n"
+"Processing time: %d:%02d:%02d"
+
+#: gui/execstd.cpp:64
+msgid "Executa padronização"
+msgstr "Run standardization"
+
+#: gui/exportdlg.cpp:64
+msgid "Exporta dados"
+msgstr "Export data"
+
+#: gui/exportdlg.cpp:69 gui/importcsv.cpp:89
+msgid "Separador de definições:"
+msgstr "Definition separator:"
+
+#: gui/exportdlg.cpp:71 gui/importcsv.cpp:93
+msgid "Separador de campos:"
+msgstr "Field separator:"
+
+#: gui/exportdlg.cpp:83 gui/reclinkmain.cpp:382 gui/viewtable.cpp:111
+msgid "Exporta"
+msgstr "Export"
+
+#: gui/exportdlg.cpp:224
+#, c-format
+msgid "Copiados %d registros"
+msgstr "Copied %d records"
+
+#: gui/exportdlg.cpp:233
+msgid "Selecione um arquivo de entrada"
+msgstr "Select the input file"
+
+#: gui/exportdlg.cpp:235
+msgid "O arquivo selecionado não existe"
+msgstr "The selected file does not exist"
+
+#: gui/exportdlg.cpp:237
+msgid "Separador de campos vazio"
+msgstr "Field separator empty"
+
+#: gui/exportdlg.cpp:239
+msgid "Separador de registros vazio"
+msgstr "Record separator empty"
+
+#: gui/exportdlg.cpp:241
+msgid "Os separadores não podem ser iguais"
+msgstr "The separators must be different"
+
+#: gui/freqanalysis.cpp:60
+msgid "Frequência de valores"
+msgstr "Frequencies of values"
+
+#: gui/freqanalysis.cpp:63
+msgid "Campo:"
+msgstr "Field:"
+
+#: gui/freqanalysis.cpp:72 gui/inspect.cpp:137 gui/inspect.cpp:162
+#: gui/wizcopy.cpp:112
+msgid "Valor"
+msgstr "Value"
+
+#: gui/freqanalysis.cpp:73
+msgid "Freq"
+msgstr "Freq"
+
+#: gui/freqanalysis.cpp:74
+msgid "Cum"
+msgstr "Cum"
+
+#: gui/freqanalysis.cpp:81
+msgid "Frequências"
+msgstr "Frequencies "
+
+#: gui/freqanalysis.cpp:82
+msgid "Valores"
+msgstr "Values"
+
+#: gui/freqanalysis.cpp:92
+msgid "Selecione o arquivo de frequências"
+msgstr "Select the frequences file"
+
+#: gui/freqdlg.cpp:64
+msgid "Calcula frequência de valores em campos"
+msgstr "Calculate frequency of values in fields"
+
+#: gui/freqdlg.cpp:80
+msgid "Campos para determinar freq."
+msgstr "Fields to determine freq"
+
+#: gui/freqdlg.cpp:150
+msgid "Arquivo inexistente"
+msgstr "File does not exist"
+
+#: gui/freqdlg.cpp:489
+msgid "Escolha pelo menos um campo!"
+msgstr "Choose at least one field!"
+
+#: gui/importcsv.cpp:77
+msgid "Importa arquivo texto"
+msgstr "Import text file"
+
+#: gui/importcsv.cpp:85
+msgid "Seleciona o arquivo"
+msgstr "Select file"
+
+#: gui/importcsv.cpp:101
+msgid "Primeira linha"
+msgstr "First line"
+
+#: gui/importcsv.cpp:102
+msgid "Arquivo separado"
+msgstr "Separate file"
+
+#: gui/importcsv.cpp:103
+msgid "Entrada manual"
+msgstr "Manual input"
+
+#: gui/importcsv.cpp:105
+msgid " Cabeçalho "
+msgstr "Header"
+
+#: gui/importcsv.cpp:112
+msgid "Nome"
+msgstr "Name"
+
+#: gui/importcsv.cpp:113 gui/wizlnk.cpp:152
+msgid "Tipo"
+msgstr "Type"
+
+#: gui/importcsv.cpp:114
+msgid "Tamanho"
+msgstr "Length"
+
+#: gui/importcsv.cpp:115
+msgid "Decimais"
+msgstr "Decimals"
+
+#: gui/importcsv.cpp:126 gui/wizdup.cpp:121 gui/wizlnk.cpp:135
+#: gui/wizlnk.cpp:159 gui/wizstd.cpp:110
+msgid "Adiciona"
+msgstr "Add"
+
+#: gui/importcsv.cpp:128 gui/viewdup.cpp:109
+msgid "Apaga"
+msgstr "Delete"
+
+#: gui/importcsv.cpp:131 gui/inspect.cpp:273
+msgid "Cancela"
+msgstr "Cancel"
+
+#: gui/importcsv.cpp:133 gui/indexdialog.cpp:71 gui/inspect.cpp:268
+msgid "OK"
+msgstr "OK"
+
+#: gui/importcsv.cpp:151 gui/importcsv.cpp:304 gui/importcsv.cpp:370
+#: gui/importcsv.cpp:441
+msgid "Caractere"
+msgstr "Character"
+
+#: gui/importcsv.cpp:152 gui/importcsv.cpp:307 gui/importcsv.cpp:373
+#: gui/importcsv.cpp:444
+msgid "Inteiro"
+msgstr "Integer"
+
+#: gui/importcsv.cpp:153 gui/importcsv.cpp:310 gui/importcsv.cpp:376
+#: gui/importcsv.cpp:447
+msgid "Fracionário"
+msgstr "Float"
+
+#: gui/importcsv.cpp:154 gui/importcsv.cpp:313 gui/importcsv.cpp:379
+#: gui/importcsv.cpp:450
+msgid "Booleano"
+msgstr "Boolean"
+
+#: gui/importcsv.cpp:155 gui/importcsv.cpp:316 gui/importcsv.cpp:382
+#: gui/importcsv.cpp:453 gui/setoptsdlg.cpp:69
+msgid "Data"
+msgstr "Date"
+
+#: gui/importcsv.cpp:258
+msgid ""
+"Resultado:\n"
+"Lidos/escritos:\n"
+msgstr ""
+"Result:\n"
+"Read/written:\n"
+
+#: gui/importcsv.cpp:319 gui/importcsv.cpp:385 gui/importcsv.cpp:456
+msgid "Numérico"
+msgstr "Numeric"
+
+#: gui/importcsv.cpp:322 gui/importcsv.cpp:388 gui/importcsv.cpp:459
+msgid "Erro"
+msgstr "Error"
+
+#: gui/importdlg.cpp:53
+msgid "Importa dados"
+msgstr "Import data"
+
+#: gui/importdlg.cpp:60
+msgid "*.dbf"
+msgstr "*.dbf"
+
+#: gui/importdlg.cpp:113
+#, c-format
+msgid "Copiados %d de %d registros"
+msgstr "Copied %d of %d records"
+
+#: gui/indexdialog.cpp:55
+msgid "Cria/abre arquivo de índice"
+msgstr "Create/open an index file"
+
+#: gui/indexdialog.cpp:59
+msgid "Nome do arquivo:"
+msgstr "File name:"
+
+#: gui/indexdialog.cpp:66
+msgid "Campos:"
+msgstr "Fields:"
+
+#: gui/indexdialog.cpp:74
+msgid "Select file"
+msgstr "Seleciona arquivo"
+
+#: gui/indexdialog.cpp:93
+msgid "Selecione o arquivo de índice"
+msgstr "Select the index file"
+
+#: gui/inspect.cpp:105
+msgid "Inspeciona pares"
+msgstr "Inspect pairs"
+
+#: gui/inspect.cpp:108
+msgid "Config. do relacionamento"
+msgstr "Linkage config."
+
+#: gui/inspect.cpp:114 gui/viewdup.cpp:81
+msgid "Abre o arquivo"
+msgstr "Open file"
+
+#: gui/inspect.cpp:121 gui/inspect.cpp:180
+msgid "Sobe campo"
+msgstr "Field up"
+
+#: gui/inspect.cpp:124 gui/inspect.cpp:183
+msgid "Desce campo"
+msgstr "Field down"
+
+#: gui/inspect.cpp:128
+msgid "Referência (lido integralmente)"
+msgstr "Reference (entirely read)"
+
+#: gui/inspect.cpp:153
+msgid "Comparação (lido em  blocos)"
+msgstr "Comparison (read in blocks)"
+
+#: gui/inspect.cpp:188
+msgid "Score do par:"
+msgstr "Pair score:"
+
+#: gui/inspect.cpp:197
+msgid "Par"
+msgstr "Match"
+
+#: gui/inspect.cpp:198
+msgid "Dúvida"
+msgstr "Doubt"
+
+#: gui/inspect.cpp:199
+msgid "Não par"
+msgstr "Non match"
+
+#: gui/inspect.cpp:200
+msgid "Ignorado"
+msgstr "Ignored"
+
+#: gui/inspect.cpp:202
+msgid "Status"
+msgstr "Status"
+
+#: gui/inspect.cpp:207
+msgid "Score + min:"
+msgstr "Min + score:"
+
+#: gui/inspect.cpp:211
+msgid "Score - máx:"
+msgstr "Max - score:"
+
+#: gui/inspect.cpp:219
+msgid "Marca todos"
+msgstr "Mark all"
+
+#: gui/inspect.cpp:221
+msgid "Limpa todos"
+msgstr "Clear all"
+
+#: gui/inspect.cpp:234
+msgid "Freq."
+msgstr "Freq."
+
+#: gui/inspect.cpp:245
+msgid "Fim"
+msgstr "End"
+
+#: gui/inspect.cpp:249
+msgid "Avança\n"
+msgstr "Go forward\n"
+
+#: gui/inspect.cpp:251 gui/wizcopy.cpp:194 gui/wizdup.cpp:149
+#: gui/wizjin.cpp:133 gui/wizlnk.cpp:192 gui/wizstd.cpp:137
+msgid "Volta"
+msgstr "Return"
+
+#: gui/inspect.cpp:255 gui/setoptsdlg.cpp:119
+msgid "Início"
+msgstr "Begin"
+
+#: gui/inspect.cpp:259
+msgid "Passo:"
+msgstr "Step:"
+
+#: gui/inspect.cpp:279
+msgid "*.lnkcfg"
+msgstr "*.lnkcfg"
+
+#: gui/inspect.cpp:444 gui/viewtable.cpp:298
+#, c-format
+msgid "Tempo de indexação: %d:%02d:%02d"
+msgstr "Indexing time: %d:%02d:%02d"
+
+#: gui/inspect.cpp:463
+msgid ""
+"Já existe uma tabela de scores\n"
+"associada a esta configuração.\n"
+"Devo utilizá-la?"
+msgstr ""
+"There is a score table associated\n"
+"with this configuration.\n"
+"Should I use it?"
+
+#: gui/inspect.cpp:577
+#, c-format
+msgid "Tempo de leitura de scores: %d:%02d:%02d"
+msgstr "Time for reading scores: %d:%02d:%02d"
+
+#: gui/inspect.cpp:1034 gui/inspect.cpp:1109
+msgid "Confirma operação?"
+msgstr "Confirm operation?"
+
+#: gui/inspect.cpp:1424
+msgid "Deseja realmente cancelar a operação?"
+msgstr "Do you really want to cancel the operation?"
+
+#: gui/inspect.cpp:1428
+msgid ""
+"Deseja realmente descartar\n"
+"a tabela de frequências?"
+msgstr ""
+"Do you really want to delete\n"
+"the frequency table?"
+
+#: gui/inspect.cpp:1438
+msgid "Cancelado"
+msgstr "Cancelled"
+
+#: gui/langdlg.cpp:53
+msgid "Inglês"
+msgstr "English"
+
+#: gui/langdlg.cpp:54
+msgid "Português"
+msgstr "Portuguese"
+
+#: gui/progressdialog.cpp:49
+msgid "Indexando, aguarde..."
+msgstr "Indexing - wait..."
+
+#: gui/reclinkApp.cpp:181
+msgid "Execução do programa interrompida!"
+msgstr "Program run interrupted!"
+
+#: gui/reclinkmain.cpp:114
+msgid "OpenRecLink"
+msgstr "OpenRecLink"
+
+#: gui/reclinkmain.cpp:125
+msgid "Ferramentas"
+msgstr "Tools"
+
+#: gui/reclinkmain.cpp:127
+msgid "Log atividade"
+msgstr "Activity log"
+
+#: gui/reclinkmain.cpp:129
+msgid "Sobre"
+msgstr "About"
+
+#: gui/reclinkmain.cpp:131 gui/viewtable.cpp:104
+msgid "Sai"
+msgstr "Exit"
+
+#: gui/reclinkmain.cpp:133 gui/viewtable.cpp:106
+msgid "Arquivo"
+msgstr "File"
+
+#: gui/reclinkmain.cpp:135 gui/reclinkmain.cpp:141 gui/reclinkmain.cpp:147
+#: gui/reclinkmain.cpp:167 gui/reclinkmain.cpp:181
+msgid "Configura"
+msgstr "Configure"
+
+#: gui/reclinkmain.cpp:139 gui/viewdup.cpp:112
+msgid "Copia"
+msgstr "Copy"
+
+#: gui/reclinkmain.cpp:145 gui/wizstd.cpp:89
+msgid "Padroniza"
+msgstr "Standardize"
+
+#: gui/reclinkmain.cpp:149 gui/reclinkmain.cpp:386
+msgid "Gera freq"
+msgstr "Generate freq"
+
+#: gui/reclinkmain.cpp:151
+msgid "Analisa freq"
+msgstr "Analyze freq"
+
+#: gui/reclinkmain.cpp:155 gui/runcalc.cpp:134
+msgid "Calcula"
+msgstr "Calculate"
+
+#: gui/reclinkmain.cpp:161
+msgid "Marca/Desmarca"
+msgstr "Mark/Unmark"
+
+#: gui/reclinkmain.cpp:163
+msgid "Exporta SQL"
+msgstr "Export SQL"
+
+#: gui/reclinkmain.cpp:165 gui/wizlnk.cpp:107
+msgid "Relaciona"
+msgstr "Linkage"
+
+#: gui/reclinkmain.cpp:171 gui/reclinkmain.cpp:175
+msgid "Examina"
+msgstr "Examine"
+
+#: gui/reclinkmain.cpp:173 gui/wizdup.cpp:93
+msgid "Deduplica"
+msgstr "Deduplication"
+
+#: gui/reclinkmain.cpp:179
+msgid "Combina"
+msgstr "Combine"
+
+#: gui/reclinkmain.cpp:185 gui/wizjin.cpp:90
+msgid "Associa"
+msgstr "Join"
+
+#: gui/reclinkmain.cpp:217
+msgid ""
+"Já há uma cópia do programa\n"
+"em execução. Continua?"
+msgstr ""
+"There is already a running\n"
+"copy of the program.\n"
+"Continue?"
+
+#: gui/reclinkmain.cpp:218
+msgid "AVISO"
+msgstr "WARNING"
+
+#: gui/reclinkmain.cpp:371
+msgid "Não identificada"
+msgstr "Not identified"
+
+#: gui/reclinkmain.cpp:374
+msgid "Anexa arq"
+msgstr "Append file"
+
+#: gui/reclinkmain.cpp:376
+#, fuzzy
+msgid "Exec combina"
+msgstr "Run combination"
+
+#: gui/reclinkmain.cpp:378
+msgid "Cfg duplicidade"
+msgstr "Cfg duplicity"
+
+#: gui/reclinkmain.cpp:380
+#, fuzzy
+msgid "Exec duplicidade"
+msgstr "Run deduplication"
+
+#: gui/reclinkmain.cpp:384
+#, fuzzy
+msgid "Análise freq"
+msgstr "Analyze freq"
+
+#: gui/reclinkmain.cpp:388
+msgid "Importa CSV"
+msgstr "Import CSV"
+
+#: gui/reclinkmain.cpp:390
+msgid "Importa DBF"
+msgstr "Import DBF"
+
+#: gui/reclinkmain.cpp:392
+#, fuzzy
+msgid "Inspeciona"
+msgstr "Inspect pairs"
+
+#: gui/reclinkmain.cpp:394
+msgid "Indexa"
+msgstr "Index"
+
+#: gui/reclinkmain.cpp:396
+msgid "Cfg associa"
+msgstr "Cfg join"
+
+#: gui/reclinkmain.cpp:398
+msgid "Exec associa"
+msgstr "Run join"
+
+#: gui/reclinkmain.cpp:400
+msgid "Configura cópia"
+msgstr "Configure copy"
+
+#: gui/reclinkmain.cpp:402
+msgid "Executa cópia"
+msgstr "Run copy"
+
+#: gui/reclinkmain.cpp:404
+msgid "Cfg relaciona"
+msgstr "Cfg linkage"
+
+#: gui/reclinkmain.cpp:406
+#, fuzzy
+msgid "Exec relaciona"
+msgstr "Run linkage"
+
+#: gui/reclinkmain.cpp:408
+msgid "Exec matriz"
+msgstr "Exec matrixes"
+
+#: gui/reclinkmain.cpp:412
+msgid "Cfg padroniza"
+msgstr "Cfg standardize"
+
+#: gui/reclinkmain.cpp:414
+msgid "Exec padroniza"
+msgstr "Run standardize"
+
+#: gui/reclinkmain.cpp:416
+msgid "Insp duplicidade"
+msgstr "Insp deduplication"
+
+#: gui/reclinkmain.cpp:418
+msgid "Marca pares"
+msgstr "Mark pairs"
+
+#: gui/reclinkmain.cpp:420
+msgid "Desmarca pares"
+msgstr "Unmark pairs"
+
+#: gui/runcalc.cpp:86
+msgid "Calcula parâmetros"
+msgstr "Calculate parameters"
+
+#: gui/runcalc.cpp:89
+msgid "Arq. conf:"
+msgstr "Conf. file:"
+
+#: gui/runcalc.cpp:94
+msgid ""
+"Abre o arquivo\n"
+"de configuração"
+msgstr "Open the configuration file"
+
+#: gui/runcalc.cpp:99
+msgid "Valor inicial para os m_i:"
+msgstr "Initial value for the m_i:"
+
+#: gui/runcalc.cpp:101
+msgid "0.9"
+msgstr "0,9"
+
+#: gui/runcalc.cpp:103
+msgid "Valor inicial para os u_i:"
+msgstr "Initial value of the u_i:"
+
+#: gui/runcalc.cpp:105 gui/runcalc.cpp:121 gui/runcalc.cpp:125
+msgid "0.1"
+msgstr "0,1"
+
+#: gui/runcalc.cpp:107
+msgid "Valor inicial para o p:"
+msgstr "Initial value for p:"
+
+#: gui/runcalc.cpp:109
+msgid "0.05"
+msgstr "0,05"
+
+#: gui/runcalc.cpp:111
+msgid "Número máx. de iterações:"
+msgstr "Max. no. of iterations:"
+
+#: gui/runcalc.cpp:113
+msgid "1000"
+msgstr "1000"
+
+#: gui/runcalc.cpp:115
+msgid "Convergência relativa (epsilon):"
+msgstr "Relative convergence (epsilon):"
+
+#: gui/runcalc.cpp:117
+msgid "0.001"
+msgstr "0,001"
+
+#: gui/runcalc.cpp:119
+msgid "Probabilidade de rejeitar par:"
+msgstr "Probability of rejecting a match:"
+
+#: gui/runcalc.cpp:123
+msgid "Prob. de não rejeitar não par:"
+msgstr "Probability of non rejecting a non-match:"
+
+#: gui/runcalc.cpp:197
+#, c-format
+msgid "Tempo de execução: %d:%02d:%02d\n"
+msgstr "Processing time: %d:%02d:%02d\n"
+
+#: gui/runcalc.cpp:200
+msgid "Deseja transferir os valores para a configuração?"
+msgstr "Do you wish to transfer the values to the configuration?"
+
+#: gui/runcalc.cpp:337
+msgid "Parâmetros de saida\n"
+msgstr "Output parameters\n"
+
+#: gui/runcalc.cpp:338
+msgid "-------------------\n"
+msgstr "-------------------\n"
+
+#: gui/runcalc.cpp:339
+#, c-format
+msgid "Número de iterações do algoritmo EM: %d\n"
+msgstr "Number of iterations of the EM algorithm: %d\n"
+
+#: gui/runcalc.cpp:341
+#, c-format
+msgid "Menor diferença da log-verossimilhanca entre iterações: %g\n"
+msgstr "Least difference of the log-verossimilitude between iterations: %g\n"
+
+#: gui/runcalc.cpp:343
+#, c-format
+msgid "Maior valor da funcao de log-verossimilhança: %12g\n"
+msgstr "Greater value of the log-verossimilitude function: %12g\n"
+
+#: gui/runcalc.cpp:347
+msgid "Parâmetros estimados\n"
+msgstr "Estimated parameters\n"
+
+#: gui/runcalc.cpp:348
+msgid "--------------------\n"
+msgstr "--------------------\n"
+
+#: gui/runcalc.cpp:349
+msgid "Probabilidade m(i) do campo concordar dado que é um par:\n"
+msgstr "Probability m (i) of a true field match:\n"
+
+#: gui/runcalc.cpp:355
+msgid "Probabilidade u(i) do campo concordar dado que é um não-par:\n"
+msgstr "Probability m (i) of a false field match:\n"
+
+#: gui/runcalc.cpp:361
+#, c-format
+msgid "Probabilidade (p) de ser par: %12g\n"
+msgstr "Probability (p) of being a pair: %12g\n"
+
+#: gui/runcalc.cpp:363
+msgid "Frequência de concordância (f) do campo i:\n"
+msgstr "Frequency of agreement (f) of the field i:\n"
+
+#: gui/runcalc.cpp:369
+#, c-format
+msgid "Limiar inferior (na escala do escore): %12g\n"
+msgstr "Lower threshold (in the score scale): %12g\n"
+
+#: gui/runcalc.cpp:371
+#, c-format
+msgid "Limiar superior (na escala do escore): %12g\n"
+msgstr "Upper threshold (in the score scale): %12g\n"
+
+#: gui/runcalc.cpp:373
+#, fuzzy
+msgid "Pesos da concordancia A(i) [log(mi/ui)]:\n"
+msgstr "Weights of the agreement A(i) [log(mi/ui)]:\n"
+
+#: gui/runcalc.cpp:379
+#, fuzzy
+msgid "Pesos da discordancia D(i) [log((1-mi)/(1-ui))]:\n"
+msgstr "Weights of the disagreement D(i) [log(1-wi/1-ui)]:\n"
+
+#: gui/runcalc.cpp:385
+msgid "Poder discriminante do campo P(i) [A(i)-D(i)]:\n"
+msgstr "Discriminating power of the field p(i) [A(i)-D(i)]:\n"
+
+#: gui/runcalc.cpp:391
+msgid "Padrões, frequências e escores observados:\n"
+msgstr "Patterns, frequencies and scores observed:\n"
+
+#: gui/runcalc.cpp:399
+#, c-format
+msgid "Padrão: %d frequência: %d configuração: "
+msgstr "Pattern: %d frequency: %d configuration:"
+
+#: gui/setoptsdlg.cpp:64 gui/setoptsdlg.cpp:77
+msgid "Tipos de conversão"
+msgstr "Types of conversion"
+
+#: gui/setoptsdlg.cpp:70
+msgid "Nomes próprios"
+msgstr "Names"
+
+#: gui/setoptsdlg.cpp:71
+msgid "Elimina pontuação"
+msgstr "Delete punctuation"
+
+#: gui/setoptsdlg.cpp:72
+msgid "Subcadeia"
+msgstr "Substring"
+
+#: gui/setoptsdlg.cpp:73
+msgid "Nenhuma (cópia simples)"
+msgstr "None (simple copy)"
+
+#: gui/setoptsdlg.cpp:74
+msgid "Subdivide nome"
+msgstr "Subdivide name"
+
+#: gui/setoptsdlg.cpp:75
+msgid "Substitui valores"
+msgstr "Replace names"
+
+#: gui/setoptsdlg.cpp:81
+msgid "DD/MM/AA"
+msgstr "DD/MM/YY"
+
+#: gui/setoptsdlg.cpp:82
+msgid "DDMMAA"
+msgstr "DDMMYY"
+
+#: gui/setoptsdlg.cpp:83
+msgid "DD/MM/AAAA"
+msgstr "DD/MM/YYYY"
+
+#: gui/setoptsdlg.cpp:84
+msgid "DDMMAAAA"
+msgstr "DDMMYYYY"
+
+#: gui/setoptsdlg.cpp:85
+msgid "MM/DD/AA"
+msgstr "MM/DD/YY"
+
+#: gui/setoptsdlg.cpp:86
+msgid "MMDDAA"
+msgstr "MMDDYY"
+
+#: gui/setoptsdlg.cpp:87
+msgid "MM/DD/AAAA"
+msgstr "MM/DD/YYYY"
+
+#: gui/setoptsdlg.cpp:88
+msgid "MMDDAAAA"
+msgstr "MMDDYYYY"
+
+#: gui/setoptsdlg.cpp:89
+msgid "AA/MM/DD"
+msgstr "YY/MM/DD"
+
+#: gui/setoptsdlg.cpp:90
+msgid "AAMMDD"
+msgstr "YYMMDD"
+
+#: gui/setoptsdlg.cpp:91
+msgid "AAAA/MM/DD"
+msgstr "YYYY/MM/DD"
+
+#: gui/setoptsdlg.cpp:92
+msgid "AAAAMMDD"
+msgstr "YYYYMMDD"
+
+#: gui/setoptsdlg.cpp:94
+msgid "Tipos de data"
+msgstr "Types of date"
+
+#: gui/setoptsdlg.cpp:99
+msgid "Substituições"
+msgstr "Replacements"
+
+#: gui/setoptsdlg.cpp:110
+msgid "Troca"
+msgstr "Change"
+
+#: gui/setoptsdlg.cpp:111
+msgid "Por"
+msgstr "To"
+
+#: gui/setoptsdlg.cpp:115
+msgid "Refaz"
+msgstr "Redo"
+
+#: gui/setoptsdlg.cpp:126
+msgid "Caracteres"
+msgstr "Characters"
+
+#: gui/setoptsdlg.cpp:136 gui/wizstd.cpp:104
+msgid "Entrada"
+msgstr "Input"
+
+#: gui/setoptsdlg.cpp:140 gui/wizstd.cpp:106
+msgid "Saída"
+msgstr "Output"
+
+#: gui/showstructdlg.cpp:22
+msgid "Estrutura do arquivo"
+msgstr "File structure"
+
+#: gui/showstructdlg.cpp:31
+msgid "NOME"
+msgstr "NAME"
+
+#: gui/showstructdlg.cpp:32
+msgid "TIPO"
+msgstr "TYPE"
+
+#: gui/showstructdlg.cpp:33
+msgid "TAM"
+msgstr "SZE"
+
+#: gui/showstructdlg.cpp:34
+msgid "DEC"
+msgstr "DEC"
+
+#: gui/viewdup.cpp:71
+msgid "Visualiza duplicações"
+msgstr "Visualize duplications"
+
+#: gui/viewdup.cpp:76
+msgid "Arquivo:"
+msgstr "File:"
+
+#: gui/viewdup.cpp:90
+msgid "_UNIQ"
+msgstr "_UNIQ"
+
+#: gui/viewdup.cpp:91
+msgid "REC"
+msgstr "REC"
+
+#: gui/viewdup.cpp:92
+msgid "FREQ"
+msgstr "FREQ"
+
+#: gui/viewdup.cpp:93
+msgid "SCOREMIN"
+msgstr "SCOREMIN"
+
+#: gui/viewdup.cpp:103
+msgid "?"
+msgstr "?"
+
+#: gui/viewdup.cpp:104
+msgid "..."
+msgstr "..."
+
+#: gui/viewdup.cpp:110
+msgid "Apaga identificador corrente"
+msgstr "Erase current identifier"
+
+#: gui/viewdup.cpp:113
+msgid "Copia identificador corrente para  memória"
+msgstr "Copy current identifier to memory"
+
+#: gui/viewdup.cpp:115
+msgid "Gera"
+msgstr "Generate"
+
+#: gui/viewdup.cpp:116
+msgid "Gera novo identificador na memória"
+msgstr "Create new identifier in memory"
+
+#: gui/viewdup.cpp:118
+msgid "Grava"
+msgstr "Save"
+
+#: gui/viewdup.cpp:119
+msgid "Grava  identificador na memória"
+msgstr "Save identifier in memory"
+
+#: gui/viewdup.cpp:123
+msgid "Retrocede"
+msgstr "Go back"
+
+#: gui/viewdup.cpp:127
+msgid "Avança"
+msgstr "Go forward"
+
+#: gui/viewdup.cpp:136 gui/viewtable.cpp:90 gui/wizcopy.cpp:198
+#: gui/wizstd.cpp:141
+msgid "*.dat"
+msgstr "*.dat"
+
+#: gui/viewdup.cpp:196
+#, fuzzy
+msgid ""
+"Já existe um arquivo de resumo associado.\n"
+"Utiliza o mesmo? (\"Não\" apaga o arquivo)"
+msgstr ""
+"There is an associated match file.\n"
+"Should I use it? (\"No\" erases the file)"
+
+#: gui/viewdup.cpp:352
+msgid "O arquivo não contém duplicações"
+msgstr "The file doesn't have duplications"
+
+#: gui/viewdup.cpp:356
+msgid ""
+"Este arquivo não passou\n"
+"pelo processo de deduplicação"
+msgstr ""
+"This file hasn't been subject\n"
+"to the deduplication process"
+
+#: gui/viewdup.cpp:477
+msgid "O arquivo não contém duplicações anteriores"
+msgstr "The file has no previous duplications"
+
+#: gui/viewdup.cpp:489
+msgid "O arquivo não contém duplicações posteriores"
+msgstr "The file has no posterior duplications"
+
+#: gui/viewdup.cpp:501
+msgid "Deseja gravar arquivo de log?"
+msgstr "Do you wish to record a log file?"
+
+#: gui/viewdup.cpp:534
+msgid "Identificador "
+msgstr "Identifier"
+
+#: gui/viewdup.cpp:534
+msgid " registros:\n"
+msgstr " records:\n"
+
+#: gui/viewdup.cpp:653
+msgid "Apaga o identificador?"
+msgstr "Erase identifier"
+
+#: gui/viewdup.cpp:653 gui/viewdup.cpp:708
+msgid "CONFIRMA"
+msgstr "CONFIRM"
+
+#: gui/viewdup.cpp:681
+msgid "Nenhum registro selecionado"
+msgstr "No record defined"
+
+#: gui/viewdup.cpp:704
+msgid "Sem identificador na memoria"
+msgstr "No identifier in  memory"
+
+#: gui/viewdup.cpp:707
+msgid "Grava o identificador "
+msgstr "Save identifier"
+
+#: gui/viewlog.cpp:47
+msgid "Log de atividade"
+msgstr "Activity log"
+
+#: gui/viewlog.cpp:57
+msgid "Hora (UTC)"
+msgstr "Time (UTC)"
+
+#: gui/viewlog.cpp:58
+msgid "Atividade"
+msgstr "Activity"
+
+#: gui/viewlog.cpp:59
+msgid "Configuração"
+msgstr "Configuration"
+
+#: gui/viewlog.cpp:60
+msgid "Tempo"
+msgstr "Time"
+
+#: gui/viewlog.cpp:61
+msgid "Mensagem"
+msgstr "Message"
+
+#: gui/viewtable.cpp:90 gui/wizcopy.cpp:198 gui/wizstd.cpp:141
+msgid "Selecione o arquivo"
+msgstr "Select the file"
+
+#: gui/viewtable.cpp:93
+msgid "Visualiza"
+msgstr "Visualize"
+
+#: gui/viewtable.cpp:95
+msgid "Estrutura"
+msgstr "Structure"
+
+#: gui/viewtable.cpp:98
+msgid "Reinicia"
+msgstr "Reinitialize"
+
+#: gui/viewtable.cpp:101
+msgid "Índice"
+msgstr "Index"
+
+#: gui/viewtable.cpp:108
+msgid "Anexa"
+msgstr "Append"
+
+#: gui/viewtable.cpp:114
+msgid "Importa"
+msgstr "Import"
+
+#: gui/viewtable.cpp:116
+msgid "Importa dbf"
+msgstr "Import dbf"
+
+#: gui/viewtable.cpp:118
+msgid "Movimenta"
+msgstr "Move"
+
+#: gui/viewtable.cpp:166
+#, c-format
+msgid "Este arquivo tem %d registros."
+msgstr "This file has %d records."
+
+#: gui/viewtable.cpp:305
+msgid "Especificação de campos inválida."
+msgstr "Invalid field specification."
+
+#: gui/viewtable.cpp:308
+msgid "Não é possível criar índice sem especificar campos."
+msgstr "It is not possible to create an index without specifying fields."
+
+#: gui/viewtable.cpp:378
+#, c-format
+msgid "Anexados %d registros."
+msgstr "Appended %d records"
+
+#: gui/wizcopy.cpp:97 gui/wizdup.cpp:89 gui/wizjin.cpp:86 gui/wizlnk.cpp:103
+#: gui/wizstd.cpp:85
+msgid "Assistente"
+msgstr "Wizard"
+
+#: gui/wizcopy.cpp:101
+msgid "Cópia seletiva"
+msgstr "Selective copy"
+
+#: gui/wizcopy.cpp:110 gui/wizdup.cpp:113
+msgid "Campo"
+msgstr "Field"
+
+#: gui/wizcopy.cpp:111
+msgid "Op. lógico"
+msgstr "Logical op."
+
+#: gui/wizcopy.cpp:113
+msgid "Conector"
+msgstr "Connector"
+
+#: gui/wizcopy.cpp:116 gui/wizcopy.cpp:129 gui/wizcopy.cpp:142
+#: gui/wizcopy.cpp:155 gui/wizcopy.cpp:168
+msgid "Maior que"
+msgstr "Greater than"
+
+#: gui/wizcopy.cpp:117 gui/wizcopy.cpp:130 gui/wizcopy.cpp:143
+#: gui/wizcopy.cpp:156 gui/wizcopy.cpp:169
+msgid "Maior ou igual a"
+msgstr "Greater or equal to"
+
+#: gui/wizcopy.cpp:118 gui/wizcopy.cpp:131 gui/wizcopy.cpp:144
+#: gui/wizcopy.cpp:157 gui/wizcopy.cpp:170
+msgid "Igual a"
+msgstr "Equal to"
+
+#: gui/wizcopy.cpp:119 gui/wizcopy.cpp:132 gui/wizcopy.cpp:145
+#: gui/wizcopy.cpp:158 gui/wizcopy.cpp:171
+msgid "Menor ou igual a"
+msgstr "Lower or equal to"
+
+#: gui/wizcopy.cpp:120 gui/wizcopy.cpp:133 gui/wizcopy.cpp:146
+#: gui/wizcopy.cpp:159 gui/wizcopy.cpp:172
+msgid "Menor que"
+msgstr "Lower than"
+
+#: gui/wizcopy.cpp:121 gui/wizcopy.cpp:134 gui/wizcopy.cpp:147
+#: gui/wizcopy.cpp:160 gui/wizcopy.cpp:173
+msgid "Diferente de"
+msgstr "Different from"
+
+#: gui/wizcopy.cpp:124 gui/wizcopy.cpp:137 gui/wizcopy.cpp:150
+#: gui/wizcopy.cpp:163
+msgid "e"
+msgstr "and"
+
+#: gui/wizcopy.cpp:125 gui/wizcopy.cpp:138 gui/wizcopy.cpp:151
+#: gui/wizcopy.cpp:164
+msgid "ou"
+msgstr "or"
+
+#: gui/wizcopy.cpp:126 gui/wizcopy.cpp:139 gui/wizcopy.cpp:152
+#: gui/wizcopy.cpp:165
+msgid "."
+msgstr "."
+
+#: gui/wizcopy.cpp:177 gui/wizjin.cpp:113
+msgid ""
+"Selecione os campos \n"
+"desejados do arquivo\n"
+"mestre na caixa ao\n"
+"lado:"
+msgstr ""
+"Select the desired\n"
+"fields from the master\n"
+"file in the box beside\n"
+"this:"
+
+#: gui/wizcopy.cpp:178
+msgid ""
+"Marca\n"
+" todos\n"
+"campos"
+msgstr ""
+"Marks\n"
+" all\n"
+"fields"
+
+#: gui/wizcopy.cpp:179
+msgid ""
+"Desmarca\n"
+" todos\n"
+"campos"
+msgstr ""
+"Unmarks\n"
+" all\n"
+"fields"
+
+#: gui/wizcopy.cpp:184 gui/wizdup.cpp:139 gui/wizjin.cpp:121 gui/wizlnk.cpp:180
+#: gui/wizstd.cpp:127
+msgid "Aceita"
+msgstr "Accept"
+
+#: gui/wizcopy.cpp:186 gui/wizdup.cpp:141 gui/wizjin.cpp:123 gui/wizlnk.cpp:182
+#: gui/wizstd.cpp:129
+msgid "Abandona"
+msgstr "Abandon"
+
+#: gui/wizcopy.cpp:187 gui/wizdup.cpp:142 gui/wizjin.cpp:124 gui/wizlnk.cpp:183
+#: gui/wizstd.cpp:130
+msgid "Status da configuração:"
+msgstr "Configuration status:"
+
+#: gui/wizcopy.cpp:188 gui/wizstd.cpp:131
+msgid "Arq. entrada"
+msgstr "Input file"
+
+#: gui/wizcopy.cpp:189
+msgid "Condições"
+msgstr "Conditions"
+
+#: gui/wizcopy.cpp:190
+msgid "Campos"
+msgstr "Fields"
+
+#: gui/wizcopy.cpp:191 gui/wizdup.cpp:146 gui/wizjin.cpp:130 gui/wizlnk.cpp:189
+#: gui/wizstd.cpp:134
+msgid "Finaliza"
+msgstr "Finalize"
+
+#: gui/wizcopy.cpp:195 gui/wizdup.cpp:150 gui/wizjin.cpp:134 gui/wizlnk.cpp:193
+#: gui/wizstd.cpp:138
+msgid "Segue"
+msgstr "Proceed"
+
+#: gui/wizcopy.cpp:216 gui/wizdup.cpp:175 gui/wizjin.cpp:155 gui/wizlnk.cpp:228
+#: gui/wizstd.cpp:165
+msgid "Segue >>"
+msgstr "Proceed >>"
+
+#: gui/wizcopy.cpp:217 gui/wizdup.cpp:176 gui/wizjin.cpp:156 gui/wizlnk.cpp:229
+#: gui/wizstd.cpp:166
+msgid "<< Volta"
+msgstr "<<Return"
+
+#: gui/wizcopy.cpp:285 gui/wizdup.cpp:283 gui/wizjin.cpp:178 gui/wizlnk.cpp:384
+#: gui/wizstd.cpp:633
+msgid ""
+"Já existe uma configuração associada\n"
+"a este arquivo, deseja utilizá-la?"
+msgstr ""
+"There is a configuration associated\n"
+"with this file, do you want to use it?"
+
+#: gui/wizcopy.cpp:286 gui/wizdup.cpp:283 gui/wizjin.cpp:178 gui/wizlnk.cpp:384
+#: gui/wizstd.cpp:633
+msgid "CONFIGURAÇÃO DISPONÍVEL"
+msgstr "CONFIGURATION AVAILABLE "
+
+#: gui/wizcopy.cpp:482
+msgid "É obrigatório selecionar pelo menos um campo.\n"
+msgstr "Choose at least one field.\n"
+
+#: gui/wizcopy.cpp:484
+msgid "É obrigatório selecionar o nome do campo 1.\n"
+msgstr "The name of field 1 must be selected.\n"
+
+#: gui/wizcopy.cpp:488
+msgid "É obrigatório selecionar o nome do campo 2.\n"
+msgstr "The name of field 2 must be selected.\n"
+
+#: gui/wizcopy.cpp:492
+msgid "É obrigatório selecionar o nome do campo 3.\n"
+msgstr "The name of field 3 must be selected.\n"
+
+#: gui/wizcopy.cpp:496
+msgid "É obrigatório selecionar o nome do campo 4.\n"
+msgstr "The name of field 4 must be selected.\n"
+
+#: gui/wizcopy.cpp:500
+msgid "É obrigatório selecionar o nome do campo 5.\n"
+msgstr "The name of field 5 must be selected.\n"
+
+#: gui/wizdup.cpp:103
+msgid "Arquivo de atualização:"
+msgstr "Update file:"
+
+#: gui/wizdup.cpp:104 gui/wizjin.cpp:98 gui/wizlnk.cpp:115
+msgid "Arquivo de configuração:"
+msgstr "Configuration file:"
+
+#: gui/wizdup.cpp:114
+msgid "Bloco"
+msgstr "Block"
+
+#: gui/wizdup.cpp:115 gui/wizlnk.cpp:151
+msgid "Comp."
+msgstr "Comp."
+
+#: gui/wizdup.cpp:116 gui/wizlnk.cpp:153
+msgid "Corr."
+msgstr "Corr."
+
+#: gui/wizdup.cpp:117 gui/wizlnk.cpp:154
+msgid "Inc."
+msgstr "Inc."
+
+#: gui/wizdup.cpp:118 gui/wizlnk.cpp:155
+msgid "Lim."
+msgstr "Lim."
+
+#: gui/wizdup.cpp:122 gui/wizlnk.cpp:136 gui/wizlnk.cpp:160 gui/wizstd.cpp:111
+msgid "Remove"
+msgstr "Remove"
+
+#: gui/wizdup.cpp:123 gui/wizlnk.cpp:137 gui/wizlnk.cpp:161 gui/wizstd.cpp:112
+msgid "Limpa"
+msgstr "Clear"
+
+#: gui/wizdup.cpp:128 gui/wizlnk.cpp:168
+msgid "Escore mínimo:"
+msgstr "Minimum score:"
+
+#: gui/wizdup.cpp:129 gui/wizlnk.cpp:169
+msgid "Máximo:"
+msgstr "Maximum:"
+
+#: gui/wizdup.cpp:130 gui/wizlnk.cpp:170
+msgid ""
+"Limites de escores possíveis\n"
+"com a configuração corrente:"
+msgstr ""
+"Limits of possible scores\n"
+"with the current configuration:"
+
+#: gui/wizdup.cpp:131 gui/wizlnk.cpp:171
+msgid "Mínimo:"
+msgstr "Minimum:"
+
+#: gui/wizdup.cpp:132 gui/wizdup.cpp:133 gui/wizlnk.cpp:172 gui/wizlnk.cpp:173
+msgid "NNNN"
+msgstr "NNNN"
+
+#: gui/wizdup.cpp:143
+msgid "Arquivos"
+msgstr "Files"
+
+#: gui/wizdup.cpp:144
+msgid "Processos"
+msgstr "Processes"
+
+#: gui/wizdup.cpp:145
+msgid "Escore mínimo"
+msgstr "Minimum score"
+
+#: gui/wizdup.cpp:190 gui/wizlnk.cpp:235
+msgid "EXATO,CARACTERE,DIFERENCA,APROX"
+msgstr "EXACT,CHARACTER,DIFFERENCE,APPROX"
+
+#: gui/wizdup.cpp:323 gui/wizjin.cpp:220
+msgid "Selecione o arquivo de atualização"
+msgstr "Select the update file"
+
+#: gui/wizdup.cpp:341 gui/wizjin.cpp:210 gui/wizjin.cpp:240 gui/wizlnk.cpp:449
+#: gui/wizlnk.cpp:488
+msgid "Este arquivo não existe."
+msgstr "This file does not exist."
+
+#: gui/wizdup.cpp:465 gui/wizlnk.cpp:692
+msgid "Arquivo de configuração não definido\n"
+msgstr "Undefined configuration file\n"
+
+#: gui/wizdup.cpp:468
+msgid "Arquivo de atualização não definido\n"
+msgstr "Undefined update file\n"
+
+#: gui/wizdup.cpp:475
+#, c-format
+msgid "Linha %d sem campo de atualização\n"
+msgstr "Line %d with no update field\n"
+
+#: gui/wizdup.cpp:488
+#, c-format
+msgid "Linha %d com campo de atualização inválido\n"
+msgstr "Line %d with invalid update field\n"
+
+#: gui/wizdup.cpp:497 gui/wizlnk.cpp:790
+#, c-format
+msgid "Linha %d sem tipo de comparação\n"
+msgstr "Line %d with no type of comparison\n"
+
+#: gui/wizdup.cpp:502 gui/wizdup.cpp:525 gui/wizlnk.cpp:795
+#, c-format
+msgid "Linha %d sem valor correto\n"
+msgstr "Line %d with no correct value\n"
+
+#: gui/wizdup.cpp:507 gui/wizdup.cpp:530 gui/wizlnk.cpp:800
+#, c-format
+msgid "Linha %d sem valor incorreto\n"
+msgstr "Line %d with no incorrect value\n"
+
+#: gui/wizdup.cpp:512 gui/wizdup.cpp:535 gui/wizlnk.cpp:805
+#: nongui/dbdup.cpp:293 nongui/dblink.cpp:140 nongui/dblnmatrix.cpp:131
+msgid "EXATO"
+msgstr "EXACT"
+
+#: gui/wizdup.cpp:514 gui/wizdup.cpp:537 gui/wizlnk.cpp:807
+#, c-format
+msgid "Linha %d sem limiar\n"
+msgstr "Line %d with no threshold\n"
+
+#: gui/wizdup.cpp:545
+msgid "Score mínimo não definido\n"
+msgstr "Undefined minimum score\n"
+
+#: gui/wizdup.cpp:547
+msgid "Nenhum critério definido\n"
+msgstr "No criterion defined\n"
+
+#: gui/wizdup.cpp:617 gui/wizlnk.cpp:877
+msgid "Verifique por favor os parâmetros."
+msgstr "Please check the parameters."
+
+#: gui/wizdup.cpp:617 gui/wizlnk.cpp:877
+msgid "ERRO DE CÁLCULO"
+msgstr "CALCULATION ERROR"
+
+#: gui/wizjin.cpp:104
+msgid "Arquivo mestre (será indexado)"
+msgstr "Master file (will be indexed)"
+
+#: gui/wizjin.cpp:105
+msgid "Arquivo de atualização (será lido por inteiro):"
+msgstr "Update file (will be read in its entirety):"
+
+#: gui/wizjin.cpp:109
+msgid "Campo-chave do arquivo mestre:"
+msgstr "Master file key field:"
+
+#: gui/wizjin.cpp:110
+msgid "Campo-chave do arquivo de atualização:"
+msgstr "Update file key field:"
+
+#: gui/wizjin.cpp:115
+msgid ""
+"Selecione os campos \n"
+"desejados do arquivo\n"
+"de atualização na caixa\n"
+"ao lado:"
+msgstr ""
+"Select the desired\n"
+"fields from the update\n"
+"file in the box besides\this:"
+
+#: gui/wizjin.cpp:125 gui/wizlnk.cpp:184
+msgid "Config."
+msgstr "Config."
+
+#: gui/wizjin.cpp:126 gui/wizlnk.cpp:185
+msgid "Arq. dados"
+msgstr "Data file"
+
+#: gui/wizjin.cpp:127
+msgid "Chave"
+msgstr "Key"
+
+#: gui/wizjin.cpp:128
+msgid "Mestre"
+msgstr "Master"
+
+#: gui/wizjin.cpp:129
+msgid "Atualização"
+msgstr "Update"
+
+#: gui/wizjin.cpp:190
+msgid "Selecione o arquivo mestre"
+msgstr "Select the master file"
+
+#: gui/wizjin.cpp:197 gui/wizjin.cpp:228 gui/wizlnk.cpp:427 gui/wizlnk.cpp:467
+msgid ""
+"Os nomes dos arquivos\n"
+"devem ser diferentes."
+msgstr ""
+"The names of the files\n"
+"must be different"
+
+#: gui/wizjin.cpp:331
+msgid "Erro ao abrir arquivo mestre"
+msgstr "Error opening master file"
+
+#: gui/wizjin.cpp:350
+msgid "Erro ao abrir arquivo de atualização"
+msgstr "Error opening update file"
+
+#: gui/wizjin.cpp:396
+msgid "Selecione o arquivo de configuração\n"
+msgstr "Select the configuration file\n"
+
+#: gui/wizjin.cpp:398
+msgid "Selecione o arquivo mestre\n"
+msgstr "Select the master file\n"
+
+#: gui/wizjin.cpp:400
+msgid "Selecione o arquivo de atualização\n"
+msgstr "Select the update file\n"
+
+#: gui/wizjin.cpp:402
+msgid "Selecione o campo-chave do arquivo mestre\n"
+msgstr "Select the key field of the master file\n"
+
+#: gui/wizjin.cpp:404
+msgid "Selecione o campo-chave do arquivo de atualização\n"
+msgstr "Select the key field of the update file\n"
+
+#: gui/wizjin.cpp:408
+msgid "O uso do numero de registro como chave tem que ser nos dois arquivos\n"
+msgstr "The use of the record number as a key has to be applied to both files\n"
+
+#: gui/wizjin.cpp:415
+msgid "Selecione ao menos um campo do arquivo mestre\n"
+msgstr "Select at least one field from the master file\n"
+
+#: gui/wizjin.cpp:421
+msgid "Selecione ao menos um campo do arquivo de atualização\n"
+msgstr "Select at least one field from the update file\n"
+
+#: gui/wizlnk.cpp:121
+msgid "Arquivo de comparação (será lido integralmente)"
+msgstr "Comparison file (will be read in its entirety)"
+
+#: gui/wizlnk.cpp:122
+msgid "Arquivo de referência (será lido por blocos):"
+msgstr "Reference file (will be read in blocks):"
+
+#: gui/wizlnk.cpp:131 gui/wizlnk.cpp:187
+msgid "Comparação"
+msgstr "Comparison"
+
+#: gui/wizlnk.cpp:132
+msgid "Referência"
+msgstr "Reference"
+
+#: gui/wizlnk.cpp:142
+msgid "Nome do índice:"
+msgstr "Index name:"
+
+#: gui/wizlnk.cpp:156
+msgid "Ref."
+msgstr "Ref."
+
+#: gui/wizlnk.cpp:166
+msgid "Ignora escore baixo:"
+msgstr "Ignore low score:"
+
+#: gui/wizlnk.cpp:186
+msgid "Blocagem"
+msgstr "Blocking"
+
+#: gui/wizlnk.cpp:188 gui/wizstd.cpp:133
+msgid "Opções adicionais"
+msgstr "Additional options"
+
+#: gui/wizlnk.cpp:419
+msgid "Selecione o arquivo de comparação"
+msgstr "Select the comparison file"
+
+#: gui/wizlnk.cpp:459
+msgid "Selecione o arquivo de referência"
+msgstr "Select the reference file"
+
+#: gui/wizlnk.cpp:695
+msgid "Arquivo de comparação não definido\n"
+msgstr "Undefined comparison file\n"
+
+#: gui/wizlnk.cpp:697
+msgid "Arquivo de referência não definido\n"
+msgstr "Undefined reference file\n"
+
+#: gui/wizlnk.cpp:706
+#, c-format
+msgid "Linha %d sem campo de blocagem (Comp)\n"
+msgstr "Line %d with no blocking field (Comp)\n"
+
+#: gui/wizlnk.cpp:719
+#, c-format
+msgid "Linha %d com campo de blocagem inválido (Comp)\n"
+msgstr "Line %d with an invalid blocking field (Comp)\n"
+
+#: gui/wizlnk.cpp:725
+#, c-format
+msgid "Linha %d sem campo de blocagem (Ref)\n"
+msgstr "Line %d without blocking field (Ref)\n"
+
+#: gui/wizlnk.cpp:737
+#, c-format
+msgid "Linha %d com campo de blocagem inválido (Ref)\n"
+msgstr "Line %d with invalid blocking field (Ref)\n"
+
+#: gui/wizlnk.cpp:743
+msgid "Nenhum critério de blocagem definido\n"
+msgstr "No blocking criterion defined\n"
+
+#: gui/wizlnk.cpp:745
+msgid "Nome de índice não definido\n"
+msgstr "Undefined index name\n"
+
+#: gui/wizlnk.cpp:752
+#, c-format
+msgid "Linha %d sem campo de comparação (Comp)\n"
+msgstr "Line %d with no comparison field (Comp)\n"
+
+#: gui/wizlnk.cpp:765
+#, c-format
+msgid "Linha %d com campo de comparação inválido (Comp)\n"
+msgstr "Line %d with an invalid comparison field (Comp)\n"
+
+#: gui/wizlnk.cpp:771
+#, c-format
+msgid "Linha %d sem campo de comparação (Ref)\n"
+msgstr "Line %d with no comparison field (Ref)\n"
+
+#: gui/wizlnk.cpp:783
+#, c-format
+msgid "Linha %d com campo de comparação inválido (Ref)\n"
+msgstr "Line %d with an invalid comparison field (Ref)\n"
+
+#: gui/wizlnk.cpp:813
+msgid "Nenhum critério de comparação definido\n"
+msgstr "No comparison criterion defined\n"
+
+#: gui/wizstd.cpp:105
+msgid "Processo"
+msgstr "Process"
+
+#: gui/wizstd.cpp:109
+msgid ""
+"Adiciona\n"
+" todos\n"
+"campos"
+msgstr ""
+"Adds\n"
+" all\n"
+"fields"
+
+#: gui/wizstd.cpp:117
+msgid "Exclusões:"
+msgstr "Exclusions:"
+
+#: gui/wizstd.cpp:118
+msgid "Pontuação:"
+msgstr "Punctuation:"
+
+#: gui/wizstd.cpp:119
+msgid "DE,DO,DA,DOS,DAS"
+msgstr "OF"
+
+#: gui/wizstd.cpp:120
+msgid "()/'.,;:-"
+msgstr "()/'.,;:-"
+
+#: gui/wizstd.cpp:121
+msgid "Apêndices:"
+msgstr "Appendixes:"
+
+#: gui/wizstd.cpp:122
+msgid "JUNIOR JR FILHO FO NETO SOBRINHO"
+msgstr "JUNIOR JR II III"
+
+#: gui/wizstd.cpp:132
+msgid "Opções gerais"
+msgstr "General options"
+
+#: gui/wizstd.cpp:342 gui/wizstd.cpp:504
+msgid "CDATA0"
+msgstr "CDATE0"
+
+#: gui/wizstd.cpp:347 gui/wizstd.cpp:507
+msgid "CDATA1"
+msgstr "CDATE1"
+
+#: gui/wizstd.cpp:352 gui/wizstd.cpp:510
+msgid "CDATA2"
+msgstr "CDATE2"
+
+#: gui/wizstd.cpp:357 gui/wizstd.cpp:513
+msgid "CDATA3"
+msgstr "CDATE3"
+
+#: gui/wizstd.cpp:362 gui/wizstd.cpp:516
+msgid "CDATA4"
+msgstr "CDATE4"
+
+#: gui/wizstd.cpp:367 gui/wizstd.cpp:519
+msgid "CDATA5"
+msgstr "CDATE5"
+
+#: gui/wizstd.cpp:372 gui/wizstd.cpp:522
+msgid "CDATA6"
+msgstr "CDATE6"
+
+#: gui/wizstd.cpp:377 gui/wizstd.cpp:525
+msgid "CDATA7"
+msgstr "CDATE7"
+
+#: gui/wizstd.cpp:382 gui/wizstd.cpp:528
+msgid "CDATA8"
+msgstr "CDATE8"
+
+#: gui/wizstd.cpp:387 gui/wizstd.cpp:531
+msgid "CDATA9"
+msgstr "CDATE9"
+
+#: gui/wizstd.cpp:392 gui/wizstd.cpp:534
+msgid "CDATAA"
+msgstr "CDATEA"
+
+#: gui/wizstd.cpp:397 gui/wizstd.cpp:537 gui/wizstd.cpp:554
+msgid "NADA"
+msgstr "NOTHING"
+
+#: gui/wizstd.cpp:401 gui/wizstd.cpp:542
+msgid "CNOMES"
+msgstr "CNAMES"
+
+#: gui/wizstd.cpp:405 gui/wizstd.cpp:545
+msgid "CPONTO"
+msgstr "CPUNCT"
+
+#: gui/wizstd.cpp:409 gui/wizstd.cpp:557 gui/wizstd.cpp:572 gui/wizstd.cpp:591
+#: gui/wizstd.cpp:593
+msgid "FNOMEP"
+msgstr "FNAMEP"
+
+#: gui/wizstd.cpp:413 gui/wizstd.cpp:594 gui/wizstd.cpp:596
+msgid "FNOMEU"
+msgstr "FNAMEL"
+
+#: gui/wizstd.cpp:417 gui/wizstd.cpp:597 gui/wizstd.cpp:599
+msgid "FNOMEI"
+msgstr "FNAMEI"
+
+#: gui/wizstd.cpp:421 gui/wizstd.cpp:600 gui/wizstd.cpp:602
+msgid "FNOMEA"
+msgstr "FNAMEA"
+
+#: gui/wizstd.cpp:425 gui/wizstd.cpp:582 gui/wizstd.cpp:583 gui/wizstd.cpp:603
+#: gui/wizstd.cpp:605
+msgid "PBLOCO"
+msgstr "PBLOCK"
+
+#: gui/wizstd.cpp:429 gui/wizstd.cpp:585 gui/wizstd.cpp:586 gui/wizstd.cpp:606
+#: gui/wizstd.cpp:607
+msgid "UBLOCO"
+msgstr "LBLOCK"
+
+#: gui/wizstd.cpp:433 gui/wizstd.cpp:440
+msgid "SUBSTR"
+msgstr "SUBSTR"
+
+#: gui/wizstd.cpp:461 gui/wizstd.cpp:467
+msgid "TROCA"
+msgstr "CHANGE"
+
+#: gui/wizstd.cpp:548
+#, c-format
+msgid "SUBSTR %d-%d"
+msgstr "SUBSTR %d-%d"
+
+#: gui/wizstd.cpp:560
+msgid "TROCA "
+msgstr "CHANGE"
+
+#: gui/wizstd.cpp:577
+msgid ""
+"Cria só os campos de blocagem\n"
+"(PBLOCO e UBLOCO)?"
+msgstr ""
+"Generate only the blocking fields\n"
+"(PBLOCK & LBLOCK)?"
+
+#: gui/wizstd.cpp:577
+msgid "OPÇÃO DE SUBDIVISÃO"
+msgstr "SUBDIVISION OPTION"
+
+#: gui/wizstd.cpp:724
+#, c-format
+msgid "Linha %d sem campo de entrada\n"
+msgstr "Line %d with no input field\n"
+
+#: gui/wizstd.cpp:737
+#, c-format
+msgid "Linha %d com campo de entrada inválido\n"
+msgstr "Line %d with invalid input field\n"
+
+#: gui/wizstd.cpp:743
+#, c-format
+msgid "Linha %d sem tipo de processo\n"
+msgstr "Line %d with to type of process\n"
+
+#: gui/wizstd.cpp:748
+#, c-format
+msgid "Linha %d sem campo de saída\n"
+msgstr "Line %d with no output field\n"
+
+#: gui/wizstd.cpp:760
+#, c-format
+msgid "Linha %d tem campo de saída repetido\n"
+msgstr "Line %d has a repeated output field\n"
+
+#: gui/wizstd.cpp:767
+msgid "Nenhum critério de padronização definido\n"
+msgstr "No standardization criterion defined\n"
+
+#: nongui/dbconvert.cpp:345
+msgid "S"
+msgstr "Y"
+
+#: nongui/dbconvert.cpp:347
+msgid "N"
+msgstr "N"
+
+#: nongui/dbdup.cpp:295 nongui/dblink.cpp:142 nongui/dblnmatrix.cpp:133
+msgid "CARACTERE"
+msgstr "CHARACTER"
+
+#: nongui/dbdup.cpp:297 nongui/dblink.cpp:144 nongui/dblnmatrix.cpp:135
+msgid "DIFERENCA"
+msgstr "DIFFERENCE"
+
+#: nongui/dbdup.cpp:299 nongui/dblink.cpp:146 nongui/dblnmatrix.cpp:137
+msgid "APROX"
+msgstr "APPROX"
+
+#: nongui/dblink.cpp:259
+msgid "; "
+msgstr ";"
+
+#: nongui/findex.cpp:166
+msgid "Erro ao gravar indice"
+msgstr "Error saving index"
+
+#: nongui/findex.cpp:170
+msgid "Impossível gravar em arq. fechado"
+msgstr "Impossible to write on a closed file"
+
+#: nongui/findex.cpp:205 nongui/findex.cpp:252
+msgid "Erro ao buscar indice"
+msgstr "Error searching index"
+
+#: nongui/findex.cpp:276
+msgid "Erro ao ordenar índice"
+msgstr "Error sorting index"
+
+#: nongui/findex.cpp:334
+msgid "Erro ao gravar chave"
+msgstr "Error storgin key"
+
+#: nongui/findex.cpp:355
+msgid "Erro ao ler chave"
+msgstr "Error reading key"
+
+#: nongui/ntable.cpp:79 nongui/ntable.cpp:96 nongui/ntable.cpp:112
+#: nongui/ntable.cpp:130 nongui/ntable.cpp:163 nongui/xbtable.cpp:82
+#: nongui/xbtable.cpp:100 nongui/xbtable.cpp:115 nongui/xbtable.cpp:133
+#: nongui/xbtable.cpp:157
+msgid "Erro ao acessar campo"
+msgstr "Error accessing field"
+
+#: nongui/ntable.cpp:176 nongui/xbtable.cpp:169
+msgid "Erro ao computar número de campos"
+msgstr "Error computing number of fields"
+
+#: nongui/ntable.cpp:190 nongui/xbtable.cpp:182
+msgid "Erro ao identificar nome de campo"
+msgstr "Error identifying field name"
+
+#: nongui/ntable.cpp:204 nongui/xbtable.cpp:197
+msgid "Erro ao identificar número de campo"
+msgstr "Error identifying field number"
+
+#: nongui/ntable.cpp:230 nongui/xbtable.cpp:244
+msgid "Erro ao identificar tipo de campo"
+msgstr "Error identifying field type"
+
+#: nongui/ntable.cpp:257 nongui/xbtable.cpp:269
+msgid "Erro ao identificar tamanho de campo"
+msgstr "Error identifying field size"
+
+#: nongui/ntable.cpp:284 nongui/xbtable.cpp:294
+msgid "Erro ao identificar decimais de campo"
+msgstr "Error identifying field decimals"
+
+#: nongui/ntable.cpp:313 nongui/xbtable.cpp:322
+msgid "Erro ao atribuir valor a campo"
+msgstr "Error storing value in field"
+
+#: nongui/ntable.cpp:329 nongui/xbtable.cpp:338
+msgid "Erro ao substituir registro"
+msgstr "Error replacing record"
+
+#: nongui/ntable.cpp:343 nongui/xbtable.cpp:352
+msgid "Erro ao acrescentar registro"
+msgstr "Error adding record"
+
+#: nongui/ntable.cpp:371 nongui/xbtable.cpp:471
+msgid "Erro ao abrir arquivo"
+msgstr "Error opening file"
+
+#: nongui/ntable.cpp:386 nongui/xbtable.cpp:490
+msgid "Erro ao criar arquivo"
+msgstr "Error creating file"
+
+#: nongui/ntable.cpp:472 nongui/ntable.cpp:480 nongui/ntable.cpp:501
+#: nongui/ntable.cpp:510 nongui/ntable.cpp:531 nongui/ntable.cpp:540
+#: nongui/ntable.cpp:561 nongui/ntable.cpp:570 nongui/ntable.cpp:587
+#: nongui/xbtable.cpp:572 nongui/xbtable.cpp:583 nongui/xbtable.cpp:608
+#: nongui/xbtable.cpp:621 nongui/xbtable.cpp:646 nongui/xbtable.cpp:659
+#: nongui/xbtable.cpp:684 nongui/xbtable.cpp:697 nongui/xbtable.cpp:717
+msgid "Erro ao acessar registro"
+msgstr "Error accessing record"
+
+#: nongui/ntable.cpp:605 nongui/ntable.cpp:615 nongui/ntable.cpp:637
+#: nongui/ntable.cpp:652 nongui/ntable.cpp:673 nongui/ntable.cpp:686
+#: nongui/xbtable.cpp:740 nongui/xbtable.cpp:753 nongui/xbtable.cpp:779
+#: nongui/xbtable.cpp:795
+msgid "Erro ao procurar registro"
+msgstr "Error searching record"
+
+#: nongui/ntable.cpp:704
+msgid "Erro ao computar total de registros"
+msgstr "Error computing total number of records"
+
+#: nongui/ntable.cpp:716 nongui/xbtable.cpp:826
+msgid "Erro ao computar número de registro"
+msgstr "Error computing record number"
+
+#: nongui/ntable.cpp:806 nongui/xbtable.cpp:915
+msgid "Erro ao criar índice"
+msgstr "Error creating index"
+
+#: nongui/ntable.cpp:857 nongui/xbtable.cpp:965
+msgid "Erro ao abrir índice"
+msgstr "Error opening index"
+
+#~ msgid ""
+#~ "Uma das frequências calculadas foi igual a zero.\n"
+#~ "Uma linha artificial foi incluida na matriz para\n"
+#~ "forçar valores diferentes de zero.\n"
+#~ "Pode ser conveniente executar novamente a rotina\n"
+#~ " com uma fração amostral maior."
+#~ msgstr ""
+#~ "One of the calculated frequencies was equal to zero.\n"
+#~ "An artificial line was included in the matrix to force\n"
+#~ "non-zero values.\n"
+#~ "It might be advisable to run the routine again with\n"
+#~ "a larger sample fraction."
+
+#~ msgid "English"
+#~ msgstr "English"
+
+#~ msgid "Passo 1"
+#~ msgstr "Step 1"
+
+#~ msgid "Operações"
+#~ msgstr "Operations"
+
+#~ msgid "Cópia de "
+#~ msgstr "Copy of "
+
+#~ msgid "Cópia"
+#~ msgstr "Copy "
+
+#, fuzzy
+#~ msgid "Copiados %d de %d registros."
+#~ msgstr "Copied %d of %d records"
+
+#, fuzzy
+#~ msgid " Valor"
+#~ msgstr "Value"
+
+#~ msgid "Registro %d"
+#~ msgstr "Record %d"
+
+#~ msgid "Não encontrado."
+#~ msgstr "Not found"
+
+#~ msgid "Importa texto"
+#~ msgstr "Import text"
+
+#~ msgid "Exporta texto"
+#~ msgstr "Export text"
+
+#~ msgid "Não implementado ainda."
+#~ msgstr "Not implemented yet."
+
+#~ msgid "Busca"
+#~ msgstr "Search"
+
+#~ msgid "Erro ao medir índice"
+#~ msgstr "Error measuring index"
+
+#~ msgid "Erro ao acessar registro (índice)"
+#~ msgstr "Error accessing record (index)"
+
+#~ msgid "Erro ao procurar registro (índice)"
+#~ msgstr "Error searching record (index)"
+
+#~ msgid "Erro ao reindexar"
+#~ msgstr "Error reindexing"
+
+#~ msgid "Selecone o arquivo"
+#~ msgstr "Select the file"
