@@ -1,0 +1,18 @@
+unzip 201103_SeguroDefeso.zip
+iconv -f iso-8859-1 -t utf-8 201103_SeguroDefeso.csv > temp
+mv temp 201103_SeguroDefeso.csv
+sed -i 's/\r//g' 201103_SeguroDefeso.csv
+
+awk 'BEGIN{FS="\t"}NR>1&&NR<=1000{print$5","$7",\042"$8"\042,"$9","$10}' 201103_SeguroDefeso.csv | sort -u > sdf1103.csv
+awk 'BEGIN{FS="\t"}NR>1&&NR<=1000{print$4","$6",\042"$7"\042,"$8","$9}' 201703_SeguroDefeso.csv | sort -u > sdf1703.csv
+
+head sdf1103.csv; tail sdf1103.csv; wc -l sdf1103.csv
+head sdf1703.csv; tail sdf1703.csv; wc -l sdf1703.csv
+
+echo 'import dbf; dbf.from_csv(csvfile="sdf1103.csv", filename="sdf1103", field_names="pis rgp nome uf municipio".split())' | python
+echo 'import dbf; dbf.from_csv(csvfile="sdf1703.csv", filename="sdf1703", field_names="pis rgp nome uf municipio".split())' | python
+
+./impdbf sdf1103.dbf
+./impdbf sdf1703.dbf
+
+file *
