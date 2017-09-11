@@ -39,36 +39,33 @@ extern "C"
 #endif	/*  */
   
 // function to be imported/exported
-  
+
 /* parameter estimation */ 
-  DLL_EXPORT void estimatepars(double *m, double *u, double *p, unsigned int *size_file_a,
-			       unsigned int *size_file_b, unsigned int *maxit, double *eps,
-			       double *loglik, std::string ctrlfile, std::string datafile,
-			       int *errcode);
-   
-/* u_i estimate */ 
-   
-    DLL_EXPORT void estimateu(double *u, unsigned int *freq, unsigned int *card_u,
-			      std::string ctrlfile, std::string datafile, int *errcode);
-   
-/* thresholds computation (using observed patterns)*/ 
-   
-    DLL_EXPORT void computethresh(double *m, double *u, double *alpha, double *beta,
-				  double *lowthresh, double *highthresh, double *score,
-				  std::string ctrlfile, std::string datafile, int *errcode);
-   
+DLL_EXPORT void estimatepars(double *m, double *u, double *p, unsigned int *size_file_a,
+		       unsigned int *size_file_b, unsigned int *maxit, double *eps,
+		       double *loglik, std::string ctrlfile, std::string datafile,
+		       int *errcode);
+
+/* u_i estimate */
+DLL_EXPORT void estimateu(double *u, unsigned int *freq, unsigned int *card_u,
+		      std::string ctrlfile, std::string datafile, int *errcode);
+
+/* thresholds computation (using observed patterns)*/
+DLL_EXPORT void computethresh(double *m, double *u, double *alpha, double *beta,
+			  double *lowthresh, double *highthresh, double *score,
+			  std::string ctrlfile, std::string datafile, int *errcode);
+
 /* resturn a vector with agreement pattern */ 
-    DLL_EXPORT matrix_uint * getpattern(unsigned int rows, unsigned int cols, matrix_short * gamma);
-   
-/* read data file */ 
-   
-    DLL_EXPORT matrix_short * readdata(std::string & ctrl_file, std::string & data_file,
-				       unsigned int *rows, unsigned int *cols, unsigned int *size_a,
-				       unsigned int *size_b, int *errcode);
-   
+DLL_EXPORT matrix_uint * getpattern(unsigned int rows, unsigned int cols, matrix_short * gamma);
+
+/* read data file */  
+DLL_EXPORT matrix_short * readdata(std::string & ctrl_file, std::string & data_file,
+			       unsigned int *rows, unsigned int *cols, unsigned int *size_a,
+			       unsigned int *size_b, int *errcode);
+
 /* wrapper for pow */ 
-    DLL_EXPORT double pow_int(double base, int exp);
-   
+DLL_EXPORT double pow_int(double base, int exp);
+
 #ifdef __cplusplus
 } 
 #endif	/*  */

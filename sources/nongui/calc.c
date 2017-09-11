@@ -39,4 +39,4 @@ npos(double m, double u)
   double r = (1 - m) / (1 - u);
   return calclog(r);
 }
- 
+

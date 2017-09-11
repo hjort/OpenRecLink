@@ -23,15 +23,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #ifndef calcH
 #define calcH
+
 #ifdef __cplusplus
 extern "C"
 {
-  
 #endif	/*  */
-  double ppos(double m, double u);
-   double npos(double m, double u);
+
+double ppos(double m, double u);
+double npos(double m, double u);
    
 #ifdef __cplusplus
-} 
+}
 #endif	/*  */
+
 #endif

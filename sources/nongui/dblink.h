@@ -21,7 +21,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Licença:     GPL
 /////////////////////////////////////////////////////////////////////////////
 
-
 #ifndef dblink_h
 #define dblink_h
 
