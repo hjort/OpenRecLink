@@ -32,7 +32,8 @@
 *.app
 
 # build files
-sources/build/*
+sources/build/impdbf
+sources/build/openreclink
 
 # backup files
 *.*~
