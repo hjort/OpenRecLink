@@ -78,7 +78,7 @@ _ntable::getstring(wxString fldname)
       catch( ...)
       {
 	error(_("Erro ao acessar campo"));
-      };
+      };
     }
   }
   return retval;
@@ -92,14 +92,14 @@ _ntable::getlong(wxString fldname)
   {
     int fldno = getfieldnum(fldname);
     if (fldno != -1)
-      try
+      try
     {
       retval = dbf_file->getlongfield(fldno);	//specific
     }
     catch( ...)
     {
-      error(_("Erro ao acessar campo"));
-    };
+      error(_("Erro ao acessar campo"));
+    };
   }
   return retval;
 }
@@ -112,14 +112,14 @@ _ntable::getdouble(wxString fldname)
   {
     int fldno = getfieldnum(fldname);
     if (fldno != -1)
-      try
+      try
     {
       retval = dbf_file->getfloatfield(fldno);	//specific
     }
     catch( ...)
     {
-      error(_("Erro ao acessar campo"));
-    };
+      error(_("Erro ao acessar campo"));
+    };
   }
   return retval;
 }
@@ -143,8 +143,8 @@ dbtable::date _ntable::getdate(wxString fldname)
       }
       catch( ...)
       {
-	error(_("Erro ao acessar campo"));
-      };
+	error(_("Erro ao acessar campo"));
+      };
       wxString
 	tmp = buff.Mid(6, 2);
       long
@@ -176,14 +176,14 @@ _ntable::getbool(wxString fldname)
   {
     int fldno = getfieldnum(fldname);
     if (fldno != -1)
-      try
+      try
     {
       retval = dbf_file->getlogicalfield(fldno);	//specific
     }
     catch( ...)
     {
-      error(_("Erro ao acessar campo"));
-    };
+      error(_("Erro ao acessar campo"));
+    };
   }
   return retval;
 }
@@ -193,14 +193,14 @@ _ntable::getnumfields(void)
 {
   int numflds = 0;
   if (dbf_file)
-    try
+    try
   {
     numflds = dbf_file->fieldcount();	//specific
   }
   catch( ...)
   {
-    error(_("Erro ao computar número de campos"));
-  };
+    error(_("Erro ao computar número de campos"));
+  };
   return numflds;
 }
 
@@ -210,15 +210,15 @@ _ntable::getfieldname(int num)
   wxString retval = _T("");
   if (dbf_file)
   {
-    try
+    try
     {
       if ((num != -1) && num < dbf_file->fieldcount())	//specific
 	retval = dbf_file->getfieldname(num);	//specific
     }
     catch( ...)
     {
-      error(_("Erro ao identificar nome de campo"));
-    };
+      error(_("Erro ao identificar nome de campo"));
+    };
   }
   return retval;
 }
@@ -235,8 +235,8 @@ _ntable::getfieldnum(wxString fldname)
     }
     catch( ...)
     {
-      error(_("Erro ao identificar número de campo"));
-    };
+      error(_("Erro ao identificar número de campo"));
+    };
   }
   return retval;
 }
@@ -259,14 +259,14 @@ dbtable::ftype _ntable::getfieldtype(int num)
   dbtable::ftype retval = dbtable::UNKNOWN;
   if (dbf_file)
   {
-    try
+    try
     {
       retval = dbf_file->getfieldtype(num);
-    }
+    }
     catch( ...)
     {
-      error(_("Erro ao identificar tipo de campo"));
-    };
+      error(_("Erro ao identificar tipo de campo"));
+    };
   }
   return retval;
 }
@@ -290,15 +290,15 @@ _ntable::getfieldlen(int num)
   int retval = 0;
   if (dbf_file)
   {
-    try
+    try
     {
       if ((num != -1) && num < dbf_file->fieldcount())	//specific
 	retval = dbf_file->getfieldlen(num);	//specific
     }
     catch( ...)
     {
-      error(_("Erro ao identificar tamanho de campo"));
-    };
+      error(_("Erro ao identificar tamanho de campo"));
+    };
   }
   return retval;
 }
@@ -322,15 +322,15 @@ _ntable::getfielddec(int num)
   int retval = 0;
   if (dbf_file)
   {
-    try
+    try
     {
       if ((num != -1) && num < dbf_file->fieldcount())
 	retval = dbf_file->getfielddecimal(num);	//specific
     }
     catch( ...)
     {
-      error(_("Erro ao identificar decimais de campo"));
-    };
+      error(_("Erro ao identificar decimais de campo"));
+    };
   }
   return retval;
 }
@@ -355,15 +355,15 @@ _ntable::setfield(wxString value, int num)
   bool retval = false;
   if (dbf_file)
   {
-    try
+    try
     {
       if (num < getnumfields())
 	retval = dbf_file->putfield(num, value);	//specific
     }
     catch( ...)
     {
-      error(_("Erro ao atribuir valor a campo"));
-    };
+      error(_("Erro ao atribuir valor a campo"));
+    };
   }
   return retval;
 }
@@ -374,15 +374,15 @@ _ntable::replacerec(void)
   bool retval = false;
   if (dbf_file)
   {
-    long recno;
-    try
+    long recno;
+    try
     {
       recno = dbf_file->getcurrecno();	//specific
       retval = dbf_file->putrecord(recno);
-    } catch( ...)
+    } catch( ...)
     {
-      error(_("Erro ao substituir registro"));
-    };
+      error(_("Erro ao substituir registro"));
+    };
   }
   return retval;
 };
@@ -393,14 +393,14 @@ _ntable::appendrec(void)
   bool retval = false;
   if (dbf_file)
   {
-    try
+    try
     {
       retval = dbf_file->appendrecord();
-    }
+    }
     catch( ...)
     {
-      error(_("Erro ao acrescentar registro"));
-    };
+      error(_("Erro ao acrescentar registro"));
+    };
   }
   return retval;
 }
@@ -416,7 +416,7 @@ _ntable::open(wxString Filename)
   }
   catch( ...)
   {
-    dbf_file = 0;
+    dbf_file = 0;
   };
   if (dbf_file)
   {
@@ -427,15 +427,15 @@ _ntable::open(wxString Filename)
 	delete[]dbfstru;
 	dbfstru = 0;
       }
-      try
+      try
       {
 	if (dbf_file->opendatabase(Filename))	//specific
 	  retval = true;
-      }
+      }
       catch( ...)
       {
-	error(_("Erro ao abrir arquivo"));
-      };
+	error(_("Erro ao abrir arquivo"));
+      };
     }
     else			// senão, cria...
     {
@@ -449,11 +449,11 @@ _ntable::open(wxString Filename)
 	    dbfstru = 0;
 	    retval = true;
 	  }
-	}
+	}
 	catch( ...)
 	{
-	  error(_("Erro ao criar arquivo"));
-	};
+	  error(_("Erro ao criar arquivo"));
+	};
       }
     }
   }
@@ -552,19 +552,19 @@ _ntable::first(void)
       }
       catch( ...)
       {
-	error(_("Erro ao acessar registro"));
-      };
+	error(_("Erro ao acessar registro"));
+      };
     }
     else
     {
-      try
+      try
       {
 	retval = dbf_file->getfirstrecord();	//specific
       }
       catch( ...)
       {
-	error(_("Erro ao acessar registro"));
-      };
+	error(_("Erro ao acessar registro"));
+      };
     }
   }
   return retval;
@@ -574,7 +574,7 @@ bool
 _ntable::next(void)
 {
   bool retval = false;
-  isbof = false;
+  isbof = false;
   if (dbf_file)
   {
     if (useix)
@@ -588,20 +588,20 @@ _ntable::next(void)
       }
       catch( ...)
       {
-	error(_("Erro ao acessar registro"));
-      };
+	error(_("Erro ao acessar registro"));
+      };
     }
     else
     {
-      try
+      try
       {
 	retval = dbf_file->getnextrecord();	//specific
 	iseof = dbf_file->eof();
-      }
+      }
       catch( ...)
       {
-	error(_("Erro ao acessar registro"));
-      };
+	error(_("Erro ao acessar registro"));
+      };
     }
   }
   return retval;
@@ -611,7 +611,7 @@ bool
 _ntable::prev(void)
 {
   bool retval = false;
-  iseof = false;
+  iseof = false;
   if (dbf_file)
   {
     if (useix)
@@ -625,20 +625,20 @@ _ntable::prev(void)
       }
       catch( ...)
       {
-	error(_("Erro ao acessar registro"));
-      };
+	error(_("Erro ao acessar registro"));
+      };
     }
     else
     {
-      try
+      try
       {
 	retval = dbf_file->getprevrecord();	//specific
 	isbof = dbf_file->bof();
-      }
+      }
       catch( ...)
       {
-	error(_("Erro ao acessar registro"));
-      };
+	error(_("Erro ao acessar registro"));
+      };
     }
   }
   return retval;
@@ -648,7 +648,7 @@ bool
 _ntable::last(void)
 {
   bool retval = false;
-  if (dbf_file)
+  if (dbf_file)
   {
     iseof = true;
     isbof = false;
@@ -659,44 +659,44 @@ _ntable::last(void)
 	long recno = dbf_ix.last();
 	if (recno > -1)
 	  retval = dbf_file->getrecord(recno);
-      }
+      }
       catch( ...)
       {
-	error(_("Erro ao acessar registro"));
-      };
+	error(_("Erro ao acessar registro"));
+      };
     }
     else
     {
-      try
+      try
       {
-	retval = dbf_file->getlastrecord();	//specific
+	retval = dbf_file->getlastrecord();	//specific
 	iseof = dbf_file->eof();
-      }
+      }
       catch( ...)
       {
-	error(_("Erro ao acessar registro"));
-      };
+	error(_("Erro ao acessar registro"));
+      };
     }
   }
   return retval;
 }
 
-bool _ntable::go(long recno)
+bool _ntable::go(long recno)
 {
   bool
     retval = false;
-  if (recno && recno <= dbf_file->noofrecords())	//specific
+  if (recno && recno <= dbf_file->noofrecords())	//specific
   {
     try
     {
-      retval = dbf_file->getrecord(recno);	//specific
+      retval = dbf_file->getrecord(recno);	//specific
       if (retval)		//specific
 	iseof = isbof = false;
     }
     catch( ...)
     {
-      error(_("Erro ao acessar registro"));
-    };
+      error(_("Erro ao acessar registro"));
+    };
   }
   return retval;
 }
@@ -717,8 +717,8 @@ _ntable::find(long key)
       }
       catch( ...)
       {
-	error(_("Erro ao procurar registro"));
-      };
+	error(_("Erro ao procurar registro"));
+      };
     }
     else
     {
@@ -726,12 +726,12 @@ _ntable::find(long key)
       {
 	try
 	{
-	  retval = dbf_file->getrecord(key);	//specific
+	  retval = dbf_file->getrecord(key);	//specific
 	}
 	catch( ...)
 	{
-	  error(_("Erro ao procurar registro"));
-	};
+	  error(_("Erro ao procurar registro"));
+	};
       }
     }
   }
@@ -756,8 +756,8 @@ _ntable::moveby(long step)
       }
       catch( ...)
       {
-	error(_("Erro ao procurar registro"));
-      };
+	error(_("Erro ao procurar registro"));
+      };
     }
     else
     {
@@ -770,12 +770,12 @@ _ntable::moveby(long step)
 	recno = maxval;
       try
       {
-	retval = dbf_file->getrecord(recno);	//specific
+	retval = dbf_file->getrecord(recno);	//specific
       }
       catch( ...)
       {
-	error(_("Erro ao procurar registro"));
-      };
+	error(_("Erro ao procurar registro"));
+      };
     }
   }
   iseof = isbof = false;
@@ -799,24 +799,24 @@ _ntable::find(wxString key)
       }
       catch( ...)
       {
-	error(_("Erro ao procurar registro"));
-      };
+	error(_("Erro ao procurar registro"));
+      };
     }
     else
     {
       long recno;		// this might be a PROBLEM
       if (key.ToLong(&recno))
       {
-	if (recno && (recno <= gettotalrecs()))
+	if (recno && (recno <= gettotalrecs()))
 	{
 	  try
 	  {
-	    retval = dbf_file->getrecord(recno);	//specific
+	    retval = dbf_file->getrecord(recno);	//specific
 	  }
 	  catch( ...)
 	  {
-	    error(_("Erro ao procurar registro"));
-	  };
+	    error(_("Erro ao procurar registro"));
+	  };
 	}
       }
     }
@@ -831,14 +831,14 @@ _ntable::gettotalrecs(void)
 {
   long retval = 0l;
   if (dbf_file)
-    try
+    try
   {
     retval = dbf_file->noofrecords();	//specific
   }
   catch( ...)
   {
-    error(_("Erro ao computar total de registros"));
-  };
+    error(_("Erro ao computar total de registros"));
+  };
   return retval;
 }
 
@@ -847,14 +847,14 @@ _ntable::getcurrentrec(void)
 {
   long retval = 0l;
   if (dbf_file)
-    try
+    try
   {
     retval = dbf_file->getcurrecno();	//specific
   }
   catch( ...)
   {
-    error(_("Erro ao computar número de registro"));
-  };
+    error(_("Erro ao computar número de registro"));
+  };
   return retval;
 }
 
@@ -1220,12 +1220,12 @@ _ntable::getcurrentidx(void)
   return ixinuse;
 };
 
- void
+ void
 _ntable::error(wxString errmsg)
 {
   iserr = false;
-  wxMessageBox(errmsg, _("ERRO"), wxICON_ERROR);
-};
+  wxMessageBox(errmsg, _("ERRO"), wxICON_ERROR);
+};
 
 wxString
 _ntable::defdbext(void)

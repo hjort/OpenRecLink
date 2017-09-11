@@ -235,10 +235,10 @@ namespace dblnmatrix
 
     while (!retval && !tbcomp.eof())
     {
-      wxString key = _T("");
+      wxString key = _T("");
       //wxMessageBox(wxString::Format(_T("%d"),noblks),_T("DUUUH"));
       for (int i = 0; i < noblks; i++)
-	key += tbcomp.getstring(blockopts[i].compfield);
+	key += tbcomp.getstring(blockopts[i].compfield);
       //wxString key = tbref.makekey();
       //wxMessageBox(key,_T("DUUUH"));
       retval = tbref.find(key);
@@ -272,13 +272,13 @@ namespace dblnmatrix
       wxString reffld = blockopts[i].reffield;
       wxString compval = tbcomp.getstring(compfld);
       wxString refval = tbref.getstring(reffld);
-      if (compval != refval)
+      if (compval != refval)
 	
       {
-	retval = false;
+	retval = false;
 	break;
-      }
-    }
+      }
+    }
 
     return retval;
   }

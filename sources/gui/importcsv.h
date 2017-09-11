@@ -88,11 +88,11 @@ private:
 
   //(*Handlers(importcsv)
   void OnadbtnClick(wxCommandEvent & event);
-   void OndelbtnClick(wxCommandEvent & event);
-   void OncancelbtnClick(wxCommandEvent & event);
-   void OnokbtnClick(wxCommandEvent & event);
-   void OnRadioBox1Select(wxCommandEvent & event);
-   void OnselfilenamebtnButton1Click(wxCommandEvent & event);
+   void OndelbtnClick(wxCommandEvent & event);
+   void OncancelbtnClick(wxCommandEvent & event);
+   void OnokbtnClick(wxCommandEvent & event);
+   void OnRadioBox1Select(wxCommandEvent & event);
+   void OnselfilenamebtnButton1Click(wxCommandEvent & event);
    
     //*)
   DECLARE_EVENT_TABLE()};

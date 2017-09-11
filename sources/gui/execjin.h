@@ -47,40 +47,40 @@ public:
 
   //(*Declarations(execjin)
   wxBitmapButton *BitmapButton2;
-   wxTextCtrl * cfgfilenamectrl;
-   wxPanel * Panel1;
-   wxTextCtrl * outfilenamectrl;
-   wxStaticLine * StaticLine2;
-   wxBitmapButton * opencfgfile;
-   wxStaticText * StaticText1;
-   wxBitmapButton * openoutfile;
-   wxStaticText * StaticText3;
-   wxStaticLine * StaticLine1;
-   wxFileDialog * FileDialog1;
-   wxFileDialog * FileDialog2;
-   wxStaticText * StaticText5;
-   wxStaticText * StaticText2;
-   wxStopWatch StopWatch1;
-   wxGauge * Gauge1;
-   wxBitmapButton * BitmapButton1;
+   wxTextCtrl * cfgfilenamectrl;
+   wxPanel * Panel1;
+   wxTextCtrl * outfilenamectrl;
+   wxStaticLine * StaticLine2;
+   wxBitmapButton * opencfgfile;
+   wxStaticText * StaticText1;
+   wxBitmapButton * openoutfile;
+   wxStaticText * StaticText3;
+   wxStaticLine * StaticLine1;
+   wxFileDialog * FileDialog1;
+   wxFileDialog * FileDialog2;
+   wxStaticText * StaticText5;
+   wxStaticText * StaticText2;
+   wxStopWatch StopWatch1;
+   wxGauge * Gauge1;
+   wxBitmapButton * BitmapButton1;
    
     //*)
 protected:
 
   //(*Identifiers(execjin)
   static const long ID_TEXTCTRL2;
-   static const long ID_BITMAPBUTTON2;
-   static const long ID_TEXTCTRL4;
-   static const long ID_BITMAPBUTTON1;
-   static const long ID_STATICTEXT1;
-   static const long ID_STATICTEXT3;
-   static const long ID_GAUGE1;
-   static const long ID_STATICTEXT2;
-   static const long ID_STATICTEXT5;
-   static const long ID_BITMAPBUTTON3;
-   static const long ID_STATICLINE1;
-   static const long ID_STATICLINE2;
-   static const long ID_PANEL1;
+   static const long ID_BITMAPBUTTON2;
+   static const long ID_TEXTCTRL4;
+   static const long ID_BITMAPBUTTON1;
+   static const long ID_STATICTEXT1;
+   static const long ID_STATICTEXT3;
+   static const long ID_GAUGE1;
+   static const long ID_STATICTEXT2;
+   static const long ID_STATICTEXT5;
+   static const long ID_BITMAPBUTTON3;
+   static const long ID_STATICLINE1;
+   static const long ID_STATICLINE2;
+   static const long ID_PANEL1;
    
     //*)
 private:

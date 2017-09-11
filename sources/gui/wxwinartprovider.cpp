@@ -34,13 +34,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "disk.xpm"
 #include "folder_page.xpm"
 #include "tick.xpm"
- wxWinArtProvider::wxWinArtProvider() 
+ wxWinArtProvider::wxWinArtProvider() 
 {
   
     //ctor
 }
 
-wxBitmap wxWinArtProvider::CreateBitmap(const wxArtID & id,
+wxBitmap wxWinArtProvider::CreateBitmap(const wxArtID & id,
 					 const wxArtClient & client, const wxSize & size)
 {
   if (id == wxART_FILE_OPEN)

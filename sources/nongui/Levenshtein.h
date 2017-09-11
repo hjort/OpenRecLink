@@ -29,10 +29,10 @@ typedef char *pstr;
 extern "C"
 {
   
-#endif	/*  */
+#endif	/*  */
   int wld(const pstr word, const pstr sample, const int limit);
    
 #ifdef __cplusplus
 } 
-#endif	/*  */
-#endif	/*  */
+#endif	/*  */
+#endif	/*  */

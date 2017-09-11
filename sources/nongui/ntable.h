@@ -51,7 +51,7 @@ private:
     ixinuse;
   wxArrayString
     ixflds;
-  void
+  void
   error(wxString errmsg);
   bool
     iserr;

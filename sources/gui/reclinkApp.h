@@ -25,10 +25,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define reclinkAPP_H
   
 #include <wx/app.h>
-class reclinkApp:public wxApp 
+class reclinkApp:public wxApp 
 {
-public:virtual bool OnInit();
-};
+public:virtual bool OnInit();
+};
 
- 
+ 
 #endif // reclinkAPP_H

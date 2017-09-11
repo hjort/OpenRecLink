@@ -144,13 +144,13 @@ _dbdup::checkblockvars(void)
     wxString upfld = blockopts[i].compfield;
     wxString upval = update.getstring(upfld);
     wxString mstval = storedblock[i];
-    if (upval != mstval)
+    if (upval != mstval)
       
     {
-      retval = false;
+      retval = false;
       break;
-    }
-  }
+    }
+  }
 
   return retval;
 }
@@ -241,8 +241,8 @@ _dbdup::findblockbeg(void)
 	storedvals[i] = ax;
       }
       wxString key = _T("");
-      for (int i = 0; i < nblocks; i++)
-	key += update.getstring(blockopts[i].compfield);
+      for (int i = 0; i < nblocks; i++)
+	key += update.getstring(blockopts[i].compfield);
       retval = update.find(key);
 #ifdef __DEBUGCRACA__
       if (retval)

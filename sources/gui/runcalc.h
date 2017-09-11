@@ -44,52 +44,52 @@ public:
 
   //(*Declarations(runcalc)
   wxTextCtrl *textout;
-   wxTextCtrl * falsopos;
-   wxTextCtrl * p_ini;
-   wxTextCtrl * falsoneg;
-   wxBitmapButton * gobtn;
-   wxStaticText * StaticText1;
-   wxStaticText * StaticText3;
-   wxTextCtrl * m_ini;
-   wxTextCtrl * maxiterctrl;
-   wxStaticText * StaticText8;
-   wxFileDialog * FileDialog1;
-   wxTextCtrl * epsilonctrl;
-   wxStaticText * StaticText7;
-   wxStaticText * StaticText4;
-   wxStaticText * StaticText5;
-   wxStaticText * StaticText2;
-   wxStopWatch StopWatch1;
-   wxStaticText * StaticText6;
-   wxTextCtrl * u_ini;
-   wxBitmapButton * opencfg;
-   wxTextCtrl * cfgnamectrl;
-   wxBitmapButton * closebtn;
+   wxTextCtrl * falsopos;
+   wxTextCtrl * p_ini;
+   wxTextCtrl * falsoneg;
+   wxBitmapButton * gobtn;
+   wxStaticText * StaticText1;
+   wxStaticText * StaticText3;
+   wxTextCtrl * m_ini;
+   wxTextCtrl * maxiterctrl;
+   wxStaticText * StaticText8;
+   wxFileDialog * FileDialog1;
+   wxTextCtrl * epsilonctrl;
+   wxStaticText * StaticText7;
+   wxStaticText * StaticText4;
+   wxStaticText * StaticText5;
+   wxStaticText * StaticText2;
+   wxStopWatch StopWatch1;
+   wxStaticText * StaticText6;
+   wxTextCtrl * u_ini;
+   wxBitmapButton * opencfg;
+   wxTextCtrl * cfgnamectrl;
+   wxBitmapButton * closebtn;
    
     //*)
 protected:
 
   //(*Identifiers(runcalc)
   static const long ID_STATICTEXT1;
-   static const long ID_TEXTCTRL1;
-   static const long ID_BITMAPBUTTON1;
-   static const long ID_STATICTEXT2;
-   static const long ID_TEXTCTRL3;
-   static const long ID_STATICTEXT3;
-   static const long ID_TEXTCTRL4;
-   static const long ID_STATICTEXT4;
-   static const long ID_TEXTCTRL5;
-   static const long ID_STATICTEXT5;
-   static const long ID_TEXTCTRL6;
-   static const long ID_STATICTEXT6;
-   static const long ID_TEXTCTRL7;
-   static const long ID_STATICTEXT7;
-   static const long ID_TEXTCTRL8;
-   static const long ID_STATICTEXT8;
-   static const long ID_TEXTCTRL9;
-   static const long ID_TEXTCTRL2;
-   static const long ID_BITMAPBUTTON2;
-   static const long ID_BITMAPBUTTON3;
+   static const long ID_TEXTCTRL1;
+   static const long ID_BITMAPBUTTON1;
+   static const long ID_STATICTEXT2;
+   static const long ID_TEXTCTRL3;
+   static const long ID_STATICTEXT3;
+   static const long ID_TEXTCTRL4;
+   static const long ID_STATICTEXT4;
+   static const long ID_TEXTCTRL5;
+   static const long ID_STATICTEXT5;
+   static const long ID_TEXTCTRL6;
+   static const long ID_STATICTEXT6;
+   static const long ID_TEXTCTRL7;
+   static const long ID_STATICTEXT7;
+   static const long ID_TEXTCTRL8;
+   static const long ID_STATICTEXT8;
+   static const long ID_TEXTCTRL9;
+   static const long ID_TEXTCTRL2;
+   static const long ID_BITMAPBUTTON2;
+   static const long ID_BITMAPBUTTON3;
    
     //*)
 private:

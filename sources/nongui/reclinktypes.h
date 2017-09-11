@@ -95,20 +95,20 @@ namespace reclink
 // Estrutura para definicao de campos de blocagem nos dois arquivos
   typedef struct _blockcfg
   {
-    wxString reffield;
-    wxString compfield;
-  } blockcfg;
+    wxString reffield;
+    wxString compfield;
+  } blockcfg;
 
 // Estrutura para a definicao das comparacoes
   typedef struct _comparecfg
   {
-    wxString reffield;
-    wxString compfield;
-    compref comp;
-    double correct;
-     double incorrect;
-     double lim;
-   } comparecfg;
- }				// fim do namespace
+    wxString reffield;
+    wxString compfield;
+    compref comp;
+    double correct;
+     double incorrect;
+     double lim;
+   } comparecfg;
+ }				// fim do namespace
 
 #endif

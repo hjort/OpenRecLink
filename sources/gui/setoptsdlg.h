@@ -47,36 +47,36 @@ public:
 
   //(*Declarations(setoptsdlg)
   wxRadioBox *RadioBox2;
-   wxTextCtrl * inlist;
-   wxButton * Button1;
-   wxGrid * Grid1;
-   wxStaticText * StaticText1;
-   wxTextCtrl * examples;
-   wxStaticText * StaticText3;
-   wxSpinCtrl * SpinCtrl2;
-   wxStaticText * StaticText5;
-   wxStaticText * StaticText2;
-   wxRadioBox * RadioBox1;
-   wxStaticText * StaticText6;
-   wxSpinCtrl * SpinCtrl1;
+   wxTextCtrl * inlist;
+   wxButton * Button1;
+   wxGrid * Grid1;
+   wxStaticText * StaticText1;
+   wxTextCtrl * examples;
+   wxStaticText * StaticText3;
+   wxSpinCtrl * SpinCtrl2;
+   wxStaticText * StaticText5;
+   wxStaticText * StaticText2;
+   wxRadioBox * RadioBox1;
+   wxStaticText * StaticText6;
+   wxSpinCtrl * SpinCtrl1;
    
     //*)
 protected:
 
   //(*Identifiers(setoptsdlg)
   static const long ID_RADIOBOX1;
-   static const long ID_RADIOBOX2;
-   static const long ID_STATICTEXT1;
-   static const long ID_GRID1;
-   static const long ID_BUTTON1;
-   static const long ID_STATICTEXT5;
-   static const long ID_SPINCTRL1;
-   static const long ID_STATICTEXT6;
-   static const long ID_SPINCTRL2;
-   static const long ID_STATICTEXT2;
-   static const long ID_TEXTCTRL1;
-   static const long ID_STATICTEXT3;
-   static const long ID_TEXTCTRL2;
+   static const long ID_RADIOBOX2;
+   static const long ID_STATICTEXT1;
+   static const long ID_GRID1;
+   static const long ID_BUTTON1;
+   static const long ID_STATICTEXT5;
+   static const long ID_SPINCTRL1;
+   static const long ID_STATICTEXT6;
+   static const long ID_SPINCTRL2;
+   static const long ID_STATICTEXT2;
+   static const long ID_TEXTCTRL1;
+   static const long ID_STATICTEXT3;
+   static const long ID_TEXTCTRL2;
    
     //*)
 private:

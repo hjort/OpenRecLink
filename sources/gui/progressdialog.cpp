@@ -42,19 +42,19 @@ const long
   //(*Initialize(progressdialog)
   wxBoxSizer *
     BoxSizer1;
-   Create(parent, id, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxRAISED_BORDER, _T("id"));
-  SetClientSize(wxDefaultSize);
-  Move(wxDefaultPosition);
-  BoxSizer1 = new wxBoxSizer(wxVERTICAL);
-  msglabel =
+   Create(parent, id, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxRAISED_BORDER, _T("id"));
+  SetClientSize(wxDefaultSize);
+  Move(wxDefaultPosition);
+  BoxSizer1 = new wxBoxSizer(wxVERTICAL);
+  msglabel =
     new wxStaticText(this, ID_STATICTEXT1, _("Indexando, aguarde..."), wxDefaultPosition,
 		     wxDefaultSize, 0, _T("ID_STATICTEXT1"));
-  BoxSizer1->Add(msglabel, 1, wxALL | wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL, 5);
-  SetSizer(BoxSizer1);
-  BoxSizer1->Fit(this);
-  BoxSizer1->SetSizeHints(this);
-   Connect(wxEVT_SET_FOCUS, (wxObjectEventFunction) & progressdialog::OnSetFocus);
-  Connect(wxEVT_KILL_FOCUS, (wxObjectEventFunction) & progressdialog::OnKillFocus);
+  BoxSizer1->Add(msglabel, 1, wxALL | wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL, 5);
+  SetSizer(BoxSizer1);
+  BoxSizer1->Fit(this);
+  BoxSizer1->SetSizeHints(this);
+   Connect(wxEVT_SET_FOCUS, (wxObjectEventFunction) & progressdialog::OnSetFocus);
+  Connect(wxEVT_KILL_FOCUS, (wxObjectEventFunction) & progressdialog::OnKillFocus);
   
     //*)
 }

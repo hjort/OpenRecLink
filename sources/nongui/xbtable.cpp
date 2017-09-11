@@ -83,7 +83,7 @@ _xbtable::getstring(wxString fldname)
       } catch( ...)
       {
 	error(_("Erro ao acessar campo"));
-      };
+      };
       if (br)
 	retval = wxString(buff, wxConvUTF8).Trim();
     }
@@ -99,14 +99,14 @@ _xbtable::getlong(wxString fldname)
   {
     int fldno = getfieldnum(fldname);
     if (fldno != -1)
-      try
+      try
     {
       retval = dbf_file->GetLongField(fldno);	//specific
     }
     catch( ...)
     {
-      error(_("Erro ao acessar campo"));
-    };
+      error(_("Erro ao acessar campo"));
+    };
   }
   return retval;
 }
@@ -119,14 +119,14 @@ _xbtable::getdouble(wxString fldname)
   {
     int fldno = getfieldnum(fldname);
     if (fldno != -1)
-      try
+      try
     {
       retval = dbf_file->GetFloatField(fldno);	//specific
     }
     catch( ...)
     {
-      error(_("Erro ao acessar campo"));
-    };
+      error(_("Erro ao acessar campo"));
+    };
   }
   return retval;
 }
@@ -151,8 +151,8 @@ dbtable::date _xbtable::getdate(wxString fldname)
 	br = dbf_file->GetField(fldno, buff);	//specific
       } catch( ...)
       {
-	error(_("Erro ao acessar campo"));
-      };
+	error(_("Erro ao acessar campo"));
+      };
       if (br > 9)
       {
 	retval.day = atoi(buff + 8);
@@ -174,14 +174,14 @@ _xbtable::getbool(wxString fldname)
   {
     int fldno = getfieldnum(fldname);
     if (fldno != -1)
-      try
+      try
     {
       retval = dbf_file->GetLogicalField(fldno);	//specific
     }
     catch( ...)
     {
-      error(_("Erro ao acessar campo"));
-    };
+      error(_("Erro ao acessar campo"));
+    };
   }
   return retval;
 }
@@ -191,14 +191,14 @@ _xbtable::getnumfields(void)
 {
   int numflds = 0;
   if (dbf_file)
-    try
+    try
   {
     numflds = dbf_file->FieldCount();	//specific
   }
   catch( ...)
   {
-    error(_("Erro ao computar número de campos"));
-  };
+    error(_("Erro ao computar número de campos"));
+  };
   return numflds;
 }
 
@@ -208,15 +208,15 @@ _xbtable::getfieldname(int num)
   wxString retval = _T("");
   if (dbf_file)
   {
-    try
+    try
     {
       if ((num != -1) && num < dbf_file->FieldCount())	//specific
 	retval = wxString(dbf_file->GetFieldName(num), wxConvUTF8);	//specific
     }
     catch( ...)
     {
-      error(_("Erro ao identificar nome de campo"));
-    };
+      error(_("Erro ao identificar nome de campo"));
+    };
   }
   return retval;
 }
@@ -234,8 +234,8 @@ _xbtable::getfieldnum(wxString fldname)
       retval = dbf_file->GetFieldNo(fname);	//specific
     } catch( ...)
     {
-      error(_("Erro ao identificar número de campo"));
-    };
+      error(_("Erro ao identificar número de campo"));
+    };
   }
   return retval;
 }
@@ -258,7 +258,7 @@ dbtable::ftype _xbtable::getfieldtype(int num)
   dbtable::ftype retval = dbtable::UNKNOWN;
   if (dbf_file)
   {
-    try
+    try
     {
       if ((num != -1) && num < dbf_file->FieldCount())
 	switch (dbf_file->GetFieldType(num))	//specific
@@ -284,11 +284,11 @@ dbtable::ftype _xbtable::getfieldtype(int num)
 	default:
 	  break;
 	}
-    }
+    }
     catch( ...)
     {
-      error(_("Erro ao identificar tipo de campo"));
-    };
+      error(_("Erro ao identificar tipo de campo"));
+    };
   }
   return retval;
 }
@@ -312,15 +312,15 @@ _xbtable::getfieldlen(int num)
   int retval = 0;
   if (dbf_file)
   {
-    try
+    try
     {
       if ((num != -1) && num < dbf_file->FieldCount())	//specific
 	retval = dbf_file->GetFieldLen(num);	//specific
     }
     catch( ...)
     {
-      error(_("Erro ao identificar tamanho de campo"));
-    };
+      error(_("Erro ao identificar tamanho de campo"));
+    };
   }
   return retval;
 }
@@ -344,15 +344,15 @@ _xbtable::getfielddec(int num)
   int retval = 0;
   if (dbf_file)
   {
-    try
+    try
     {
       if ((num != -1) && num < dbf_file->FieldCount())
 	retval = dbf_file->GetFieldDecimal(num);	//specific
     }
     catch( ...)
     {
-      error(_("Erro ao identificar decimais de campo"));
-    };
+      error(_("Erro ao identificar decimais de campo"));
+    };
   }
   return retval;
 }
@@ -377,16 +377,16 @@ _xbtable::setfield(wxString value, int num)
   bool retval = false;
   if (dbf_file)
   {
-    try
+    try
     {
       if (num < getnumfields())
 	if (dbf_file->PutField(num, value.mb_str(wxConvUTF8)) == XB_NO_ERROR)	//specific
 	  retval = true;
-    }
+    }
     catch( ...)
     {
-      error(_("Erro ao atribuir valor a campo"));
-    };
+      error(_("Erro ao atribuir valor a campo"));
+    };
   }
   return retval;
 }
@@ -397,17 +397,17 @@ _xbtable::replacerec(void)
   bool retval = false;
   if (dbf_file)
   {
-    long recno;
-    try
+    long recno;
+    try
     {
       recno = dbf_file->GetCurRecNo();	//specific
       if (dbf_file->PutRecord(recno) == XB_NO_ERROR)	//specific
 	retval = true;
-    }
+    }
     catch( ...)
     {
-      error(_("Erro ao substituir registro"));
-    };
+      error(_("Erro ao substituir registro"));
+    };
   }
   return retval;
 };
@@ -418,15 +418,15 @@ _xbtable::appendrec(void)
   bool retval = false;
   if (dbf_file)
   {
-    try
+    try
     {
       if (dbf_file->AppendRecord() == XB_NO_ERROR)	//specific
 	retval = true;
-    }
+    }
     catch( ...)
     {
-      error(_("Erro ao acrescentar registro"));
-    };
+      error(_("Erro ao acrescentar registro"));
+    };
   }
   return retval;
 }
@@ -532,7 +532,7 @@ _xbtable::open(wxString Filename)
   }
   catch( ...)
   {
-    dbf_file = 0;
+    dbf_file = 0;
   };
   if (dbf_file)
   {
@@ -544,7 +544,7 @@ _xbtable::open(wxString Filename)
 	delete[]dbfstru;
 	dbfstru = 0;
       }
-      try
+      try
       {
 	long filesize = check_file_size(Filename.mb_str(wxConvUTF8));
 	if (dbf_file->OpenDatabase(Filename.mb_str(wxConvUTF8)) == XB_NO_ERROR)	//specific
@@ -556,10 +556,10 @@ _xbtable::open(wxString Filename)
 	reclen++;
 	int hdrsize = (nflds * 32) + 33;
 	calcrecs = (filesize - hdrsize) / reclen;
-      } catch( ...)
+      } catch( ...)
       {
-	error(_("Erro ao abrir arquivo"));
-      };
+	error(_("Erro ao abrir arquivo"));
+      };
     }
     else			// senão, cria...
     {
@@ -577,11 +577,11 @@ _xbtable::open(wxString Filename)
 	    if (rslt == XB_NO_ERROR)	//specific
 	      retval = true;
 	  }
-	}
+	}
 	catch( ...)
 	{
-	  error(_("Erro ao criar arquivo"));
-	};
+	  error(_("Erro ao criar arquivo"));
+	};
       }
     }
   }
@@ -678,25 +678,25 @@ _xbtable::first(void)
 	  if (result == XB_NO_ERROR)	//specific
 	    retval = true;
 	}
-      }
+      }
       catch( ...)
       {
-	error(_("Erro ao acessar registro"));
-      };
+	error(_("Erro ao acessar registro"));
+      };
     }
     else
     {
-      xbShort result;
-      try
+      xbShort result;
+      try
       {
 	result = dbf_file->GetFirstRecord();	//specific
 	if (result == XB_NO_ERROR)	//specific
 	  retval = true;
-      }
+      }
       catch( ...)
       {
-	error(_("Erro ao acessar registro"));
-      };
+	error(_("Erro ao acessar registro"));
+      };
     }
   }
   return retval;
@@ -706,13 +706,13 @@ bool
 _xbtable::next(void)
 {
   bool retval = false;
-  isbof = false;
+  isbof = false;
   if (dbf_file)
   {
     if (useix)
     {
       xbShort result;
-      try
+      try
       {
 	long recno = dbf_ix.next();
 	iseof = dbf_ix.iseof();
@@ -722,16 +722,16 @@ _xbtable::next(void)
 	  if (result == XB_NO_ERROR)	//specific
 	    retval = true;
 	}
-      }
+      }
       catch( ...)
       {
-	error(_("Erro ao acessar registro"));
-      };
+	error(_("Erro ao acessar registro"));
+      };
     }
     else
     {
-      xbShort result;
-      try
+      xbShort result;
+      try
       {
 	result = dbf_file->GetNextRecord();	//specific
 	if (result == XB_EOF)	//specific
@@ -739,11 +739,11 @@ _xbtable::next(void)
 	
 	else if (result == XB_NO_ERROR)	//specific
 	  retval = true;
-      }
+      }
       catch( ...)
       {
-	error(_("Erro ao acessar registro"));
-      };
+	error(_("Erro ao acessar registro"));
+      };
     }
   }
   return retval;
@@ -753,7 +753,7 @@ bool
 _xbtable::prev(void)
 {
   bool retval = false;
-  iseof = false;
+  iseof = false;
   if (dbf_file)
   {
     if (useix)
@@ -769,16 +769,16 @@ _xbtable::prev(void)
 	  if (result == XB_NO_ERROR)	//specific
 	    retval = true;
 	}
-      }
+      }
       catch( ...)
       {
-	error(_("Erro ao acessar registro"));
-      };
+	error(_("Erro ao acessar registro"));
+      };
     }
     else
     {
-      xbShort result;
-      try
+      xbShort result;
+      try
       {
 	result = dbf_file->GetPrevRecord();	//specific
 	if (result == XB_BOF)	//specific
@@ -786,11 +786,11 @@ _xbtable::prev(void)
 	
 	else if (result == XB_NO_ERROR)	//specific
 	  retval = true;
-      }
+      }
       catch( ...)
       {
-	error(_("Erro ao acessar registro"));
-      };
+	error(_("Erro ao acessar registro"));
+      };
     }
   }
   return retval;
@@ -800,70 +800,70 @@ bool
 _xbtable::last(void)
 {
   bool retval = false;
-  if (dbf_file)
+  if (dbf_file)
   {
     iseof = true;
     isbof = false;
     if (useix)
     {
       xbShort result;
-      try
+      try
       {
 	long recno = dbf_ix.last();
 	result = dbf_file->GetRecord(recno);	//specific
 	if (recno > -1)
 	{
-	  if (result == XB_NO_ERROR)	//specific
+	  if (result == XB_NO_ERROR)	//specific
 	    retval = true;
 	}
-      }
+      }
       catch( ...)
       {
-	error(_("Erro ao acessar registro"));
-      };
+	error(_("Erro ao acessar registro"));
+      };
     }
     else
     {
       xbShort result;		//specific
       try
       {
-	result = dbf_file->GetLastRecord();	//specific
+	result = dbf_file->GetLastRecord();	//specific
 	if (result == XB_EOF)	//specific
 	  iseof = true;
 	
 	else if (result == XB_NO_ERROR)	//specific
 	  retval = true;
-      }
+      }
       catch( ...)
       {
-	error(_("Erro ao acessar registro"));
-      };
+	error(_("Erro ao acessar registro"));
+      };
     }
   }
   return retval;
 }
 
-bool _xbtable::go(long recno)
+bool _xbtable::go(long recno)
 {
   bool
     retval = false;
-  if (recno && recno < dbf_file->NoOfRecords())	//specific
+  if (recno && recno < dbf_file->NoOfRecords())	//specific
   {
     xbShort
       rslt;
-    try
+    try
     {
-      rslt = dbf_file->GetRecord(recno);	//specific
+      rslt = dbf_file->GetRecord(recno);	//specific
       if (rslt == XB_NO_ERROR)	//specific
       {
 	retval = true;
 	iseof = isbof = false;
       }
-    }
+    }
     catch( ...)
     {
-      error(_("Erro ao acessar registro"));
-    };
+      error(_("Erro ao acessar registro"));
+    };
   }
   return retval;
 }
@@ -877,7 +877,7 @@ _xbtable::find(long key)
     if (useix)
     {
       xbShort result;
-      try
+      try
       {
 	long recno = dbf_ix.xlate(--key);
 	if (recno > -1l)
@@ -886,27 +886,27 @@ _xbtable::find(long key)
 	  if (result == XB_NO_ERROR)	//specific
 	    retval = true;
 	}
-      }
+      }
       catch( ...)
       {
-	error(_("Erro ao procurar registro"));
-      };
+	error(_("Erro ao procurar registro"));
+      };
     }
     else
     {
       if ((key) && key <= gettotalrecs())
       {
 	xbShort rslt;
-	try
+	try
 	{
-	  rslt = dbf_file->GetRecord(key);	//specific
+	  rslt = dbf_file->GetRecord(key);	//specific
 	  if (rslt == XB_NO_ERROR)	//specific
 	    retval = true;
-	}
+	}
 	catch( ...)
 	{
-	  error(_("Erro ao procurar registro"));
-	};
+	  error(_("Erro ao procurar registro"));
+	};
       }
     }
   }
@@ -924,7 +924,7 @@ _xbtable::find(wxString key)
     if (useix)
     {
       xbShort result;
-      try
+      try
       {
 	long recno = dbf_ix.find(key);
 	if (recno > -1l)
@@ -933,30 +933,30 @@ _xbtable::find(wxString key)
 	  if (result == XB_NO_ERROR)	//specific
 	    retval = true;
 	}
-      }
+      }
       catch( ...)
       {
-	error(_("Erro ao procurar registro"));
-      };
+	error(_("Erro ao procurar registro"));
+      };
     }
     else
     {
       long recno;
       if (key.ToLong(&recno))
       {
-	if (recno && (recno <= gettotalrecs()))
+	if (recno && (recno <= gettotalrecs()))
 	{
 	  xbShort rslt;		//specific
 	  try
 	  {
-	    rslt = dbf_file->GetRecord(recno);	//specific
+	    rslt = dbf_file->GetRecord(recno);	//specific
 	    if (rslt == XB_NO_ERROR)	//specific
 	      retval = true;
-	  }
+	  }
 	  catch( ...)
 	  {
-	    error(_("Erro ao procurar registro"));
-	  };
+	    error(_("Erro ao procurar registro"));
+	  };
 	}
       }
     }
@@ -987,14 +987,14 @@ _xbtable::getcurrentrec(void)
 {
   long retval = 0l;
   if (dbf_file)
-    try
+    try
   {
     retval = dbf_file->GetCurRecNo();	//specific
   }
   catch( ...)
   {
-    error(_("Erro ao computar número de registro"));
-  };
+    error(_("Erro ao computar número de registro"));
+  };
   return retval;
 }
 
@@ -1381,12 +1381,12 @@ _xbtable::getcurrentidx(void)
   return ixinuse;
 };
 
- void
+ void
 _xbtable::error(wxString errmsg)
 {
   iserr = false;
-  wxMessageBox(errmsg, _("ERRO"), wxICON_ERROR);
-};
+  wxMessageBox(errmsg, _("ERRO"), wxICON_ERROR);
+};
 
 wxString
 _xbtable::defdbext(void)

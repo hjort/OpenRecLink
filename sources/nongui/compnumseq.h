@@ -27,5 +27,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "reclinktypes.h"
 double docompare(wxString v1, wxString v2, reclink::compref comp, double m, double u, double l,
 		 bool & match);
- 
-#endif	/*  */
+ 
+#endif	/*  */

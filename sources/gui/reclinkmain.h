@@ -117,29 +117,29 @@ private:
 
   //(*Handlers(reclinkmain)
   void OnmenucloseSelected(wxCommandEvent & event);
-   void OncfgdupSelected(wxCommandEvent & event);
-   void OncfgstdSelected(wxCommandEvent & event);
-   void OncfglnkSelected(wxCommandEvent & event);
-   void OncfgjinSelected(wxCommandEvent & event);
-   void OnMenuItem1Selected(wxCommandEvent & event);
-   void OnrunstdSelected(wxCommandEvent & event);
-   void OnrunlnkSelected(wxCommandEvent & event);
-   void OninspectSelected(wxCommandEvent & event);
-   void OndoexeccmbSelected(wxCommandEvent & event);
-   void OndoexecjinSelected(wxCommandEvent & event);
-   void OndodupSelected(wxCommandEvent & event);
-   void OnaboutSelected(wxCommandEvent & event);
-   void OncalcparmsSelected(wxCommandEvent & event);
-   void OndocalcSelected(wxCommandEvent & event);
-   void OnviewdupSelected(wxCommandEvent & event);
-   void OnMenuItem19Selected(wxCommandEvent & event);
-   void OnMenuItem20Selected(wxCommandEvent & event);
-   void OnMenuItem21Selected(wxCommandEvent & event);
-   void OnMenuItem16Selected(wxCommandEvent & event);
-   void OnMenuItem17Selected(wxCommandEvent & event);
-   void OnMenuItem18Selected(wxCommandEvent & event);
-   void OnMenuItem22Selected(wxCommandEvent & event);
-   void OnMenuItem23Selected(wxCommandEvent & event);
+   void OncfgdupSelected(wxCommandEvent & event);
+   void OncfgstdSelected(wxCommandEvent & event);
+   void OncfglnkSelected(wxCommandEvent & event);
+   void OncfgjinSelected(wxCommandEvent & event);
+   void OnMenuItem1Selected(wxCommandEvent & event);
+   void OnrunstdSelected(wxCommandEvent & event);
+   void OnrunlnkSelected(wxCommandEvent & event);
+   void OninspectSelected(wxCommandEvent & event);
+   void OndoexeccmbSelected(wxCommandEvent & event);
+   void OndoexecjinSelected(wxCommandEvent & event);
+   void OndodupSelected(wxCommandEvent & event);
+   void OnaboutSelected(wxCommandEvent & event);
+   void OncalcparmsSelected(wxCommandEvent & event);
+   void OndocalcSelected(wxCommandEvent & event);
+   void OnviewdupSelected(wxCommandEvent & event);
+   void OnMenuItem19Selected(wxCommandEvent & event);
+   void OnMenuItem20Selected(wxCommandEvent & event);
+   void OnMenuItem21Selected(wxCommandEvent & event);
+   void OnMenuItem16Selected(wxCommandEvent & event);
+   void OnMenuItem17Selected(wxCommandEvent & event);
+   void OnMenuItem18Selected(wxCommandEvent & event);
+   void OnMenuItem22Selected(wxCommandEvent & event);
+   void OnMenuItem23Selected(wxCommandEvent & event);
    
     //*)
     DECLARE_EVENT_TABLE()

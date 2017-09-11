@@ -221,9 +221,9 @@ namespace dblink
 
     while (!retval && !tbcomp.eof() && (recno <= last))
     {
-      wxString key = _T("");
-      for (int i = 0; i < noblks; i++)
-	key += tbcomp.getstring(blockopts[i].compfield);
+      wxString key = _T("");
+      for (int i = 0; i < noblks; i++)
+	key += tbcomp.getstring(blockopts[i].compfield);
       //wxString key = tbref.makekey();
       retval = tbref.find(key);
 #ifdef __DEBBUG__
@@ -262,12 +262,12 @@ namespace dblink
       else
 	msg = compval + _T("/") + refval;
 #endif
-      if (compval != refval)
+      if (compval != refval)
 	
       {
-	retval = false;
+	retval = false;
 	break;
-      }
+      }
     }
 
 #ifdef __DEBBUG__

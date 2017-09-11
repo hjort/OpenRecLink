@@ -26,30 +26,30 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <wx/grid.h>
   
 #include "ntable.h"
-typedef class _ngrid:public wxGridTableBase 
+typedef class _ngrid:public wxGridTableBase 
 {
-public:
+public:
 	/** Default constructor */ 
   _ngrid();
   
 	/** Default destructor */ 
   ~_ngrid();
-  int GetNumberRows();
-   int GetNumberCols();
-   bool IsEmptyCell(int row, int col);
-   wxString GetColLabelValue(int col);
-   wxString GetRowLabelValue(int row);
-   void SetValue(int row, int col, const wxString & value);
-   wxString GetValue(int row, int col);
-   bool SetTable(_ntable * tb);
+  int GetNumberRows();
+   int GetNumberCols();
+   bool IsEmptyCell(int row, int col);
+   wxString GetColLabelValue(int col);
+   wxString GetRowLabelValue(int row);
+   void SetValue(int row, int col, const wxString & value);
+   wxString GetValue(int row, int col);
+   bool SetTable(_ntable * tb);
   void SetLimits(long begin, long end);
 protected: private:
   long rowmin;
   long rowmax;
-   int nrows;
-   int ncols;
-   wxArrayString collabels;
-   ntable * table;
- } ngrid;
- 
-#endif	/*  */
+   int nrows;
+   int ncols;
+   wxArrayString collabels;
+   ntable * table;
+ } ngrid;
+ 
+#endif	/*  */

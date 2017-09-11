@@ -36,17 +36,17 @@ namespace fldcvt
   {
   private:
     wxString punctuation;
-    wxArrayString excllist;
+    wxArrayString excllist;
     wxString suffixes;
-     wxString stdval;
-     wxString stdfirst;
-     wxString stdlast;
-     wxString stdinit;
-     wxString stdapp;
+     wxString stdval;
+     wxString stdfirst;
+     wxString stdlast;
+     wxString stdinit;
+     wxString stdapp;
     wxString procname(wxString name, reclink::convref convtype);
-     void parsename(wxString name);
+     void parsename(wxString name);
     void initvars(void);
-     wxString blockvar(wxString var);
+     wxString blockvar(wxString var);
     wxString xchange(wxString var, wxString rules);
   public:
       _fldcv();

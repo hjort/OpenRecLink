@@ -27,11 +27,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 extern "C"
 {
   
-#endif	/*  */
+#endif	/*  */
   double ppos(double m, double u);
-   double npos(double m, double u);
+   double npos(double m, double u);
    
 #ifdef __cplusplus
 } 
-#endif	/*  */
+#endif	/*  */
 #endif

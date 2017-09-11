@@ -25,18 +25,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "calc.h"
 
 #define calclog(n) ((double)(log((double)n)/log((double)2.0)))
-  double
+
+double
 ppos(double m, double u) 
 {
-  double r = m / u;
-  return calclog(r);
-}
+  double r = m / u;
+  return calclog(r);
+}
 
- double
+double
 npos(double m, double u) 
 {
-  double r = (1 - m) / (1 - u);
-  return calclog(r);
-}
-
- 
+  double r = (1 - m) / (1 - u);
+  return calclog(r);
+}
+ 

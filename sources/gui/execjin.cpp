@@ -38,29 +38,29 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //(*IdInit(execjin)
 const long
   execjin::ID_TEXTCTRL2 = wxNewId();
-const long
+const long
   execjin::ID_BITMAPBUTTON2 = wxNewId();
-const long
+const long
   execjin::ID_TEXTCTRL4 = wxNewId();
-const long
+const long
   execjin::ID_BITMAPBUTTON1 = wxNewId();
-const long
+const long
   execjin::ID_STATICTEXT1 = wxNewId();
-const long
+const long
   execjin::ID_STATICTEXT3 = wxNewId();
-const long
+const long
   execjin::ID_GAUGE1 = wxNewId();
-const long
+const long
   execjin::ID_STATICTEXT2 = wxNewId();
-const long
+const long
   execjin::ID_STATICTEXT5 = wxNewId();
-const long
+const long
   execjin::ID_BITMAPBUTTON3 = wxNewId();
-const long
+const long
   execjin::ID_STATICLINE1 = wxNewId();
-const long
+const long
   execjin::ID_STATICLINE2 = wxNewId();
-const long
+const long
   execjin::ID_PANEL1 = wxNewId();
 
 //*)
@@ -73,83 +73,83 @@ const long
   //(*Initialize(execjin)
   wxFlexGridSizer *
     FlexGridSizer1;
-   Create(parent, wxID_ANY, _("Executa associação"), wxDefaultPosition, wxDefaultSize,
+   Create(parent, wxID_ANY, _("Executa associação"), wxDefaultPosition, wxDefaultSize,
 	    wxDEFAULT_DIALOG_STYLE, _T("wxID_ANY"));
-  SetClientSize(wxSize(523, 349));
-  FlexGridSizer1 = new wxFlexGridSizer(3, 1, 0, 0);
-  Panel1 =
+  SetClientSize(wxSize(523, 349));
+  FlexGridSizer1 = new wxFlexGridSizer(3, 1, 0, 0);
+  Panel1 =
     new wxPanel(this, ID_PANEL1, wxDefaultPosition, wxSize(501, 305), wxTAB_TRAVERSAL,
 		_T("ID_PANEL1"));
-  cfgfilenamectrl =
+  cfgfilenamectrl =
     new wxTextCtrl(Panel1, ID_TEXTCTRL2, wxEmptyString, wxPoint(24, 40), wxSize(400, 27),
 		   wxTE_READONLY, wxDefaultValidator, _T("ID_TEXTCTRL2"));
-  opencfgfile =
+  opencfgfile =
     new wxBitmapButton(Panel1, ID_BITMAPBUTTON2,
 		       wxArtProvider::GetBitmap(wxART_MAKE_ART_ID_FROM_STR(_T("wxART_FILE_OPEN")),
 						wxART_BUTTON), wxPoint(432, 40), wxDefaultSize,
 		       wxBU_AUTODRAW, wxDefaultValidator, _T("ID_BITMAPBUTTON2"));
-  outfilenamectrl =
+  outfilenamectrl =
     new wxTextCtrl(Panel1, ID_TEXTCTRL4, wxEmptyString, wxPoint(24, 112), wxSize(400, 27),
 		   wxTE_READONLY, wxDefaultValidator, _T("ID_TEXTCTRL4"));
-  openoutfile =
+  openoutfile =
     new wxBitmapButton(Panel1, ID_BITMAPBUTTON1,
 		       wxArtProvider::GetBitmap(wxART_MAKE_ART_ID_FROM_STR(_T("wxART_FILE_OPEN")),
 						wxART_BUTTON), wxPoint(432, 112), wxDefaultSize,
 		       wxBU_AUTODRAW, wxDefaultValidator, _T("ID_BITMAPBUTTON1"));
-  StaticText1 =
+  StaticText1 =
     new wxStaticText(Panel1, ID_STATICTEXT1, _("Arq. configuração"), wxPoint(32, 24),
 		     wxDefaultSize, 0, _T("ID_STATICTEXT1"));
-  StaticText3 =
+  StaticText3 =
     new wxStaticText(Panel1, ID_STATICTEXT3, _("Arq. saída"), wxPoint(32, 96), wxDefaultSize, 0,
 		     _T("ID_STATICTEXT3"));
-  Gauge1 =
+  Gauge1 =
     new wxGauge(Panel1, ID_GAUGE1, 100, wxPoint(32, 240), wxSize(424, 28), 0, wxDefaultValidator,
 		_T("ID_GAUGE1"));
-  StaticText2 =
+  StaticText2 =
     new wxStaticText(Panel1, ID_STATICTEXT2, _("Registro corrente:"), wxPoint(192, 192),
 		     wxDefaultSize, 0, _T("ID_STATICTEXT2"));
-  StaticText5 =
+  StaticText5 =
     new wxStaticText(Panel1, ID_STATICTEXT5, _T("0"), wxPoint(336, 192), wxSize(120, 17),
 		     wxALIGN_RIGHT, _T("ID_STATICTEXT5"));
-  BitmapButton2 =
+  BitmapButton2 =
     new wxBitmapButton(Panel1, ID_BITMAPBUTTON3,
 		       wxArtProvider::GetBitmap(wxART_MAKE_ART_ID_FROM_STR
 						(_T("wxART_EXECUTABLE_FILE")), wxART_BUTTON),
 		       wxPoint(40, 184), wxDefaultSize, wxBU_AUTODRAW, wxDefaultValidator,
 		       _T("ID_BITMAPBUTTON3"));
-  BitmapButton2->SetToolTip(_("Executa"));
-  StaticLine1 =
+  BitmapButton2->SetToolTip(_("Executa"));
+  StaticLine1 =
     new wxStaticLine(Panel1, ID_STATICLINE1, wxPoint(0, 168), wxSize(480, 1), wxLI_HORIZONTAL,
 		     _T("ID_STATICLINE1"));
-  StaticLine2 =
+  StaticLine2 =
     new wxStaticLine(Panel1, ID_STATICLINE2, wxPoint(0, 290), wxSize(480, 1), wxLI_HORIZONTAL,
 		     _T("ID_STATICLINE2"));
-  FlexGridSizer1->Add(Panel1, 1, wxALL | wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL, 5);
-  BitmapButton1 =
+  FlexGridSizer1->Add(Panel1, 1, wxALL | wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL, 5);
+  BitmapButton1 =
     new wxBitmapButton(this, wxID_OK,
 		       wxArtProvider::GetBitmap(wxART_MAKE_ART_ID_FROM_STR(_T("wxART_UNDO")),
 						wxART_BUTTON), wxDefaultPosition, wxDefaultSize,
 		       wxBU_AUTODRAW, wxDefaultValidator, _T("wxID_OK"));
-  BitmapButton1->SetToolTip(_("Retorna"));
-  FlexGridSizer1->Add(BitmapButton1, 0,
+  BitmapButton1->SetToolTip(_("Retorna"));
+  FlexGridSizer1->Add(BitmapButton1, 0,
 		       wxBOTTOM | wxRIGHT | wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL, 5);
-  SetSizer(FlexGridSizer1);
-  FileDialog1 =
+  SetSizer(FlexGridSizer1);
+  FileDialog1 =
     new wxFileDialog(this, _("Seleciona arquivo"), wxEmptyString, wxEmptyString,
 		     wxFileSelectorDefaultWildcardStr,
 		     wxFD_DEFAULT_STYLE | wxFD_OPEN | wxFD_FILE_MUST_EXIST, wxDefaultPosition,
 		     wxDefaultSize, _T("wxFileDialog"));
-  FileDialog2 =
+  FileDialog2 =
     new wxFileDialog(this, _("Seleciona arquivo"), wxEmptyString, wxEmptyString,
 		     wxFileSelectorDefaultWildcardStr, wxFD_SAVE | wxFD_OVERWRITE_PROMPT,
 		     wxDefaultPosition, wxDefaultSize, _T("wxFileDialog"));
-  SetSizer(FlexGridSizer1);
-  Layout();
-   Connect(ID_BITMAPBUTTON2, wxEVT_COMMAND_BUTTON_CLICKED,
+  SetSizer(FlexGridSizer1);
+  Layout();
+   Connect(ID_BITMAPBUTTON2, wxEVT_COMMAND_BUTTON_CLICKED,
 	     (wxObjectEventFunction) & execjin::OnopencfgfileClick);
-  Connect(ID_BITMAPBUTTON1, wxEVT_COMMAND_BUTTON_CLICKED,
+  Connect(ID_BITMAPBUTTON1, wxEVT_COMMAND_BUTTON_CLICKED,
 	   (wxObjectEventFunction) & execjin::OnopenoutfileClick);
-  Connect(ID_BITMAPBUTTON3, wxEVT_COMMAND_BUTTON_CLICKED,
+  Connect(ID_BITMAPBUTTON3, wxEVT_COMMAND_BUTTON_CLICKED,
 	   (wxObjectEventFunction) & execjin::OnBitmapButton2Click);
   
     //*)

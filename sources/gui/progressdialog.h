@@ -52,7 +52,7 @@ private:
 
   //(*Handlers(progressdialog)
   void OnSetFocus(wxFocusEvent & event);
-   void OnKillFocus(wxFocusEvent & event);
+   void OnKillFocus(wxFocusEvent & event);
    
     //*)
   DECLARE_EVENT_TABLE()};

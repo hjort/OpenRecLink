@@ -23,111 +23,111 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include <stdlib.h>
 #include "matrix.h"
- using namespace std;
- 
+ using namespace std;
+ 
 // short integer matrix
   matrix_short * matrix_short_alloc(const size r, const size c) 
 {
-  matrix_short * m;
-  m = (matrix_short *) malloc((r * c) * sizeof(matrix_short));
-  if (m != 0)
+  matrix_short * m;
+  m = (matrix_short *) malloc((r * c) * sizeof(matrix_short));
+  if (m != 0)
     
   {
-    m->dat = (short *) malloc((r * c) * sizeof(short));
-    m->r = r;
-    m->c = c;
-  }
+    m->dat = (short *) malloc((r * c) * sizeof(short));
+    m->r = r;
+    m->c = c;
+  }
   
   else
-    free(m);
-   return m;
-}
+    free(m);
+   return m;
+}
 
- matrix_short * matrix_short_calloc(const size r, const size c) 
+ matrix_short * matrix_short_calloc(const size r, const size c) 
 {
-  size i;
-   matrix_short * m;
-  m = matrix_short_alloc(r, c);
-   if (m != 0)
+  size i;
+   matrix_short * m;
+  m = matrix_short_alloc(r, c);
+   if (m != 0)
     
   {
     
       // set elements to 0
       for (i = 0; i < r * c; i++)
-      m->dat[i] = 0;
-  }
-  return m;
-}
+      m->dat[i] = 0;
+  }
+  return m;
+}
 
- void
+ void
 matrix_short_free(matrix_short * m) 
 {
-  free(m->dat);
-  free(m);
-}   void
+  free(m->dat);
+  free(m);
+}   void
 
 matrix_short_set(matrix_short * m, size i, size j, short x) 
 {
-  m->dat[i * m->c + j] = x;
-}   short
+  m->dat[i * m->c + j] = x;
+}   short
 
 matrix_short_get(matrix_short * m, size i, size j) 
 {
-  short x;
-  x = m->dat[i * m->c + j];
-  return x;
-}
+  short x;
+  x = m->dat[i * m->c + j];
+  return x;
+}
 
- 
+ 
 // unsigned integer matrix
   matrix_uint * matrix_uint_alloc(const size r, const size c) 
 {
-  matrix_uint * m;
-  m = (matrix_uint *) malloc((r * c) * sizeof(matrix_uint));
-  if (m != 0)
+  matrix_uint * m;
+  m = (matrix_uint *) malloc((r * c) * sizeof(matrix_uint));
+  if (m != 0)
     
   {
-    m->dat = (uint *) malloc((r * c) * sizeof(uint));
-    m->r = r;
-    m->c = c;
-  }
+    m->dat = (uint *) malloc((r * c) * sizeof(uint));
+    m->r = r;
+    m->c = c;
+  }
   
   else
-    free(m);
-   return m;
-}
+    free(m);
+   return m;
+}
 
- matrix_uint * matrix_uint_calloc(const size r, const size c) 
+ matrix_uint * matrix_uint_calloc(const size r, const size c) 
 {
-  size i;
-   matrix_uint * m;
-  m = matrix_uint_alloc(r, c);
-   if (m != 0)
+  size i;
+   matrix_uint * m;
+  m = matrix_uint_alloc(r, c);
+   if (m != 0)
     
   {
     
       // set elements to 0
       for (i = 0; i < r * c; i++)
-      m->dat[i] = 0;
-  }
-  return m;
-}
+      m->dat[i] = 0;
+  }
+  return m;
+}
 
- void
+ void
 matrix_uint_free(matrix_uint * m) 
 {
-  free(m->dat);
-  free(m);
-}   void
+  free(m->dat);
+  free(m);
+}   void
 
 matrix_uint_set(matrix_uint * m, size i, size j, uint x) 
 {
-  m->dat[i * m->c + j] = x;
-}   uint matrix_uint_get(matrix_uint * m, size i, size j) 
+  m->dat[i * m->c + j] = x;
+}   uint matrix_uint_get(matrix_uint * m, size i, size j) 
 {
-  uint x;
-  x = m->dat[i * m->c + j];
-  return x;
-}
+  uint x;
+  x = m->dat[i * m->c + j];
+  return x;
+}
 
-   
+   

@@ -153,8 +153,8 @@ viewtable::viewtable(wxWindow * parent, wxWindowID id, const wxPoint & pos, cons
   //*)
   Grid1->SetDefaultCellOverflow(false);
   wxIcon FrameIcon;
-  FrameIcon.CopyFromBitmap(wxBitmap(rl32x32_xpm));
-  SetIcon(FrameIcon);
+  FrameIcon.CopyFromBitmap(wxBitmap(rl32x32_xpm));
+  SetIcon(FrameIcon);
 }
 
 viewtable::~viewtable()

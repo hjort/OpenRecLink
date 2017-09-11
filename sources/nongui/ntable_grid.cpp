@@ -24,101 +24,101 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "ntable_grid.h"
   
 #include <wx/tokenzr.h>
-  _ngrid::_ngrid()
+  _ngrid::_ngrid()
 {
   rowmin = 0;
   rowmax = 0;
-}
+}
 
- _ngrid::~_ngrid()
+ _ngrid::~_ngrid()
 {
-}
+}
 
- int
+ int
 _ngrid::GetNumberRows()
 {
-  return nrows;
-}
+  return nrows;
+}
 
- int
+ int
 _ngrid::GetNumberCols()
 {
-  return ncols;
-}
+  return ncols;
+}
 
- bool _ngrid::IsEmptyCell(int row, int col) 
+ bool _ngrid::IsEmptyCell(int row, int col) 
 {
-  bool retval = false;
-  try
+  bool retval = false;
+  try
   {
-    wxString tmp = GetValue(row, col);
-    retval = tmp.IsEmpty();
-  } catch( ...)
+    wxString tmp = GetValue(row, col);
+    retval = tmp.IsEmpty();
+  } catch( ...)
   {
-  };
-   return retval;
-}
+  };
+   return retval;
+}
 
- wxString _ngrid::GetColLabelValue(int col)
+ wxString _ngrid::GetColLabelValue(int col)
 {
-  wxString retval = _T("N/A");
-   try
+  wxString retval = _T("N/A");
+   try
   {
-    if (col >= 0 && col < collabels.GetCount())
-      retval = collabels[col];
-  }
+    if (col >= 0 && col < collabels.GetCount())
+      retval = collabels[col];
+  }
   catch( ...)
   {
-  };
-   return retval;
-}
+  };
+   return retval;
+}
 
- wxString _ngrid::GetRowLabelValue(int row)
+ wxString _ngrid::GetRowLabelValue(int row)
 {
-  wxString retval;
+  wxString retval;
   if (rowmin)
     retval.Printf(_T("%d"), row + rowmin);
   else
-    retval.Printf(_T("%d"), row + 1);
-  return retval;
-}
+    retval.Printf(_T("%d"), row + 1);
+  return retval;
+}
 
- void
+ void
 ngrid::SetValue(int row, int col, const wxString & value)
 {
   
     //wxMessageBox(_("Não implementado ainda"), _("AVISO"), wxICON_WARNING);
-}  wxString _ngrid::GetValue(int row, int col)
+}  wxString _ngrid::GetValue(int row, int col)
 {
-  wxString value = GetRowLabelValue(row);
-  long
+  wxString value = GetRowLabelValue(row);
+  long
     recno;
-  value.ToLong(&recno);	// this might be a PROBLEM
+  value.ToLong(&recno);	// this might be a PROBLEM
   value = _T("N/A");
   try
   {
-    if (table->find(recno))
-      value = table->getstring(GetColLabelValue(col));
+    if (table->find(recno))
+      value = table->getstring(GetColLabelValue(col));
   }
   catch( ...)
   {
-  };
-  return value;
-}
+  };
+  return value;
+}
 
- bool _ngrid::SetTable(ntable * tb)
+ bool _ngrid::SetTable(ntable * tb)
 {
-  table = tb;
-  bool retval = tb->isopen();
-  try
+  table = tb;
+  bool retval = tb->isopen();
+  try
   {
-    if (retval)
+    if (retval)
       
     {
-      collabels.Clear();
-      ncols = table->getnumfields();
-      for (int i = 0; i < ncols; i++)
-	collabels.Add(table->getfieldname(i));
+      collabels.Clear();
+      ncols = table->getnumfields();
+      for (int i = 0; i < ncols; i++)
+	collabels.Add(table->getfieldname(i));
       long
 	maxrecs = table->gettotalrecs();
 
@@ -131,16 +131,16 @@ ngrid::SetValue(int row, int col, const wxString & value)
 	else
 	  nrows = LOTSA_RECS;
       }
-    }
-  }
-  catch( ...)
+    }
+  }
+  catch( ...)
   {
-    retval = false;
-  }
-  return retval;
-}
+    retval = false;
+  }
+  return retval;
+}
 
- void
+ void
 _ngrid::SetLimits(long begin, long end)
 {
   if (rowmin < 1L)

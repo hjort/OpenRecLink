@@ -45,37 +45,37 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //(*IdInit(execlnmatrix)
 const long
   execlnmatrix::ID_GAUGE1 = wxNewId();
-const long
+const long
   execlnmatrix::ID_TEXTCTRL2 = wxNewId();
-const long
+const long
   execlnmatrix::ID_BITMAPBUTTON2 = wxNewId();
-const long
+const long
   execlnmatrix::ID_STATICTEXT1 = wxNewId();
-const long
+const long
   execlnmatrix::ID_STATICTEXT2 = wxNewId();
-const long
+const long
   execlnmatrix::ID_STATICTEXT5 = wxNewId();
-const long
+const long
   execlnmatrix::ID_BITMAPBUTTON3 = wxNewId();
-const long
+const long
   execlnmatrix::ID_STATICLINE1 = wxNewId();
-const long
+const long
   execlnmatrix::ID_STATICLINE2 = wxNewId();
-const long
+const long
   execlnmatrix::ID_GAUGE2 = wxNewId();
-const long
+const long
   execlnmatrix::ID_BITMAPBUTTON1 = wxNewId();
-const long
+const long
   execlnmatrix::ID_SPINCTRL1 = wxNewId();
-const long
+const long
   execlnmatrix::ID_STATICTEXT3 = wxNewId();
-const long
+const long
   execlnmatrix::ID_STATICTEXT4 = wxNewId();
-const long
+const long
   execlnmatrix::ID_CHECKBOX1 = wxNewId();
-const long
+const long
   execlnmatrix::ID_CHECKBOX2 = wxNewId();
-const long
+const long
   execlnmatrix::ID_PANEL1 = wxNewId();
 
 //*)
@@ -88,98 +88,98 @@ const long
   //(*Initialize(execlnmatrix)
   wxFlexGridSizer *
     FlexGridSizer1;
-   Create(parent, wxID_ANY, _("Gera matrizes"), wxDefaultPosition, wxDefaultSize,
+   Create(parent, wxID_ANY, _("Gera matrizes"), wxDefaultPosition, wxDefaultSize,
 	    wxDEFAULT_DIALOG_STYLE, _T("wxID_ANY"));
-  SetClientSize(wxSize(523, 323));
-  FlexGridSizer1 = new wxFlexGridSizer(3, 1, 0, 0);
-  Panel1 =
+  SetClientSize(wxSize(523, 323));
+  FlexGridSizer1 = new wxFlexGridSizer(3, 1, 0, 0);
+  Panel1 =
     new wxPanel(this, ID_PANEL1, wxDefaultPosition, wxSize(501, 305), wxTAB_TRAVERSAL,
 		_T("ID_PANEL1"));
-  Gauge1 =
+  Gauge1 =
     new wxGauge(Panel1, ID_GAUGE1, 100, wxPoint(32, 200), wxSize(424, 28), 0, wxDefaultValidator,
 		_T("ID_GAUGE1"));
-  cfgfilenamectrl =
+  cfgfilenamectrl =
     new wxTextCtrl(Panel1, ID_TEXTCTRL2, wxEmptyString, wxPoint(24, 40), wxSize(400, 27),
 		   wxTE_READONLY, wxDefaultValidator, _T("ID_TEXTCTRL2"));
-  opencfgfile =
+  opencfgfile =
     new wxBitmapButton(Panel1, ID_BITMAPBUTTON2,
 		       wxArtProvider::GetBitmap(wxART_MAKE_ART_ID_FROM_STR(_T("wxART_FILE_OPEN")),
 						wxART_BUTTON), wxPoint(432, 40), wxDefaultSize,
 		       wxBU_AUTODRAW, wxDefaultValidator, _T("ID_BITMAPBUTTON2"));
-  StaticText1 =
+  StaticText1 =
     new wxStaticText(Panel1, ID_STATICTEXT1, _("Arq. configuração"), wxPoint(32, 24),
 		     wxDefaultSize, 0, _T("ID_STATICTEXT1"));
-  StaticText2 =
+  StaticText2 =
     new wxStaticText(Panel1, ID_STATICTEXT2, _("Inicializando - aguarde..."), wxPoint(160, 160),
 		     wxSize(192, 17), 0, _T("ID_STATICTEXT2"));
-  StaticText2->Hide();
-  StaticText5 =
+  StaticText2->Hide();
+  StaticText5 =
     new wxStaticText(Panel1, ID_STATICTEXT5, _T("0"), wxPoint(288, 160), wxSize(72, 17),
 		     wxALIGN_RIGHT, _T("ID_STATICTEXT5"));
-  StaticText5->Hide();
-  BitmapButton2 =
+  StaticText5->Hide();
+  BitmapButton2 =
     new wxBitmapButton(Panel1, ID_BITMAPBUTTON3,
 		       wxArtProvider::GetBitmap(wxART_MAKE_ART_ID_FROM_STR
 						(_T("wxART_EXECUTABLE_FILE")), wxART_BUTTON),
 		       wxPoint(40, 152), wxDefaultSize, wxBU_AUTODRAW, wxDefaultValidator,
 		       _T("ID_BITMAPBUTTON3"));
-  BitmapButton2->SetToolTip(_("Executa"));
-  StaticLine1 =
+  BitmapButton2->SetToolTip(_("Executa"));
+  StaticLine1 =
     new wxStaticLine(Panel1, ID_STATICLINE1, wxPoint(0, 130), wxSize(480, 1), wxLI_HORIZONTAL,
 		     _T("ID_STATICLINE1"));
-  StaticLine2 =
+  StaticLine2 =
     new wxStaticLine(Panel1, ID_STATICLINE2, wxPoint(0, 250), wxSize(480, 1), wxLI_HORIZONTAL,
 		     _T("ID_STATICLINE2"));
-  Gauge2 =
+  Gauge2 =
     new wxGauge(Panel1, ID_GAUGE2, 100, wxPoint(368, 152), wxSize(80, 28), 0, wxDefaultValidator,
 		_T("ID_GAUGE2"));
-  BitmapButton3 =
+  BitmapButton3 =
     new wxBitmapButton(Panel1, ID_BITMAPBUTTON1,
 		       wxArtProvider::GetBitmap(wxART_MAKE_ART_ID_FROM_STR(_T("wxART_ERROR")),
 						wxART_BUTTON), wxPoint(112, 152), wxDefaultSize,
 		       wxBU_AUTODRAW, wxDefaultValidator, _T("ID_BITMAPBUTTON1"));
-  BitmapButton3->Disable();
-  BitmapButton3->SetToolTip(_("Interrompe"));
-  samplesize =
+  BitmapButton3->Disable();
+  BitmapButton3->SetToolTip(_("Interrompe"));
+  samplesize =
     new wxSpinCtrl(Panel1, ID_SPINCTRL1, _T("0"), wxPoint(146, 88), wxSize(64, 27), 0, 1, 100, 0,
 		   _T("ID_SPINCTRL1"));
-  samplesize->SetValue(_T("0"));
-  StaticText3 =
+  samplesize->SetValue(_T("0"));
+  StaticText3 =
     new wxStaticText(Panel1, ID_STATICTEXT3, _("Fração amostral"), wxPoint(32, 93), wxDefaultSize,
 		     0, _T("ID_STATICTEXT3"));
-  StaticText4 =
+  StaticText4 =
     new wxStaticText(Panel1, ID_STATICTEXT4, _T("0/00"), wxPoint(213, 93), wxDefaultSize, 0,
 		     _T("ID_STATICTEXT4"));
-  randmtxcheck =
+  randmtxcheck =
     new wxCheckBox(Panel1, ID_CHECKBOX1, _("Aleatória"), wxPoint(256, 88), wxDefaultSize, 0,
 		   wxDefaultValidator, _T("ID_CHECKBOX1"));
-  randmtxcheck->SetValue(false);
-  blkmtxchk =
+  randmtxcheck->SetValue(false);
+  blkmtxchk =
     new wxCheckBox(Panel1, ID_CHECKBOX2, _("Blocada"), wxPoint(368, 88), wxDefaultSize, 0,
 		   wxDefaultValidator, _T("ID_CHECKBOX2"));
-  blkmtxchk->SetValue(false);
-  FlexGridSizer1->Add(Panel1, 1, wxALL | wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL, 5);
-  BitmapButton1 =
+  blkmtxchk->SetValue(false);
+  FlexGridSizer1->Add(Panel1, 1, wxALL | wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL, 5);
+  BitmapButton1 =
     new wxBitmapButton(this, wxID_OK,
 		       wxArtProvider::GetBitmap(wxART_MAKE_ART_ID_FROM_STR(_T("wxART_UNDO")),
 						wxART_BUTTON), wxDefaultPosition, wxDefaultSize,
 		       wxBU_AUTODRAW, wxDefaultValidator, _T("wxID_OK"));
-  BitmapButton1->SetToolTip(_("Retorna"));
-  FlexGridSizer1->Add(BitmapButton1, 0,
+  BitmapButton1->SetToolTip(_("Retorna"));
+  FlexGridSizer1->Add(BitmapButton1, 0,
 		       wxBOTTOM | wxRIGHT | wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL, 5);
-  SetSizer(FlexGridSizer1);
-  FileDialog1 =
+  SetSizer(FlexGridSizer1);
+  FileDialog1 =
     new wxFileDialog(this, _("Seleciona arquivo"), wxEmptyString, wxEmptyString,
 		     wxFileSelectorDefaultWildcardStr,
 		     wxFD_DEFAULT_STYLE | wxFD_OPEN | wxFD_FILE_MUST_EXIST, wxDefaultPosition,
 		     wxDefaultSize, _T("wxFileDialog"));
-  SetSizer(FlexGridSizer1);
-  Layout();
-   Connect(ID_BITMAPBUTTON2, wxEVT_COMMAND_BUTTON_CLICKED,
+  SetSizer(FlexGridSizer1);
+  Layout();
+   Connect(ID_BITMAPBUTTON2, wxEVT_COMMAND_BUTTON_CLICKED,
 	     (wxObjectEventFunction) & execlnmatrix::OnopencfgfileClick);
-  Connect(ID_BITMAPBUTTON3, wxEVT_COMMAND_BUTTON_CLICKED,
+  Connect(ID_BITMAPBUTTON3, wxEVT_COMMAND_BUTTON_CLICKED,
 	   (wxObjectEventFunction) & execlnmatrix::OnBitmapButton2Click);
-  Connect(ID_BITMAPBUTTON1, wxEVT_COMMAND_BUTTON_CLICKED,
+  Connect(ID_BITMAPBUTTON1, wxEVT_COMMAND_BUTTON_CLICKED,
 	   (wxObjectEventFunction) & execlnmatrix::OnBitmapButton3Click);
   
     //*)

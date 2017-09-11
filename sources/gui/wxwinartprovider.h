@@ -25,15 +25,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define WXWINARTPROVIDER_H
 
 #include <wx/artprov.h>
- class wxWinArtProvider:public wxArtProvider 
+ class wxWinArtProvider:public wxArtProvider 
 {
-public:
+public:
 	/** Default constructor */ 
     wxWinArtProvider();
-protected:
+protected:
   virtual wxBitmap CreateBitmap(const wxArtID & id,
 				const wxArtClient & client, const wxSize & size);
-private:};
+private:};
 
 
 #endif // WXWINARTPROVIDER_H

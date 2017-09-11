@@ -37,7 +37,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   
 #include <iostream>
 #include <fstream>
-   
+   
 //(*IdInit(exportdlg)
   const long
   exportdlg::ID_STATICTEXT1 = wxNewId();
@@ -50,11 +50,11 @@ const long
 const long
   exportdlg::ID_GAUGE1 = wxNewId();
 //*)
-BEGIN_EVENT_TABLE(exportdlg, wxDialog) 
+BEGIN_EVENT_TABLE(exportdlg, wxDialog) 
   //(*EventTable(exportdlg)
   //*)
   END_EVENT_TABLE() 
-  exportdlg::exportdlg(wxWindow * parent, wxWindowID id, const wxPoint & pos,
+  exportdlg::exportdlg(wxWindow * parent, wxWindowID id, const wxPoint & pos,
 			const wxSize & size) 
 {
   
@@ -115,48 +115,48 @@ const long
 
   Connect(wxID_OK, wxEVT_COMMAND_BUTTON_CLICKED, (wxObjectEventFunction) & exportdlg::OnokbtnClick);
   //*)
-}  exportdlg::~exportdlg() 
+}  exportdlg::~exportdlg() 
 {
   
     //(*Destroy(exportdlg)
     //*)
-} int
+} int
 
 exportdlg::export_recs(void)
 {
   bool wasopen = tbl->isopen();
   long curr_rec;
   int rslt = wxID_ABORT;
-  if (!wasopen)
+  if (!wasopen)
     
   {
     if (fname.IsEmpty())
-      if (FileDialog1->ShowModal() == wxID_OK)
+      if (FileDialog1->ShowModal() == wxID_OK)
 	fname = FileDialog1->GetPath();
 
     if (fname.IsEmpty())
-      wxMessageBox(_("Selecione um arquivo de entrada"), _("ERRO"));
+      wxMessageBox(_("Selecione um arquivo de entrada"), _("ERRO"));
     
     else if (!wxFileExists(fname))
-      wxMessageBox(_("O arquivo selecionado não existe"), _("ERRO"));
+      wxMessageBox(_("O arquivo selecionado não existe"), _("ERRO"));
     else
       tbl->open(fname);
-  }
+  }
   else
     curr_rec = tbl->getcurrentrec();
-   if (tbl->isopen())
+   if (tbl->isopen())
     
   {
-    wxString rcsep = recsep->GetValue();
-    wxString flsep = fldsep->GetValue();
-    if (!flsep.IsEmpty() && !rcsep.IsEmpty() && (flsep != rcsep))
+    wxString rcsep = recsep->GetValue();
+    wxString flsep = fldsep->GetValue();
+    if (!flsep.IsEmpty() && !rcsep.IsEmpty() && (flsep != rcsep))
       
     {
-      wxFileName tmp = fname;
-      tmp.SetExt(_T("sql"));
-      wxString expname = tmp.GetFullPath();
-      std::ofstream exportfile;
-      exportfile.open(expname.mb_str(wxConvUTF8));
+      wxFileName tmp = fname;
+      tmp.SetExt(_T("sql"));
+      wxString expname = tmp.GetFullPath();
+      std::ofstream exportfile;
+      exportfile.open(expname.mb_str(wxConvUTF8));
       wxString line, aux;
       aux = _T("CREATE TABLE ") + tmp.GetName() + _T("(");
       exportfile << aux.mb_str(wxConvUTF8) << std::endl;
@@ -199,83 +199,83 @@ exportdlg::export_recs(void)
       exportfile.close();
 
       tmp.SetExt(_T("csv"));
-      expname = tmp.GetFullPath();
-      exportfile.open(expname.mb_str(wxConvUTF8));
-      long maxrecs = tbl->gettotalrecs();
-      Gauge1->SetRange(maxrecs);
-      Gauge1->SetValue(0);
-      if (tbl->getfieldnum(_T("RECNO")) == -1)
-	aux = _T("RECNO,N,8,0|") + tbl->getheader();
+      expname = tmp.GetFullPath();
+      exportfile.open(expname.mb_str(wxConvUTF8));
+      long maxrecs = tbl->gettotalrecs();
+      Gauge1->SetRange(maxrecs);
+      Gauge1->SetValue(0);
+      if (tbl->getfieldnum(_T("RECNO")) == -1)
+	aux = _T("RECNO,N,8,0|") + tbl->getheader();
       else
 	aux = tbl->getheader();
-      if ((rcsep != _T("|")) || (flsep != _T(",")))
+      if ((rcsep != _T("|")) || (flsep != _T(",")))
 	
       {
-	int len = aux.Len();
-	for (int i = 0; i < len; i++)
+	int len = aux.Len();
+	for (int i = 0; i < len; i++)
 	  
 	{
-	  if ((rcsep != _T("|")) && (aux[i] == _T('|')))
-	    aux[i] = rcsep[0];
+	  if ((rcsep != _T("|")) && (aux[i] == _T('|')))
+	    aux[i] = rcsep[0];
 	  
 	  else if ((flsep != _T(",")) && (aux[i] == _T(',')))
-	    aux[i] = flsep[0];
-	}
-      }
-      exportfile << aux.mb_str(wxConvUTF8) << std::endl;
-      tbl->first();
-      long nrecs = 0l;
-      int ticker = 0;
-      while (!tbl->eof() && (nrecs <= maxrecs))
+	    aux[i] = flsep[0];
+	}
+      }
+      exportfile << aux.mb_str(wxConvUTF8) << std::endl;
+      tbl->first();
+      long nrecs = 0l;
+      int ticker = 0;
+      while (!tbl->eof() && (nrecs <= maxrecs))
 	
       {
-	nrecs++;
-	Gauge1->SetValue(nrecs);
-	ticker++;
-	if (ticker > 99)
+	nrecs++;
+	Gauge1->SetValue(nrecs);
+	ticker++;
+	if (ticker > 99)
 	  
 	{
-	  ticker = 0;
-	  wxYieldIfNeeded();
-	}
+	  ticker = 0;
+	  wxYieldIfNeeded();
+	}
 	if (tbl->getfieldnum(_T("RECNO")) == -1)
 	{
 	  aux.Printf(_T("%d|"), nrecs);
-	  aux += tbl->getrecord();
+	  aux += tbl->getrecord();
 	}
 	
 	else
 	  aux = tbl->getrecord();
-	if (rcsep != _T('|'))
+	if (rcsep != _T('|'))
 	  
 	{
-	  int len = aux.Len();
-	  for (int i = 0; i < len; i++)
-	    if (aux[i] == _T('|'))
-	      aux[i] = rcsep[0];
-	}
-	exportfile << aux.mb_str(wxConvUTF8) << std::endl;
-	tbl->next();
-      }
-      exportfile.close();
-       wxString msg;
-      msg.Printf(_("Copiados %d registros"), nrecs);
-      wxMessageBox(msg, _("ENCERRADO"));
+	  int len = aux.Len();
+	  for (int i = 0; i < len; i++)
+	    if (aux[i] == _T('|'))
+	      aux[i] = rcsep[0];
+	}
+	exportfile << aux.mb_str(wxConvUTF8) << std::endl;
+	tbl->next();
+      }
+      exportfile.close();
+       wxString msg;
+      msg.Printf(_("Copiados %d registros"), nrecs);
+      wxMessageBox(msg, _("ENCERRADO"));
       ops_log log;
       msg.Printf(_T("%d"), nrecs);
       log.log_event(_T("EXPORT"), fname, _T("N/A"), msg);
       rslt = wxID_OK;
-    }
+    }
     
     else if (flsep.IsEmpty())
-      wxMessageBox(_("Separador de campos vazio"), _("ERRO"));
+      wxMessageBox(_("Separador de campos vazio"), _("ERRO"));
     
     else if (rcsep.IsEmpty())
-      wxMessageBox(_("Separador de registros vazio"), _("ERRO"));
+      wxMessageBox(_("Separador de registros vazio"), _("ERRO"));
     
     else if (flsep == rcsep)
-      wxMessageBox(_("Os separadores não podem ser iguais"), _("ERRO"));
-    if (!wasopen)
+      wxMessageBox(_("Os separadores não podem ser iguais"), _("ERRO"));
+    if (!wasopen)
       tbl->close();
     else
       tbl->go(curr_rec);
@@ -283,15 +283,15 @@ exportdlg::export_recs(void)
   return rslt;
 }
 
-void
+void
 exportdlg::OnokbtnClick(wxCommandEvent & event) 
 {
-  int rslt = export_recs();
-  EndModal(rslt);
-}  void
+  int rslt = export_recs();
+  EndModal(rslt);
+}  void
 
 exportdlg::settbl(ntable * ptbl, wxString name) 
 {
-  tbl = ptbl;
+  tbl = ptbl;
   fname = name;
-} 
+} 
