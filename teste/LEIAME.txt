@@ -6,6 +6,9 @@ sed -i 's/\r//g' 201103_SeguroDefeso.csv
 awk 'BEGIN{FS="\t"}NR>1&&NR<=1000{print$5","$7",\042"$8"\042,"$9","$10}' 201103_SeguroDefeso.csv | sort -u > sdf1103.csv
 awk 'BEGIN{FS="\t"}NR>1&&NR<=1000{print$4","$6",\042"$7"\042,"$8","$9}' 201703_SeguroDefeso.csv | sort -u > sdf1703.csv
 
+(echo "PIS,RGP,NOME,UF,MUNICIPIO"; awk 'BEGIN{FS="\t"}NR>1&&NR<=1000{print$5","$7",\042"$8"\042,"$9","$10}' 201103_SeguroDefeso.csv | sort -u) > sdf1103.csv
+(echo "PIS,RGP,NOME,UF,MUNICIPIO"; awk 'BEGIN{FS="\t"}NR>1&&NR<=1000{print$4","$6",\042"$7"\042,"$8","$9}' 201703_SeguroDefeso.csv | sort -u) > sdf1703.csv
+
 head sdf1103.csv; tail sdf1103.csv; wc -l sdf1103.csv
 head sdf1703.csv; tail sdf1703.csv; wc -l sdf1703.csv
 
