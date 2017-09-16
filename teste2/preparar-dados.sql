@@ -1,3 +1,5 @@
+--------------------------------------------------
+
 DROP TABLE IF EXISTS sdf1103p;
 
 SELECT *,
@@ -48,6 +50,7 @@ CREATE INDEX ON sdf1703p (pnome, uf);
 
 --------------------------------------------------
 
+/*
 SELECT min(pis), max(pis), count(1)
 FROM sdf1103;
 
@@ -61,6 +64,7 @@ FROM sdf1703;
 SELECT count(1)
 FROM sdf1703
 WHERE pis < '10999999999';
+*/
 
 --------------------------------------------------
 

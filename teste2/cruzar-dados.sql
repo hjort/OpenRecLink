@@ -29,9 +29,11 @@ FROM (
     CASE WHEN rgp1 = rgp2 THEN 1.874 ELSE -0.918 END AS wrgp, -- 55x15
     CASE WHEN nome1 = nome2 THEN 1.766 ELSE -2.322 END AS wnome, --85x25
     CASE WHEN municipio1 = municipio2 THEN 1.415 ELSE -1.807 END AS wmun, --80x30
-    CASE WHEN spnome1 = spnome2 THEN 4.248 ELSE -4.248 END AS wpnome, --95x5
-    CASE WHEN sunome1 = sunome2 THEN 3.248 ELSE -4.170 END AS wunome --95x10
+    CASE WHEN pnome1 = pnome2 THEN 4.248 * sk_pnome ELSE -4.248 END AS wpnome, --95x5
+    CASE WHEN unome1 = unome2 THEN 3.248 * sk_unome ELSE -4.170 END AS wunome --95x10
   FROM cruza1
+  LEFT JOIN freq_pnome f1 ON (f1.pnome = pnome1)
+  LEFT JOIN freq_unome f2 ON (f2.unome = unome1)
 --  LIMIT 100
 ) a;
 
@@ -39,6 +41,7 @@ FROM (
 
 SELECT score, nome1, nome2
 FROM cruza2
+WHERE nome1 <> nome2
 ORDER BY score DESC;
 
 --------------------------------------------------
