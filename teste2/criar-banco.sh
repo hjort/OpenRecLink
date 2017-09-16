@@ -1,8 +1,10 @@
-export PGPORT=5433
+export PGPORT=5433 PGDATABASE=reclink
 
 createuser -W reclink
 
 createdb -O reclink reclink
 
-psql reclink -f criar-tabelas.sql
+psql -c 'CREATE EXTENSION fuzzystrmatch'
+
+psql -f criar-tabelas.sql
 
