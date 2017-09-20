@@ -6,7 +6,8 @@ SELECT *,
   sqrt(tk_pnome / qk_pnome) AS ak_pnome,
   sqrt(tk_unome / qk_unome) AS ak_unome,
   sqrt(tk_spnome / qk_spnome) AS ak_spnome,
-  sqrt(tk_sunome / qk_sunome) AS ak_sunome
+  sqrt(tk_sunome / qk_sunome) AS ak_sunome,
+  sqrt(tk_municipio / qk_municipio) AS ak_municipio
 INTO freq
 FROM (
   SELECT
@@ -18,12 +19,14 @@ FROM (
     count(spnome) AS tk_spnome,
     count(DISTINCT spnome) AS qk_spnome,
     count(sunome) AS tk_sunome,
-    count(DISTINCT sunome) AS qk_sunome
+    count(DISTINCT sunome) AS qk_sunome,
+    count(municipio) AS tk_municipio,
+    count(DISTINCT municipio) AS qk_municipio
   FROM (
-    SELECT pnome, unome, spnome, sunome
+    SELECT pnome, unome, spnome, sunome, municipio
     FROM sdf1103p
     UNION ALL
-    SELECT pnome, unome, spnome, sunome
+    SELECT pnome, unome, spnome, sunome, municipio
     FROM sdf1703p
   ) x
 ) y;
@@ -151,5 +154,35 @@ ALTER TABLE freq_sunome ADD PRIMARY KEY (sunome);
 ALTER TABLE freq_sunome OWNER TO reclink;
 
 SELECT * FROM freq_sunome LIMIT 10;
+
+--------------------------------------------------
+
+DROP TABLE IF EXISTS freq_municipio;
+
+SELECT municipio, qk_municipio, ik_municipio,
+  sqrt(ak_municipio / ik_municipio) AS sk_municipio
+INTO freq_municipio
+FROM (
+  SELECT
+    municipio,
+    count(1) AS qk_municipio,
+    min(freq.ak_municipio) AS ak_municipio,
+    count(1)::numeric / min(freq.tk_municipio) AS ik_municipio
+  FROM (
+    SELECT municipio
+    FROM sdf1103p
+    UNION ALL
+    SELECT municipio
+    FROM sdf1703p
+  ) x, freq
+  GROUP BY municipio
+) y
+ORDER BY municipio;
+
+ALTER TABLE freq_municipio ADD PRIMARY KEY (municipio);
+
+ALTER TABLE freq_municipio OWNER TO reclink;
+
+SELECT * FROM freq_municipio LIMIT 10;
 
 --------------------------------------------------
