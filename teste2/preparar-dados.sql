@@ -21,6 +21,10 @@ FROM (
   ) a
 ) b;
 
+ALTER TABLE sdf1103p OWNER TO reclink;
+
+CREATE INDEX ON sdf1103p (pnome, uf);
+
 --------------------------------------------------
 
 DROP TABLE IF EXISTS sdf1703p;
@@ -44,7 +48,7 @@ FROM (
   ) a
 ) b;
 
---------------------------------------------------
+ALTER TABLE sdf1703p OWNER TO reclink;
 
 CREATE INDEX ON sdf1703p (pnome, uf);
 
