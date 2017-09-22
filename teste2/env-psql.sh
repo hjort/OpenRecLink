@@ -1,1 +1,0 @@
-export PGDATABASE=reclink PGPORT=5433
